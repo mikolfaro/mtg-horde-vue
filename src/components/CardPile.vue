@@ -5,7 +5,7 @@
       <label class="sr-only" for="cards-number">Numero di carte</label>
       <input id="cards-number"
              type="number"
-             v-model="value"
+             v-model="cardsNumber"
              class="remove-card-input"
              min="1"
              @change="handleChange" />
@@ -25,7 +25,7 @@
 
       return {
         removeCardText: "Rimuovi carta",
-        value: '',
+        cardsNumber: 1,
         cardPileStyle: cardPileStyle
       }
     },
@@ -36,7 +36,7 @@
     },
     methods: {
       handleRemoveCard() {
-        console.log("Remove card")
+        this.$emit('removeCards', this.cardsNumber)
       },
       handleChange() {
         console.log("Change")
