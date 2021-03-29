@@ -6,7 +6,7 @@
 
     <Deck :cards="deck"></Deck>
 
-    <hand :cards="hand"></hand>
+    <Hand :cards="hand"></Hand>
 
     <token-creator></token-creator>
 
@@ -20,12 +20,14 @@
   </div>
 </template>
 <script>
+  import Deck from '@/components/Deck.vue'
   import Graveyard from '@/components/Graveyard.vue'
+  import Hand from '@/components/Hand.vue'
   import PhaseTracker from '@/components/PhaseTracker.vue'
 
   export default {
     name: "Game",
-    components: { PhaseTracker, Graveyard },
+    components: { Deck, Graveyard, Hand, PhaseTracker },
     data() {
       return {
         phase: "",
