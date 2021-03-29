@@ -8,12 +8,12 @@
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import GameForm from '@/components/GameForm.vue'
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld
+    GameForm
   }
 }
 </script>

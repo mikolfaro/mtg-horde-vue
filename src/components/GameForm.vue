@@ -35,6 +35,7 @@
           </tr>
           </tbody>
         </table>
+        <input class="submit" type="submit" value="Play!"/>
       </form>
     </div>
   </div>
@@ -50,8 +51,10 @@
       }
     },
     methods: {
-      handleSubmit() {
+      handleSubmit(e) {
+        e.preventDefault()
 
+        this.$router.push('game')
       },
       handleInputChange() {
 
@@ -59,3 +62,7 @@
     }
   }
 </script>
+
+<style lang="sass">
+  @import "~@/styles/game-form"
+</style>

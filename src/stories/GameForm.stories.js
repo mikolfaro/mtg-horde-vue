@@ -8,6 +8,6 @@ export default {
 
 export const withText = () => ({
   components: { GameForm },
-  template: '<GameForm @onSubmit="action">Hello Button</GameForm>',
+  template: '<GameForm @onSubmit="action" />',
   methods: { action: action('clicked') }
 })
