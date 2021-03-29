@@ -4,7 +4,7 @@
 
     <Graveyard :cards="graveyard"></Graveyard>
 
-    <deck :cards="deck"></deck>
+    <Deck :cards="deck"></Deck>
 
     <hand :cards="hand"></hand>
 
@@ -20,11 +20,12 @@
   </div>
 </template>
 <script>
-  import PhaseTracker from '@components/PhaseTracker.vue'
+  import Graveyard from '@/components/Graveyard.vue'
+  import PhaseTracker from '@/components/PhaseTracker.vue'
 
   export default {
     name: "Game",
-    components: { PhaseTracker },
+    components: { PhaseTracker, Graveyard },
     data() {
       return {
         phase: "",
