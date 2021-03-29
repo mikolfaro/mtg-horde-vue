@@ -1,5 +1,7 @@
 # mtg-horde-vue
 
+Porting of https://github.com/dkniffin/mtg-horde to VueJS
+
 ## Project setup
 ```
 yarn install
@@ -8,6 +10,11 @@ yarn install
 ### Compiles and hot-reloads for development
 ```
 yarn serve
+```
+
+### Storybook
+```
+yarn storybook
 ```
 
 ### Compiles and minifies for production
