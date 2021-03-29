@@ -8,7 +8,7 @@
 
     <Hand :cards="hand"></Hand>
 
-    <token-creator></token-creator>
+    <TokenCreator></TokenCreator>
 
     <board-wipe></board-wipe>
 
@@ -24,10 +24,11 @@
   import Graveyard from '@/components/Graveyard.vue'
   import Hand from '@/components/Hand.vue'
   import PhaseTracker from '@/components/PhaseTracker.vue'
+  import TokenCreator from '@/components/TokenCreator.vue'
 
   export default {
     name: "Game",
-    components: { Deck, Graveyard, Hand, PhaseTracker },
+    components: { Deck, Graveyard, Hand, PhaseTracker, TokenCreator },
     data() {
       return {
         phase: "",

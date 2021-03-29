@@ -12,7 +12,7 @@
       cards: { type: Array }
     },
     data() {
-      return []
+      return {}
     },
     methods: {
       onDiscard() {
