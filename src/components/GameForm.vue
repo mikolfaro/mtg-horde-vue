@@ -53,8 +53,11 @@
     methods: {
       handleSubmit(e) {
         e.preventDefault()
-
-        this.$router.push('game')
+        this.$emit("play", {
+          deckName: this.deck,
+          playersCount: this.players,
+          graveyardTokens: this.graveyardTokens
+        })
       },
       handleInputChange() {
 

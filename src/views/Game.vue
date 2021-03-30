@@ -20,6 +20,8 @@
   </div>
 </template>
 <script>
+  import { mapState } from 'vuex'
+
   import BoardWipe from '@/components/BoardWipe'
   import CardZone from '@/components/CardZone'
   import Deck from '@/components/Deck.vue'
@@ -38,6 +40,9 @@
         graveyard: [],
         exileCards: [],
       }
+    },
+    computed: {
+      ...mapState(['deck'])
     }
   }
 </script>
