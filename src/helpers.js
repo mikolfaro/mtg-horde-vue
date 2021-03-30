@@ -20,3 +20,14 @@ export const phases = [
     description: 'The Horde is attacking. Each of it\'s creatures has been tapped, and has a number on it, representing which planeswalker or player it is targeting. You may respond to the combat now, then resolve combat damage. Press next to continue to the Survivors\' turn.'
   }
 ]
+
+export function shuffle(array) {
+  const shuffledArray = [].concat(array);
+  for(let i = shuffledArray.length - 1; i > 0; i--){
+    const j = Math.floor(Math.random() * i)
+    const temp = shuffledArray[i]
+    shuffledArray[i] = shuffledArray[j]
+    shuffledArray[j] = temp
+  }
+  return shuffledArray
+}

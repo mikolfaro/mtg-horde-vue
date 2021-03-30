@@ -34,15 +34,10 @@
     name: "Game",
     components: { BoardWipe, CardZone, Deck, Graveyard, Hand, PhaseTracker, TokenCreator },
     data() {
-      return {
-        phase: "",
-        deck: "",
-        graveyard: [],
-        exileCards: [],
-      }
+      return {}
     },
     computed: {
-      ...mapState(['deck'])
+      ...mapState(['phase', 'deck', 'hand', 'graveyard', 'exile'])
     }
   }
 </script>

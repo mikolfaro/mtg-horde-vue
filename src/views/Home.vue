@@ -11,6 +11,7 @@ import { mapActions } from 'vuex'
 import deckData from '../decks'
 import Card from '@/models/Card'
 import GameForm from '@/components/GameForm.vue'
+import { shuffle } from '../helpers'
 
 export default {
   name: 'Home',
@@ -26,11 +27,11 @@ export default {
     },
     loadDeck(deckName) {
       if (deckData[deckName]) {
-        const cards = deckData.map((cardData, i) => {
+        const cards = deckData[deckName].map((cardData, i) => {
           return Card.freshFromData(cardData, i)
         })
 
-        this.setDeck(cards)
+        this.setDeck(shuffle(cards))
       }
     },
     ...mapActions(['setDeck'])
