@@ -5,11 +5,11 @@ export default class Card extends Record({
 }) {
 
   power() {
-    return this.cardData.get('power')
+    return this.cardData.power
   }
 
   toughness() {
-    return this.cardData.get('toughness')
+    return this.cardData.toughness
   }
 
   isToken() {

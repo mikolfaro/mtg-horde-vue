@@ -1,7 +1,5 @@
 <template>
   <div class="game-page">
-    <h1>{{ board.length }}</h1>
-
     <PhaseTracker />
 
     <Graveyard :cards="graveyard"></Graveyard>
