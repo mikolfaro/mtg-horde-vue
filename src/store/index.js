@@ -73,6 +73,7 @@ export default new Vuex.Store({
     },
     counterSpell(state, spell) {
       state.graveyard.push(spell)
+      state.stack.shift()
     }
   },
   actions: {
