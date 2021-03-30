@@ -36,6 +36,15 @@ export default new Vuex.Store({
       state.board = state.board.concat(state.hand)
       state.hand = []
       console.log(state.board)
+    },
+    attack(state) {
+      state.board = state.board.map((card) => {
+        if (!card.tapped) {
+          return card.set('tapped', true)
+        }
+
+        return card
+      })
     }
   },
   actions: {
@@ -49,6 +58,8 @@ export default new Vuex.Store({
         context.commit('draw')
       } else if (context.state.phase.id === 'HORDE_PLAY') {
         context.commit('play')
+      } else if (context.state.phase.id === 'HORDE_ATTACK') {
+        context.commit('attack')
       }
     }
   },

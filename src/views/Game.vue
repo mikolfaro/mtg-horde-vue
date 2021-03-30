@@ -40,7 +40,9 @@
       ...mapState(['phase', 'deck', 'hand', 'graveyard', 'exile', 'board'])
     },
     mounted() {
-
+      if (!this.deck) {
+        this.$router.push('home')
+      }
     }
   }
 </script>

@@ -1,3 +1,4 @@
+import CardModel from '@/models/Card'
 import Card from '@/components/Card'
 
 export default {
@@ -11,50 +12,60 @@ const Template = (args, { argTypes }) => ({
 })
 
 const cardImage = 'http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=39547&type=card'
+const card = CardModel.freshFromData({
+  name: 'Boneknitter',
+  imageUrl: cardImage,
+})
+
+const creature = CardModel.freshFromData({
+  name: 'Boneknitter',
+  imageUrl: cardImage,
+  power: '1',
+  toughness: '1',
+  types: ['Creature']
+})
+
+const morph = CardModel.freshFromData({
+  name: 'Boneknitter',
+  imageUrl: cardImage,
+  power: '2',
+  toughness: '2',
+  types: ['Creature']
+})
 
 export const faceUp = Template.bind({})
 faceUp.args = {
-  imageUrl: cardImage,
+  card: card
 }
 
 export const faceDown = Template.bind({})
 faceDown.args = {
-  imageUrl: cardImage,
-  faceDown: true,
+  card: card.set('faceDown', true)
 }
 
 export const tapped = Template.bind({})
 tapped.args = {
-  imageUrl: cardImage,
-  tapped: true,
+  card: card.set('tapped', true)
 }
 
 export const tappedAndFaceDown = Template.bind({})
 tappedAndFaceDown.args = {
-  imageUrl: cardImage,
-  tapped: true,
-  faceDown: true,
+  card: card.set('faceDown', true).set('tapped', true)
 }
 
 export const creature1_1 = Template.bind({})
+card.set('power', '1')
+console.log('XXX', card.set("toughness", '2'))
 creature1_1.args = {
-  imageUrl: cardImage,
-  power: "1",
-  toughness: "1"
+  card: creature
 }
 
-export const creature11Tapped = Template.bind({})
-creature11Tapped.args = {
-  imageUrl: cardImage,
-  power: "1",
-  toughness: "1",
-  tapped: true
+export const creature1_1Tapped = Template.bind({})
+creature1_1Tapped.args = {
+  card: creature.set("tapped", true)
 }
 
-export const morph = Template.bind({})
-morph.args = {
-  imageUrl: cardImage,
-  faceDown: true,
-  power: "2",
-  toughness: "2",
+export const morphedCreature = Template.bind({})
+morphedCreature.args = {
+  card: morph.set('faceDown', true)
 }

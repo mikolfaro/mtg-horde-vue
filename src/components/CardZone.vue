@@ -4,11 +4,7 @@
       <Card
           v-for="(card, index) in board"
           v-bind:key="index"
-          :image-url="card.cardData.imageUrl"
-          :tapped="card.tapped"
-          :faceDown="card.faceDown"
-          :power="card.power()"
-          :toughness="card.toughness()"
+          :card="card"
       />
     </div>
   </div>

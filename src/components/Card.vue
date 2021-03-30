@@ -1,8 +1,8 @@
 <template>
   <div class="card" :class="{ tapped: tapped }">
     <div class="card-bounds">
-      <img :src=image alt="Card" @click=onCardClick />
-      <span v-if="power !== null && toughness !== null" class="pt-indicator">{{power}}/{{toughness}}</span>
+      <img :src=image :alt="name" @click=onCardClick />
+      <span v-if="card.isCreature()" class="pt-indicator">{{power}}/{{toughness}}</span>
     </div>
     <button class="tap-card" @click=onTap>
       <img alt="Tap card" :src="tapIcon" role="presentation" />
@@ -12,6 +12,7 @@
 <script>
   import faceDownImage from '@/assets/back-card.png'
   import tapIcon from '@/assets/tap-icon.png'
+  import Card from '@/models/Card'
 
   export default {
     name: 'Card',
@@ -21,29 +22,27 @@
       }
     },
     props: {
-      tapped: {
-        type: Boolean,
-        default: false
-      },
-      faceDown: {
-        type: Boolean,
-        default: false
-      },
-      imageUrl: {
-        type: String,
-      },
-      power: {
-        type: String,
-        default: null
-      },
-      toughness: {
-        type: String,
-        default: null
-      },
+      card: { type: Card },
     },
     computed: {
+      name() {
+        return this.faceDown ? "Face down card" : this.card.name()
+      },
       image() {
-        return this.faceDown ? faceDownImage : this.imageUrl
+        return this.faceDown ? faceDownImage : this.card.imageUrl()
+      },
+      tapped() {
+        return this.card.tapped
+      },
+      faceDown() {
+        return this.card.faceDown
+      },
+      power() {
+        console.log('P', this.card, this.card.power())
+        return this.card.power()
+      },
+      toughness() {
+        return this.card.toughness()
       },
     },
     methods: {
