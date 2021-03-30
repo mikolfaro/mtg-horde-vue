@@ -10,9 +10,9 @@
 
     <TokenCreator></TokenCreator>
 
-    <board-wipe></board-wipe>
+    <BoardWipe></BoardWipe>
 
-    <card-zone></card-zone>
+    <CardZone></CardZone>
 
     <card-modal></card-modal>
 
@@ -20,6 +20,7 @@
   </div>
 </template>
 <script>
+  import BoardWipe from '@/components/BoardWipe'
   import Deck from '@/components/Deck.vue'
   import Graveyard from '@/components/Graveyard.vue'
   import Hand from '@/components/Hand.vue'
@@ -28,7 +29,7 @@
 
   export default {
     name: "Game",
-    components: { Deck, Graveyard, Hand, PhaseTracker, TokenCreator },
+    components: { BoardWipe, Deck, Graveyard, Hand, PhaseTracker, TokenCreator },
     data() {
       return {
         phase: "",
