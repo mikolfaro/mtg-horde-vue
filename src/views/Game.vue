@@ -21,6 +21,7 @@
 </template>
 <script>
   import BoardWipe from '@/components/BoardWipe'
+  import CardZone from '@/components/CardZone'
   import Deck from '@/components/Deck.vue'
   import Graveyard from '@/components/Graveyard.vue'
   import Hand from '@/components/Hand.vue'
@@ -29,7 +30,7 @@
 
   export default {
     name: "Game",
-    components: { BoardWipe, Deck, Graveyard, Hand, PhaseTracker, TokenCreator },
+    components: { BoardWipe, CardZone, Deck, Graveyard, Hand, PhaseTracker, TokenCreator },
     data() {
       return {
         phase: "",
