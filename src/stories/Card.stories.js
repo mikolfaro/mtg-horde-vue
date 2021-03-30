@@ -55,7 +55,6 @@ tappedAndFaceDown.args = {
 
 export const creature1_1 = Template.bind({})
 card.set('power', '1')
-console.log('XXX', card.set("toughness", '2'))
 creature1_1.args = {
   card: creature
 }

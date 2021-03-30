@@ -21,7 +21,7 @@ export default {
   methods: {
     onPlay(e) {
       this.loadDeck(e.deckName)
-      this.$router.push("game")
+      this.$router.push({ name: "Game" })
     },
     loadDeck(deckName) {
       if (deckData[deckName]) {

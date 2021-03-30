@@ -23,6 +23,13 @@ export default class Card extends Record({
     return this.cardData.originalType.startsWith('Token')
   }
 
+   isPermanent() {
+    const types = this.cardData.types
+    return types.includes('Creature') ||
+           types.includes('Artifact') ||
+           types.includes('Enchantment')
+  }
+
   isCreature() {
     return this.cardData.types && this.cardData.types.includes('Creature')
   }

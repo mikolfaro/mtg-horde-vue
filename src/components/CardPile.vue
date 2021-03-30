@@ -18,15 +18,10 @@
   export default {
     name: 'CardPile',
     data() {
-      let cardPileStyle = {}
-      if (this.background) {
-        cardPileStyle['backgroundImage'] = `url(${this.background})`
-      }
-
       return {
         removeCardText: "Rimuovi carta",
         cardsNumber: 1,
-        cardPileStyle: cardPileStyle
+
       }
     },
     props: {
@@ -40,6 +35,11 @@
       },
       handleChange() {
         console.log("Change")
+      }
+    },
+    computed: {
+      cardPileStyle() {
+        return { backgroundImage: `url('${this.background}')` }
       }
     }
   }

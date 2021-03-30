@@ -14,7 +14,10 @@
 
     <CardZone id="board"></CardZone>
 
-    <SpellModal v-if="effects.length > 0" :spell="effects[0]"></SpellModal>
+    <SpellModal
+      :spell="topStack"
+      @resolveSpell="resoveTopStack"
+      @counterSpell="counterTopStack" />
 
     <!-- card-modal></card-modal -->
 
@@ -22,7 +25,7 @@
   </div>
 </template>
 <script>
-  import { mapState } from 'vuex'
+  import { mapState, mapActions } from 'vuex'
 
   import BoardWipe from '@/components/BoardWipe'
   import CardZone from '@/components/CardZone'
@@ -40,11 +43,26 @@
       return {}
     },
     computed: {
-      ...mapState(['phase', 'deck', 'hand', 'graveyard', 'exile', 'board', 'effects'])
+      ...mapState(['phase', 'deck', 'hand', 'graveyard', 'exile', 'board', 'stack']),
+      topStack() {
+        if (this.stack.length) {
+          return this.stack[0]
+        }
+        return null
+      }
     },
     mounted() {
-      if (!this.deck) {
-        this.$router.push('home')
+      if (!this.deck.length) {
+        this.$router.push({ name: 'Home' })
+      }
+    },
+    methods: {
+      ...mapActions(['resolveSpell', 'counterSpell']),
+      resoveTopStack(spell) {
+        this.resolveSpell(spell)
+      },
+      counterTopStack(spell) {
+        this.counterSpell(spell)
       }
     }
   }

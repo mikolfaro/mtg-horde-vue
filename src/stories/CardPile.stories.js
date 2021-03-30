@@ -1,6 +1,7 @@
 import { action } from '@storybook/addon-actions'
 
 import CardPile from '../components/CardPile.vue'
+import Card from '../models/Card'
 import backCard from '../assets/back-card.png';
 
 export default {
@@ -21,10 +22,20 @@ empty.args = {
 
 export const withCards = Template.bind({})
 withCards.args = {
-  cards: [{
+  cards: [Card.freshFromData({
     name: 'Zombie',
-    imageUrl: 'https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409656&type=card'
-  }],
+    imageUrl: 'https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg'
+  })],
   label: 'The pile',
   background: backCard
+}
+
+export const withBackground = Template.bind({})
+withBackground.args = {
+  cards: [Card.freshFromData({
+    name: 'Zombie',
+    imageUrl: 'https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg'
+  })],
+  label: 'The pile',
+  background: 'https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg'
 }

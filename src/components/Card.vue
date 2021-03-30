@@ -38,7 +38,6 @@
         return this.card.faceDown
       },
       power() {
-        console.log('P', this.card, this.card.power())
         return this.card.power()
       },
       toughness() {

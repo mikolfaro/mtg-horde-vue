@@ -1,6 +1,7 @@
 import { action } from '@storybook/addon-actions'
 
 import Deck from '../components/Deck'
+import Card from '../models/Card'
 
 export default {
   title: 'Deck',
@@ -14,7 +15,7 @@ const Template = (args, { argTypes }) => ({
 
 export const withOneCard = Template.bind({})
 withOneCard.args = {
-  cards: [{
+  cards: [Card.freshFromData({
     name: 'Zombie'
-  }]
+  })]
 }

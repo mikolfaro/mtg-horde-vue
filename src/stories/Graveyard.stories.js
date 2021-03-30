@@ -1,6 +1,7 @@
 import { action } from '@storybook/addon-actions'
 
 import Graveyard from '@/components/Graveyard'
+import Card from '@/models/Card'
 
 export default {
   title: 'Graveyard',
@@ -19,8 +20,8 @@ withNoCards.args = {
 
 export const withCards = Template.bind({})
 withCards.args = {
-  cards: [{
+  cards: [Card.freshFromData({
     name: 'Zombie',
     imageUrl: 'https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409656&type=card'
-  }]
+  })]
 }

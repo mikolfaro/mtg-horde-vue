@@ -1,14 +1,14 @@
 <template>
-  <Modal :is-open="open" class="spell-modal" @close="resolveSpell">
+  <Modal v-if="spell" class="spell-modal" @close="resolveSpell">
     <template v-slot:header>The Horde cast</template>
     <template v-slot:body>
-      <div class="card">
-        <img :src="card.imageUrl()" :alt="card.name()" />
+      <div class="spell">
+        <img v-if="spell" :src="spell.imageUrl()" :alt="spell.name()" />
       </div>
     </template>
     <template v-slot:footer>
       <div class="buttons">
-        <button @click="resolve">Resolve</button>
+        <button @click="resolveSpell">Resolve</button>
         <button @click="counterSpell">Counter spell</button>
       </div>
     </template>
@@ -22,24 +22,23 @@
     name: 'SpellModal',
     components: { Modal },
     props: {
-      card: { type: Card }
+      spell: { type: Card }
     },
     data() {
-      return { isOpen: true }
+      return {}
     },
     computed: {
       open() {
-        return this.isOpen && !!this.card
+        console.log("Open", this.spell)
+        return !!this.spell
       }
     },
     methods: {
       resolveSpell() {
-        this.isOpen = false
-        this.resolve(this.card)
+        this.$emit('resolveSpell', this.spell)
       },
       counterSpell() {
-        this.isOpen = false
-        this.counter(this.card)
+        this.$emit('counterSpell', this.spell)
       }
     }
   }

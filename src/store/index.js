@@ -16,7 +16,7 @@ export default new Vuex.Store({
     exile: [],
     hand: [],
     board: [],
-    effects: []
+    stack: []
   },
   mutations: {
     setDeck(state, newDeck) {
@@ -43,11 +43,12 @@ export default new Vuex.Store({
       })
     },
     play(state) {
-      state.board.forEach((card) => {
+      state.hand.forEach((card) => {
         if (card.isPermanent()) {
           state.board.push(card)
         } else {
-          state.effects.push(card)
+          console.log("Casting spell", card.name())
+          state.stack.push(card)
         }
       })
 
@@ -61,6 +62,17 @@ export default new Vuex.Store({
 
         return card
       })
+    },
+    resolveSpell(state, spell) {
+      if (spell.isPermanent()) {
+        state.board.push(spell)
+      } else {
+        state.graveyard.push(spell)
+      }
+      state.stack.shift()
+    },
+    counterSpell(state, spell) {
+      state.graveyard.push(spell)
     }
   },
   actions: {
@@ -78,6 +90,12 @@ export default new Vuex.Store({
       } else if (context.state.phase.id === 'HORDE_ATTACK') {
         context.commit('attack')
       }
+    },
+    resolveSpell(context, spell) {
+      context.commit('resolveSpell', spell)
+    },
+    counterSpell(context, spell) {
+      context.commit('counterSpell', spell)
     }
   },
   modules: {

@@ -22,7 +22,7 @@
     computed: {
       background: function () {
         if (this.cards.length > 0) {
-          return this.cards[0]['imageUrl']
+          return this.cards[this.cards.length - 1].imageUrl()
         } else {
           return null;
         }
