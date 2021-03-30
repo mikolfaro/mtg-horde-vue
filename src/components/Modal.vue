@@ -15,8 +15,12 @@
       </header>
 
       <section class="modal-body">
-        <slot>Body of the modal</slot>
+        <slot name="body">Body of the modal</slot>
       </section>
+
+      <footer class="modal-footer">
+        <slot name="footer">Footer of the modal</slot>
+      </footer>
     </div>
   </div>
 </template>

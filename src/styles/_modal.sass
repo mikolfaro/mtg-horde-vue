@@ -1,3 +1,5 @@
+@import 'variables'
+
 .modal-backdrop
   position: fixed
   top: 0
@@ -10,12 +12,17 @@
   align-items: center
 
 .modal
-  background: #FFFFFF
-  box-shadow: 2px 2px 20px 1px
+  text-align: center
+  border: 1px solid black
+  border-radius: 10px
+  color: white
+  background-color: rgba(0, 0, 0, 0.7)
+  display: flex
+  justify-content: center
+  flex-direction: column
   overflow-x: auto
   display: flex
   flex-direction: column
-
 
 .modal-header,
 .modal-footer
@@ -24,12 +31,12 @@
 
 .modal-header
   position: relative
-  border-bottom: 1px solid #eeeeee
-  color: #4AAE9B
+  border-bottom: 1px solid $color-black
+  color: $color-white
   justify-content: space-between
 
 .modal-footer
-  border-top: 1px solid #eeeeee
+  border-top: 1px solid $color-black
   flex-direction: column
   justify-content: flex-end
 
@@ -46,7 +53,7 @@
   padding: 10px
   cursor: pointer
   font-weight: bold
-  color: #4AAE9B
+  color: $color-white
   background: transparent
 
 .btn-green
