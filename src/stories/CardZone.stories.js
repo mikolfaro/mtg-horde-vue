@@ -15,7 +15,8 @@ withCards.args = {
   cards: [
     {
       cardData: {imageUrl: 'http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=39547&type=card'},
-      tapped: true
+      tapped: true,
+      faceDown: true,
     },
     {
       cardData: {imageUrl: 'http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=39547&type=card'},

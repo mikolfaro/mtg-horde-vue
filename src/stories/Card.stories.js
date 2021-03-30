@@ -50,3 +50,11 @@ creature11Tapped.args = {
   toughness: "1",
   tapped: true
 }
+
+export const morph = Template.bind({})
+morph.args = {
+  imageUrl: cardImage,
+  faceDown: true,
+  power: "2",
+  toughness: "2",
+}

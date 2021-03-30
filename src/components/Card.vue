@@ -25,6 +25,10 @@
         type: Boolean,
         default: false
       },
+      faceDown: {
+        type: Boolean,
+        default: false
+      },
       imageUrl: {
         type: String,
       },
@@ -35,7 +39,7 @@
       toughness: {
         type: String,
         default: null
-      }
+      },
     },
     computed: {
       image() {
