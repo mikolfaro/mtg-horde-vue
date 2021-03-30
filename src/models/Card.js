@@ -2,7 +2,7 @@ import { Record } from 'immutable'
 
 export default class Card extends Record({
   cardData: {}, tapped: false, index: 0, counters: {}, modifiers: {}, faceDown: false
-}) {
+}) {  
   name() {
     return this.cardData.name
   }

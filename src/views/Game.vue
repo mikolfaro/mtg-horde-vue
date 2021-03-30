@@ -4,7 +4,7 @@
 
     <Graveyard :cards="graveyard"></Graveyard>
 
-    <Deck :cards="deck"></Deck>
+    <Deck :cards="deck" @mill="millDeck"></Deck>
 
     <Hand :cards="hand"></Hand>
 
@@ -57,13 +57,14 @@
       }
     },
     methods: {
-      ...mapActions(['resolveSpell', 'counterSpell']),
+      ...mapActions(['resolveSpell', 'counterSpell', 'millDeck']),
       resoveTopStack(spell) {
         this.resolveSpell(spell)
       },
       counterTopStack(spell) {
         this.counterSpell(spell)
-      }
+      },
+
     }
   }
 </script>

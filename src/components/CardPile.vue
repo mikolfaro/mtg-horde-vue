@@ -30,7 +30,8 @@
       background: { type: String }
     },
     methods: {
-      handleRemoveCard() {
+      handleRemoveCard(e) {
+        e.preventDefault()
         this.$emit('removeCards', this.cardsNumber)
       },
       handleChange() {

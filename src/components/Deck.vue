@@ -4,7 +4,7 @@
         label="Deck"
         :cards=cards
         :background="background"
-        @removeCard=onDiscard
+        @removeCards="mill"
         removeCardText="Discard">
     </CardPile>
   </div>
@@ -25,8 +25,8 @@
       cards: { type: Array }
     },
     methods: {
-      onDiscard() {
-        console.log("Discard")
+      mill(count) {
+        this.$emit("mill", count)
       },
     }
   }

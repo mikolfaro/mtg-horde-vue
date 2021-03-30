@@ -27,15 +27,18 @@
     height: 100%
     clip-path: inset(0px 0px 0px 0px round 10px 10px)
 
-  button.tap-card
-    position: absolute
-    bottom: 5px
-    left: 5px
-
+  button
     width: 20px
     height: 20px
     border-radius: 10px
     padding: 0
+    position: absolute
+    bottom: 5px
+
+    &.tap-card
+      left: 5px
+    &.destroy-card
+      left: 30px
 
     img
       width: 10px
@@ -47,7 +50,7 @@
     transform-origin: center
     transform: translate(25px, 25px) rotate(90deg)
 
-    button.tap-card
+    button
       bottom: -45px
 
     .pt-indicator

@@ -44,10 +44,9 @@ export default new Vuex.Store({
     },
     play(state) {
       state.hand.forEach((card) => {
-        if (card.isPermanent()) {
+        if (card.isToken()) {
           state.board.push(card)
         } else {
-          console.log("Casting spell", card.name())
           state.stack.push(card)
         }
       })
@@ -74,6 +73,17 @@ export default new Vuex.Store({
     counterSpell(state, spell) {
       state.graveyard.push(spell)
       state.stack.shift()
+    },
+    millDeck(state, count) {
+      const milledCards = state.deck.slice(0, count)
+      state.graveyard = state.graveyard.concat(milledCards)
+      state.deck = state.deck.slice(count)
+    },
+    destroy(state, permanent) {
+      state.board = state.board.filter((card) => {
+        card.index !== permanent.index
+      })
+      state.graveyard.push(permanent)
     }
   },
   actions: {
@@ -97,6 +107,10 @@ export default new Vuex.Store({
     },
     counterSpell(context, spell) {
       context.commit('counterSpell', spell)
+    },
+    millDeck(context, count) {
+      console.log('mill')
+      context.commit('millDeck', count)
     }
   },
   modules: {

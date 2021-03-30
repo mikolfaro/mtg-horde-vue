@@ -7,18 +7,23 @@
     <button class="tap-card" @click=onTap>
       <img alt="Tap card" :src="tapIcon" role="presentation" />
     </button>
+    <button class="destroy-card" @click="onDestroy">
+      <img alt="Destroy card" :src="destroyIcon" role="presentation" />
+    </button>
   </div>
 </template>
 <script>
   import faceDownImage from '@/assets/back-card.png'
   import tapIcon from '@/assets/tap-icon.png'
+  import destroyIcon from '@/assets/destroy-icon.png'
   import Card from '@/models/Card'
 
   export default {
     name: 'Card',
     data() {
       return {
-        tapIcon: tapIcon
+        tapIcon: tapIcon,
+        destroyIcon: destroyIcon,
       }
     },
     props: {
@@ -50,6 +55,9 @@
       },
       onTap() {
         return "Tap card"
+      },
+      onDestroy() {
+        return "Destroy card"
       }
     }
   }
