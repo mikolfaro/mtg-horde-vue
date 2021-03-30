@@ -14,9 +14,9 @@
 
     <CardZone></CardZone>
 
-    <card-modal></card-modal>
+    <!-- card-modal></card-modal -->
 
-    <list-modal></list-modal>
+    <!-- list-modal></list-modal -->
   </div>
 </template>
 <script>
