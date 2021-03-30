@@ -14,24 +14,28 @@ export default new Vuex.Store({
     phaseIdx: 0,
     graveyard: [],
     exile: [],
-    hand: []
+    hand: [],
+    board: [],
   },
   mutations: {
     setDeck(state, newDeck) {
       state.deck = newDeck
     },
     stepPhase(state) {
-      const nextPhaseIdx = (state.phaseIdx + 1) % phases.length
-      state.phase = phases[nextPhaseIdx];
-      console.log(state.phase)
+      state.phaseIdx = (state.phaseIdx + 1) % phases.length
+      state.phase = phases[state.phaseIdx];
     },
     draw(state) {
-      console.log("Deck", state.deck.length)
       let card
       do {
         card = state.deck.shift()
         state.hand.push(card)
       } while (card.isToken());
+    },
+    play(state) {
+      state.board = state.board.concat(state.hand)
+      state.hand = []
+      console.log(state.board)
     }
   },
   actions: {
@@ -43,6 +47,8 @@ export default new Vuex.Store({
 
       if (context.state.phase.id === 'HORDE_DRAW') {
         context.commit('draw')
+      } else if (context.state.phase.id === 'HORDE_PLAY') {
+        context.commit('play')
       }
     }
   },

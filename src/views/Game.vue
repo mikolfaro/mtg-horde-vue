@@ -1,5 +1,7 @@
 <template>
   <div class="game-page">
+    <h1>{{ board.length }}</h1>
+
     <PhaseTracker />
 
     <Graveyard :cards="graveyard"></Graveyard>
@@ -12,7 +14,7 @@
 
     <BoardWipe></BoardWipe>
 
-    <CardZone></CardZone>
+    <CardZone id="board"></CardZone>
 
     <!-- card-modal></card-modal -->
 
@@ -37,7 +39,7 @@
       return {}
     },
     computed: {
-      ...mapState(['phase', 'deck', 'hand', 'graveyard', 'exile'])
+      ...mapState(['phase', 'deck', 'hand', 'graveyard', 'exile', 'board'])
     },
     mounted() {
 

@@ -33,9 +33,6 @@
         console.log('onExile')
       }
     },
-    mounted () {
-      console.log(this.cards)
-    }
   }
 </script>
 <style lang="sass">

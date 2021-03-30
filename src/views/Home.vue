@@ -20,9 +20,7 @@ export default {
   },
   methods: {
     onPlay(e) {
-      console.log("Start game", e.deckName, e.playersCount, e.graveyardTokens)
       this.loadDeck(e.deckName)
-
       this.$router.push("game")
     },
     loadDeck(deckName) {

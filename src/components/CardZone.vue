@@ -2,7 +2,7 @@
   <div>
     <div :id="id" class="card-zone">
       <Card
-          v-for="(card, index) in cards"
+          v-for="(card, index) in board"
           v-bind:key="index"
           :image-url="card.cardData.imageUrl"
           :tapped="card.tapped"
@@ -12,6 +12,8 @@
   </div>
 </template>
 <script>
+  import { mapState } from 'vuex'
+
   import Card from '@/components/Card'
 
   export default {
@@ -22,10 +24,10 @@
     },
     props: {
       id: { type: String, },
-      cards: {
-        type: Array
-      }
-    }
+    },
+    computed: {
+      ...mapState(['board'])
+    },
   }
 </script>
 <style lang="sass">
