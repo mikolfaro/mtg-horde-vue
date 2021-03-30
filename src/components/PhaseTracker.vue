@@ -11,19 +11,22 @@
 </template>
 
 <script>
+import { mapActions, mapState } from 'vuex'
+
   export default {
     name: 'PhaseTracker',
-    props: {
-      phase: { type: Object, required: true }
-    },
     data() {
       return {}
     },
+    computed: {
+      ...mapState(['phase'])
+    },
     methods: {
       onNextPhase() {
-
-      }
-    }
+        this.stepPhase()
+      },
+      ...mapActions(['stepPhase']),
+    },
   }
 </script>
 

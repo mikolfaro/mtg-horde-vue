@@ -12,6 +12,10 @@ export default class Card extends Record({
     return this.cardData.get('toughness')
   }
 
+  isToken() {
+    return this.cardData.originalType.startsWith('Token')
+  }
+
   static freshFromData (cardData, i) {
     return new Card({ cardData: cardData, index: i })
   }

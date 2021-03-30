@@ -1,6 +1,6 @@
 <template>
   <div class="game-page">
-    <PhaseTracker :phase="phase"></PhaseTracker>
+    <PhaseTracker />
 
     <Graveyard :cards="graveyard"></Graveyard>
 
@@ -38,6 +38,9 @@
     },
     computed: {
       ...mapState(['phase', 'deck', 'hand', 'graveyard', 'exile'])
+    },
+    mounted() {
+
     }
   }
 </script>
