@@ -39,14 +39,14 @@ tappedAndFaceDown.args = {
 export const creature1_1 = Template.bind({})
 creature1_1.args = {
   imageUrl: cardImage,
-  power: 1,
-  toughness: 1
+  power: "1",
+  toughness: "1"
 }
 
 export const creature11Tapped = Template.bind({})
 creature11Tapped.args = {
   imageUrl: cardImage,
-  power: 1,
-  toughness: 1,
+  power: "1",
+  toughness: "1",
   tapped: true
 }
