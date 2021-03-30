@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import { phases } from '../helpers'
+import { phases } from '@/helpers'
 
 Vue.use(Vuex)
 
@@ -16,6 +16,7 @@ export default new Vuex.Store({
     exile: [],
     hand: [],
     board: [],
+    effects: []
   },
   mutations: {
     setDeck(state, newDeck) {
@@ -32,14 +33,29 @@ export default new Vuex.Store({
         state.hand.push(card)
       } while (card.isToken());
     },
+    untap(state) {
+      state.board = state.board.map((card) => {
+        if (card.tapped) {
+          return card.set('tapped', false)
+        }
+
+        return card
+      })
+    },
     play(state) {
-      state.board = state.board.concat(state.hand)
+      state.board.forEach((card) => {
+        if (card.isPermanent()) {
+          state.board.push(card)
+        } else {
+          state.effects.push(card)
+        }
+      })
+
       state.hand = []
-      console.log(state.board)
     },
     attack(state) {
       state.board = state.board.map((card) => {
-        if (!card.tapped) {
+        if (!card.tapped && card.isCreature()) {
           return card.set('tapped', true)
         }
 
@@ -56,6 +72,7 @@ export default new Vuex.Store({
 
       if (context.state.phase.id === 'HORDE_DRAW') {
         context.commit('draw')
+        context.commit('untap')
       } else if (context.state.phase.id === 'HORDE_PLAY') {
         context.commit('play')
       } else if (context.state.phase.id === 'HORDE_ATTACK') {

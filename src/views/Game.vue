@@ -14,6 +14,8 @@
 
     <CardZone id="board"></CardZone>
 
+    <SpellModal v-if="effects.length > 0" :spell="effects[0]"></SpellModal>
+
     <!-- card-modal></card-modal -->
 
     <!-- list-modal></list-modal -->
@@ -29,15 +31,16 @@
   import Hand from '@/components/Hand.vue'
   import PhaseTracker from '@/components/PhaseTracker.vue'
   import TokenCreator from '@/components/TokenCreator.vue'
+  import SpellModal from '@/components/SpellModal'
 
   export default {
     name: "Game",
-    components: { BoardWipe, CardZone, Deck, Graveyard, Hand, PhaseTracker, TokenCreator },
+    components: { SpellModal, BoardWipe, CardZone, Deck, Graveyard, Hand, PhaseTracker, TokenCreator },
     data() {
       return {}
     },
     computed: {
-      ...mapState(['phase', 'deck', 'hand', 'graveyard', 'exile', 'board'])
+      ...mapState(['phase', 'deck', 'hand', 'graveyard', 'exile', 'board', 'effects'])
     },
     mounted() {
       if (!this.deck) {
