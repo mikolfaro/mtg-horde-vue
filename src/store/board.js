@@ -1,5 +1,10 @@
 export default {
-  state: () => ({ permanents: [] }),
+  state: () => ({
+    permanents: [],
+    graveyard: [],
+    stack: [],
+    exile: [],
+ }),
   mutations: {
     attack(state) {
       state.permanents = state.permanents.map((card) => {
@@ -31,16 +36,28 @@ export default {
         return card
       })
     },
+    resolveSpell(state, spell) {
+      if (spell.isPermanent()) {
+        state.permanents.push(spell)
+      } else {
+        state.graveyard.push(spell)
+      }
+      state.stack.shift()
+    },
+    counterSpell(state, spell) {
+      state.graveyard.push(spell)
+      state.stack.shift()
+    },
   },
   actions: {
-    tapPermanent(context, permanent) {
-      context.commit('tapPermanent', permanent)
+    tapPermanent({ commit }, permanent) {
+      commit('tapPermanent', permanent)
     },
-    untapPermanent(context, permanent) {
-      context.commit('untapPermanent', permanent)
+    untapPermanent({ commit }, permanent) {
+      commit('untapPermanent', permanent)
     },
-    destroyPermanent(context, permanent) {
-      context.commit('destroyPermanent', permanent)
+    destroyPermanent({ commit }, permanent) {
+      commit('destroyPermanent', permanent)
     }
   }
 }
