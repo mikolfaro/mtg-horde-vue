@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import { phases } from '@/helpers'
+import board from './board'
 import hand from './hand'
 import deck from './deck'
 import settings from './settings'
@@ -9,18 +9,11 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    phase: phases[0],
-    phaseIdx: 0,
     graveyard: [],
     exile: [],
-    board: [],
     stack: []
   },
   mutations: {
-    stepPhase(state) {
-      state.phaseIdx = (state.phaseIdx + 1) % phases.length
-      state.phase = phases[state.phaseIdx];
-    },
     draw(state) {
       let card
       do {
@@ -28,13 +21,10 @@ export default new Vuex.Store({
         state.hand.cards.push(card)
       } while (card.isToken());
     },
-    untapAll(state) {
-      state.board = state.board.map(card => card.untap())
-    },
     play(state) {
       state.hand.cards.forEach((card) => {
         if (card.isToken()) {
-          state.board.push(card)
+          state.board.permanents.push(card)
         } else {
           state.stack.push(card)
         }
@@ -42,18 +32,9 @@ export default new Vuex.Store({
 
       state.hand.cards = []
     },
-    attack(state) {
-      state.board = state.board.map((card) => {
-        if (!card.tapped && card.isCreature()) {
-          return card.tap()
-        }
-
-        return card
-      })
-    },
     resolveSpell(state, spell) {
       if (spell.isPermanent()) {
-        state.board.push(spell)
+        state.board.permanents.push(spell)
       } else {
         state.graveyard.push(spell)
       }
@@ -64,12 +45,12 @@ export default new Vuex.Store({
       state.stack.shift()
     },
     millDeck(state, count) {
-      const milledCards = state.deck.slice(0, count)
+      const milledCards = state.deck.cards.slice(0, count)
       state.graveyard = state.graveyard.concat(milledCards)
-      state.deck = state.deck.slice(count)
+      state.deck.cards = state.deck.cards.slice(count)
     },
     tapPermanent(state, permanent) {
-      state.board = state.board.map((card) => {
+      state.board.cards = state.board.cards.map((card) => {
         if (card.index === permanent.index) {
           return card.tap()
         }
@@ -77,18 +58,9 @@ export default new Vuex.Store({
         return card
       })
     },
-    untapPermanent(state, permanent) {
-      state.board = state.board.map((card) => {
-        if (card.index === permanent.index) {
-          return card.untap()
-        }
-
-        return card
-      })
-    },
     destroyPermanent(state, permanent) {
-      state.board = state.board.filter(card => card.index !== permanent.index)
-      if (!state.graveyardTokens && permanent.isToken()) {
+      state.board.permanents = state.board.permanents.filter(card => card.index !== permanent.index)
+      if (!state.settings.graveyardTokens && permanent.isToken()) {
         state.exile.push(permanent)
       } else {
         state.graveyard.push(permanent)
@@ -115,23 +87,12 @@ export default new Vuex.Store({
     counterSpell(context, spell) {
       context.commit('counterSpell', spell)
     },
-    millDeck(context, count) {
-      console.log('mill')
-      context.commit('millDeck', count)
-    },
-    tapPermanent(context, permanent) {
-      context.commit('tapPermanent', permanent)
-    },
-    untapPermanent(context, permanent) {
-      context.commit('untapPermanent', permanent)
-    },
-    destroyPermanent(context, permanent) {
-      context.commit('destroyPermanent', permanent)
-    }
   },
   modules: {
-    settings,
+    board,
     deck,
     hand,
+    settings,
+    phase
   }
 })
