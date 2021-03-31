@@ -22,6 +22,12 @@ export default new Vuex.Store({
     setDeck(state, newDeck) {
       state.deck = newDeck
     },
+    setGraveyardTokens(state, graveyardTokens) {
+      state.graveyardTokens = graveyardTokens
+    },
+    setPlayersCount(state, playersCount) {
+      state.playersCount = playersCount
+    },
     stepPhase(state) {
       state.phaseIdx = (state.phaseIdx + 1) % phases.length
       state.phase = phases[state.phaseIdx];
