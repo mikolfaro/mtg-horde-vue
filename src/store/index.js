@@ -105,6 +105,12 @@ export default new Vuex.Store({
     setDeck(context, newDeck) {
       context.commit('setDeck', newDeck)
     },
+    setPlayersCount(context, graveyardTokens) {
+      context.commit('setGraveyardTokens', graveyardTokens)
+    },
+    setGraveyardTokens(context, graveyardTokens) {
+      context.commit('setGraveyardTokens', graveyardTokens)
+    },
     stepPhase(context) {
       context.commit('stepPhase')
 

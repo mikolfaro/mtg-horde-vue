@@ -21,6 +21,8 @@ export default {
   methods: {
     onPlay(e) {
       this.loadDeck(e.deckName)
+      this.setPlayersCount(e.playersCount)
+      this.setGraveyardTokens(e.graveyardTokens)
       this.$router.push({ name: "Game" })
     },
     loadDeck(deckName) {
@@ -32,7 +34,7 @@ export default {
         this.setDeck(shuffle(cards))
       }
     },
-    ...mapActions(['setDeck'])
+    ...mapActions(['setDeck', 'setPlayersCount', 'setGraveyardTokens'])
   },
 }
 </script>
