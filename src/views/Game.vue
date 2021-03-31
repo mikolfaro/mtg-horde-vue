@@ -10,7 +10,7 @@
 
     <TokenCreator :tokenDefaultData="spawnableToken" @spawnToken="spawnToken"></TokenCreator>
 
-    <BoardWipe></BoardWipe>
+    <!-- BoardWipe></BoardWipe -->
 
     <CardZone id="board"></CardZone>
 
@@ -27,7 +27,6 @@
 <script>
   import { mapState, mapActions } from 'vuex'
 
-  import BoardWipe from '@/components/BoardWipe'
   import CardZone from '@/components/CardZone'
   import Deck from '@/components/Deck.vue'
   import Graveyard from '@/components/Graveyard.vue'
@@ -38,7 +37,7 @@
 
   export default {
     name: "Game",
-    components: { SpellModal, BoardWipe, CardZone, Deck, Graveyard, Hand, PhaseTracker, TokenCreator },
+    components: { SpellModal, CardZone, Deck, Graveyard, Hand, PhaseTracker, TokenCreator },
     data() {
       return {}
     },
