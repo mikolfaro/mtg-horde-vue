@@ -5,7 +5,7 @@
         :cards=cards
         :background="background"
         @removeCards="mill"
-        removeCardText="Discard">
+        removeCardLabel="Mill cards">
     </CardPile>
   </div>
 </template>

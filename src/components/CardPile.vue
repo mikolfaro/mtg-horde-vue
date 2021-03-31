@@ -9,7 +9,7 @@
              class="remove-card-input"
              min="1"
              @change="handleChange" />
-      <input type="submit" :value="removeCardText" class="remove-card-btn" />
+      <input type="submit" :value="removeCardLabel" class="remove-card-btn" />
     </form>
     <span class="card-pile-count">{{cards.length}}</span>
   </div>
@@ -19,15 +19,14 @@
     name: 'CardPile',
     data() {
       return {
-        removeCardText: "Rimuovi carta",
         cardsNumber: 1,
-
       }
     },
     props: {
       label: { type: String },
       cards: { type: Array },
-      background: { type: String }
+      background: { type: String },
+      removeCardLabel: { type: String, default: "Remove cards" },
     },
     methods: {
       handleRemoveCard(e) {
