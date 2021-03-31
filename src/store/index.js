@@ -2,18 +2,17 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import board from './board'
 import deck from './deck'
+import exile from './exile'
 import graveyard from './graveyard'
 import hand from './hand'
 import phases from './phases'
 import settings from './settings'
+import stack from './stack'
 
 Vue.use(Vuex)
 
 export default new Vuex.Store({
-  state: {
-    exile: [],
-    stack: []
-  },
+  state: {},
   mutations: {
     draw(state) {
       let card
@@ -27,7 +26,7 @@ export default new Vuex.Store({
         if (card.isToken()) {
           state.board.permanents.push(card)
         } else {
-          state.stack.push(card)
+          state.stack.spells.push(card)
         }
       })
 
@@ -39,11 +38,11 @@ export default new Vuex.Store({
       } else {
         state.graveyard.cards.push(spell)
       }
-      state.stack.shift()
+      state.stack.spells.shift()
     },
     counterSpell(state, spell) {
       state.graveyard.cards.push(spell)
-      state.stack.shift()
+      state.stack.spells.shift()
     },
     millDeck(state, count) {
       const milledCards = state.deck.cards.slice(0, count)
@@ -83,9 +82,11 @@ export default new Vuex.Store({
   modules: {
     board,
     deck,
+    exile,
     graveyard,
     hand,
     settings,
     phases,
+    stack,
   }
 })
