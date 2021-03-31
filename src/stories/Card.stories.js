@@ -12,12 +12,12 @@ const Template = (args, { argTypes }) => ({
 })
 
 const cardImage = 'http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=39547&type=card'
-const card = CardModel.freshFromData({
+const card = CardModel.createFromCardData({
   name: 'Boneknitter',
   imageUrl: cardImage,
 })
 
-const creature = CardModel.freshFromData({
+const creature = CardModel.createFromCardData({
   name: 'Boneknitter',
   imageUrl: cardImage,
   power: '1',
@@ -25,7 +25,7 @@ const creature = CardModel.freshFromData({
   types: ['Creature']
 })
 
-const morph = CardModel.freshFromData({
+const morph = CardModel.createFromCardData({
   name: 'Boneknitter',
   imageUrl: cardImage,
   power: '2',

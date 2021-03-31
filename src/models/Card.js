@@ -42,7 +42,7 @@ export default class Card extends Record({
     return this.cardData.types && this.cardData.types.includes('Creature')
   }
 
-  static freshFromData (cardData, i) {
+  static createFromCardData (cardData, i) {
     return new Card({ cardData: cardData, index: i })
   }
 }

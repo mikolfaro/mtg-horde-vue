@@ -8,7 +8,7 @@
 
     <Hand :cards="hand.cards"></Hand>
 
-    <TokenCreator></TokenCreator>
+    <TokenCreator :tokenDefaultData="spawnableToken" @spawnToken="spawnToken"></TokenCreator>
 
     <BoardWipe></BoardWipe>
 
@@ -43,7 +43,7 @@
       return {}
     },
     computed: {
-      ...mapState(['deck', 'hand', 'graveyard', 'exile', 'board', 'stack']),
+      ...mapState(['deck', 'hand', 'graveyard', 'exile', 'board', 'stack', 'spawnableToken']),
       topStack() {
         if (this.board.stack.length) {
           return this.board.stack[0]
@@ -57,14 +57,13 @@
       }
     },
     methods: {
-      ...mapActions(['resolveSpell', 'counterSpell', 'millDeck']),
+      ...mapActions(['resolveSpell', 'counterSpell', 'millDeck', 'spawnToken']),
       resoveTopStack(spell) {
         this.resolveSpell(spell)
       },
       counterTopStack(spell) {
         this.counterSpell(spell)
       },
-
     }
   }
 </script>

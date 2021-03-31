@@ -19,7 +19,7 @@ const Template = (args, { argTypes }) => ({
 
 export const open = Template.bind({})
 open.args = {
-  spell: Card.freshFromData({
+  spell: Card.createFromCardData({
     name: "Back to Nature",
     imageUrl: "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=383187&type=card",
     types: [

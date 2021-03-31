@@ -22,7 +22,7 @@ empty.args = {
 
 export const withCards = Template.bind({})
 withCards.args = {
-  cards: [Card.freshFromData({
+  cards: [Card.createFromCardData({
     name: 'Zombie',
     imageUrl: 'https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg'
   })],
@@ -32,7 +32,7 @@ withCards.args = {
 
 export const withBackground = Template.bind({})
 withBackground.args = {
-  cards: [Card.freshFromData({
+  cards: [Card.createFromCardData({
     name: 'Zombie',
     imageUrl: 'https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg'
   })],

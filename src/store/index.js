@@ -5,12 +5,18 @@ import deck from './deck'
 import hand from './hand'
 import phases from './phases'
 import settings from './settings'
+import Card from '@/models/Card'
 
 Vue.use(Vuex)
 
 export default new Vuex.Store({
-  state: {},
+  state: {
+    cardNextId: 200,
+  },
   mutations: {
+    incCardId(state) {
+      state.cardNextId += 1
+    },
     draw(state) {
       let card
       do {
@@ -47,6 +53,12 @@ export default new Vuex.Store({
       } else {
         state.board.graveyard.push(permanent)
       }
+    },
+    setSpawnableToken(state, cardData) {
+      state.spawnableToken = cardData
+    },
+    spawnCard(state, card) {
+      state.board.permanents.push(card)
     }
   },
   actions: {
@@ -67,6 +79,21 @@ export default new Vuex.Store({
     },
     counterSpell({ commit }, spell) {
       commit('counterSpell', spell)
+    },
+    newCardId({ commit, state }) {
+      commit('incCardId')
+      return state.cardNextId
+    },
+    setSpawnableToken({ commit }, cardData) {
+      commit('setSpawnableToken', cardData)
+    },
+    spawnToken({ commit, dispatch, state }, stats) {
+      const card = Card.createFromCardData(Object.assign({}, state.spawnableToken, {
+        "power": stats.power.toString(),
+        "toughness": stats.toughness.toString(),
+      }), dispatch('newCardId'))
+
+      commit('spawnCard', card)
     },
   },
   modules: {

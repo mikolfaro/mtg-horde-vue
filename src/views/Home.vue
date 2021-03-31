@@ -27,14 +27,15 @@ export default {
     },
     loadDeck(deckName) {
       if (deckData[deckName]) {
-        const cards = deckData[deckName].map((cardData, i) => {
-          return Card.freshFromData(cardData, i)
+        const cards = deckData[deckName]['deckList'].map((cardData, i) => {
+          return Card.createFromCardData(cardData, i)
         })
 
         this.setDeck(shuffle(cards))
+        this.setSpawnableToken(deckData[deckName]['spawnableToken'])
       }
     },
-    ...mapActions(['setDeck', 'setPlayersCount', 'setGraveyardTokens'])
+    ...mapActions(['setDeck', 'setPlayersCount', 'setGraveyardTokens', 'setSpawnableToken'])
   },
 }
 </script>

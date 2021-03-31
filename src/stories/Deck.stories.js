@@ -15,7 +15,7 @@ const Template = (args, { argTypes }) => ({
 
 export const withOneCard = Template.bind({})
 withOneCard.args = {
-  cards: [Card.freshFromData({
+  cards: [Card.createFromCardData({
     name: 'Zombie'
   })]
 }

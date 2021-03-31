@@ -20,7 +20,7 @@ withNoCards.args = {
 
 export const withCards = Template.bind({})
 withCards.args = {
-  cards: [Card.freshFromData({
+  cards: [Card.createFromCardData({
     name: 'Zombie',
     imageUrl: 'https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409656&type=card'
   })]
