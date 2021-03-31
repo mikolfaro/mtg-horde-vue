@@ -6,7 +6,7 @@
 
     <Deck :cards="deck.cards" @mill="millDeck"></Deck>
 
-    <Hand :cards="hand.cards"></Hand>
+    <Hand :cards="hand.cards" @draw="draw"></Hand>
 
     <TokenCreator :tokenDefaultData="spawnableToken" @spawnToken="spawnToken"></TokenCreator>
 
@@ -56,7 +56,7 @@
       }
     },
     methods: {
-      ...mapActions(['resolveSpell', 'counterSpell', 'millDeck', 'spawnToken']),
+      ...mapActions(['resolveSpell', 'counterSpell', 'millDeck', 'spawnToken', 'draw']),
       resoveTopStack(spell) {
         this.resolveSpell(spell)
       },

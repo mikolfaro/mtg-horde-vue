@@ -17,12 +17,17 @@ export default new Vuex.Store({
     incCardId(state) {
       state.cardNextId += 1
     },
-    draw(state) {
+    drawToCard(state) {
       let card
       do {
         card = state.deck.cards.shift()
         state.hand.cards.push(card)
       } while (card.isToken());
+    },
+    drawCards(state, count) {
+      for(let i = 0; i < count; i++) {
+        state.hand.cards.push(state.deck.cards.shift())
+      }
     },
     play(state) {
       state.hand.cards.forEach((card) => {
@@ -66,7 +71,7 @@ export default new Vuex.Store({
       commit('stepPhase')
 
       if (state.phases.current.id === 'HORDE_DRAW') {
-        commit('draw')
+        commit('drawToCard')
         commit('untapAll')
       } else if (state.phases.current.id === 'HORDE_PLAY') {
         commit('play')
@@ -95,6 +100,9 @@ export default new Vuex.Store({
 
       commit('spawnCard', card)
     },
+    draw({ commit }) {
+      commit('drawCards', 1)
+    }
   },
   modules: {
     board,

@@ -16,10 +16,10 @@
     },
     methods: {
       onDiscard() {
-        console.log("Discard")
+        this.$emit("discard")
       },
       onDraw() {
-        console.log("Draw")
+        this.$emit("draw")
       }
     }
   }
