@@ -4,9 +4,9 @@
 
     <Graveyard :cards="graveyard"></Graveyard>
 
-    <Deck :cards="deck" @mill="millDeck"></Deck>
+    <Deck :cards="deck.cards" @mill="millDeck"></Deck>
 
-    <Hand :cards="hand"></Hand>
+    <Hand :cards="hand.cards"></Hand>
 
     <TokenCreator></TokenCreator>
 
@@ -52,7 +52,7 @@
       }
     },
     mounted() {
-      if (!this.deck.length) {
+      if (!this.deck.cards.length) {
         this.$router.push({ name: 'Home' })
       }
     },

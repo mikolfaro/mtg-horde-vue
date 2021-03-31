@@ -1,33 +1,22 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import { phases } from '@/helpers'
+import hand from './hand'
+import deck from './deck'
+import settings from './settings'
 
 Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    playersCount: 0,
-    graveyardTokens: false,
-
-    deck: [],
     phase: phases[0],
     phaseIdx: 0,
     graveyard: [],
     exile: [],
-    hand: [],
     board: [],
     stack: []
   },
   mutations: {
-    setDeck(state, newDeck) {
-      state.deck = newDeck
-    },
-    setGraveyardTokens(state, graveyardTokens) {
-      state.graveyardTokens = graveyardTokens
-    },
-    setPlayersCount(state, playersCount) {
-      state.playersCount = playersCount
-    },
     stepPhase(state) {
       state.phaseIdx = (state.phaseIdx + 1) % phases.length
       state.phase = phases[state.phaseIdx];
@@ -35,15 +24,15 @@ export default new Vuex.Store({
     draw(state) {
       let card
       do {
-        card = state.deck.shift()
-        state.hand.push(card)
+        card = state.deck.cards.shift()
+        state.hand.cards.push(card)
       } while (card.isToken());
     },
     untapAll(state) {
       state.board = state.board.map(card => card.untap())
     },
     play(state) {
-      state.hand.forEach((card) => {
+      state.hand.cards.forEach((card) => {
         if (card.isToken()) {
           state.board.push(card)
         } else {
@@ -51,7 +40,7 @@ export default new Vuex.Store({
         }
       })
 
-      state.hand = []
+      state.hand.cards = []
     },
     attack(state) {
       state.board = state.board.map((card) => {
@@ -108,15 +97,6 @@ export default new Vuex.Store({
     }
   },
   actions: {
-    setDeck(context, newDeck) {
-      context.commit('setDeck', newDeck)
-    },
-    setPlayersCount(context, graveyardTokens) {
-      context.commit('setGraveyardTokens', graveyardTokens)
-    },
-    setGraveyardTokens(context, graveyardTokens) {
-      context.commit('setGraveyardTokens', graveyardTokens)
-    },
     stepPhase(context) {
       context.commit('stepPhase')
 
@@ -150,5 +130,8 @@ export default new Vuex.Store({
     }
   },
   modules: {
+    settings,
+    deck,
+    hand,
   }
 })
