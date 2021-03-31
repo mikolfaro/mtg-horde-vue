@@ -2,7 +2,7 @@ import { Record } from 'immutable'
 
 export default class Card extends Record({
   cardData: {}, tapped: false, index: 0, counters: {}, modifiers: {}, faceDown: false
-}) {  
+}) {
   name() {
     return this.cardData.name
   }
@@ -13,6 +13,14 @@ export default class Card extends Record({
 
   toughness() {
     return this.cardData.toughness
+  }
+
+  tap() {
+    return this.set('tapped', true)
+  }
+
+  untap() {
+    return this.set('tapped', false)
   }
 
   imageUrl() {

@@ -61,6 +61,9 @@
       onTap() {
         this.$emit("tap", this.card)
       },
+      onUntap() {
+        this.$emit("untap", this.card)
+      },
       onDestroy() {
         this.$emit("destroy", this.card)
       }

@@ -34,13 +34,7 @@ export default new Vuex.Store({
       } while (card.isToken());
     },
     untapAll(state) {
-      state.board = state.board.map((card) => {
-        if (card.tapped) {
-          return card.set('tapped', false)
-        }
-
-        return card
-      })
+      state.board = state.board.map(card => card.untap())
     },
     play(state) {
       state.hand.forEach((card) => {
@@ -56,7 +50,7 @@ export default new Vuex.Store({
     attack(state) {
       state.board = state.board.map((card) => {
         if (!card.tapped && card.isCreature()) {
-          return card.set('tapped', true)
+          return card.tap()
         }
 
         return card
@@ -79,10 +73,24 @@ export default new Vuex.Store({
       state.graveyard = state.graveyard.concat(milledCards)
       state.deck = state.deck.slice(count)
     },
-    // tapPermanent(state, permanent) {
-    // },
-    // untapPermanent(state, permanent) {
-    // },
+    tapPermanent(state, permanent) {
+      state.board = state.board.map((card) => {
+        if (card.index === permanent.index) {
+          return card.tap()
+        }
+
+        return card
+      })
+    },
+    untapPermanent(state, permanent) {
+      state.board = state.board.map((card) => {
+        if (card.index === permanent.index) {
+          return card.untap()
+        }
+
+        return card
+      })
+    },
     destroyPermanent(state, permanent) {
       state.board = state.board.filter(card => card.index !== permanent.index)
       if (!state.graveyardTokens && permanent.isToken()) {

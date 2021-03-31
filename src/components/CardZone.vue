@@ -6,6 +6,8 @@
           v-bind:key="index"
           :card="card"
           @destroy="destroyPermanent"
+          @tap="tapPermanent"
+          @untap="untapPermanent"
       />
     </div>
   </div>
