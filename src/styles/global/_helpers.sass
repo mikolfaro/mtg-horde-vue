@@ -1,0 +1,8 @@
+@import "~bootstrap/scss/utilities/clearfix"
+@import "~bootstrap/scss/utilities/screenreaders"
+
+@each $name, $color in $colors
+  .color-#{$name}
+    color: $color
+  .bg-#{$name}
+    background-color: $color

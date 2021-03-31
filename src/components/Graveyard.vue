@@ -5,6 +5,7 @@
         :cards="cards"
         :background="background"
         @removeCards="onExile"
+        removeCardLabel="Exile"
     />
   </div>
 </template>
@@ -36,5 +37,7 @@
   }
 </script>
 <style lang="sass">
-  @import "~@/styles/graveyard.sass"
+  .graveyard
+    width: 100%
+    height: 100%
 </style>

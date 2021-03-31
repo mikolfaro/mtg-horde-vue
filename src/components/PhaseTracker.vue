@@ -2,11 +2,15 @@
   <div class="phase-tracker">
     <div class="current-phase-title">
       <span class="current-phase-label">Phase:</span>
+      &nbsp;
       <span class="current-phase">{{phase.title}}</span>
     </div>
 
     <span class="current-phase-description">{{phase.description}}</span>
-    <button class="next-phase-btn" @click="onNextPhase">Next</button>
+
+    <div class="button-container">
+      <button class="button-small" @click="onNextPhase">Next</button>
+    </div>
   </div>
 </template>
 
@@ -34,5 +38,21 @@ import { mapActions, mapState } from 'vuex'
 </script>
 
 <style lang="sass">
-  @import "~@/styles/phase-tracker"
+  .phase-tracker
+    padding: 10px
+
+    background-color: rgba($color-black, 0.5)
+    color: white
+    border: 1px solid black
+    border-radius: 10px
+
+    .current-phase-title
+      font-size: 1.7em
+
+    .current-phase-description
+      font-size: 0.8em
+      display: block
+
+    .button-container
+      text-align: right
 </style>

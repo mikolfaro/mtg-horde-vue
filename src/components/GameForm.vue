@@ -1,41 +1,32 @@
 <template>
-  <div class="game-form">
+  <div class="container game-form">
     <div class="outer-box">
+      <h1>MTG Horde</h1>
+
       <form v-on:submit="handleSubmit">
-        <table>
-          <tbody>
-          <tr>
-            <td class="label">
-              <label for="players"># of Players (Max 6):</label>
-            </td>
-            <td class="input">
-              <input id="players" name="players" type="number" min="1" max="6"
-                     v-model="players" @change="handleInputChange">
-            </td>
-          </tr>
-          <tr>
-            <td class="label">
-              <label for="deck">Deck:</label>
-            </td>
-            <td class="input">
-              <select id="deck" name="deck"
-                      v-model="deck" @change="handleInputChange">
-                <option value="zombie200">Zombies - 200</option>
-              </select>
-            </td>
-          </tr>
-          <tr>
-            <td class="label">
-              <label for="graveyardTokens">Destroyed tokens go to graveyard</label>
-            </td>
-            <td class="input">
-              <input id="graveyardTokens" name="graveyardTokens" type="checkbox"
-                     v-model="graveyardTokens" @change="handleInputChange">
-            </td>
-          </tr>
-          </tbody>
-        </table>
-        <input class="submit" type="submit" value="Play!"/>
+        <div class="mt-3 form-group">
+          <label for="players"># of Players)</label>
+          <input class="form-control" id="players" name="players" type="number" min="1" max="6"
+                 v-model="players" @change="handleInputChange">
+        </div>
+        <div class="mt-3 form-group">
+            <label for="deck">Deck</label>
+            <select class="form-control" id="deck" name="deck"
+                    v-model="deck" @change="handleInputChange">
+              <option value="zombie200">Zombies - 200</option>
+            </select>
+        </div>
+
+        <div class="mt-3 form-group">
+          <label class="checkbox">
+            <input id="graveyardTokens" name="graveyardTokens" type="checkbox"
+                   v-model="graveyardTokens" @change="handleInputChange">
+
+            <span class="label">Destroyed tokens go to graveyard</span>
+         </label>
+        </div>
+
+        <input class="button button-primary" type="submit" value="Play!"/>
       </form>
     </div>
   </div>
@@ -67,5 +58,26 @@
 </script>
 
 <style lang="sass">
-  @import "~@/styles/game-form"
+  .game-form
+    .outer-box
+      padding: 2em
+
+      margin-left: auto
+      margin-right: auto
+
+      text-align: center
+
+      border: 1px solid black
+      border-radius: 10px
+      color: white
+
+      background-color: rgba(0, 0, 0, 0.5)
+
+      display: flex
+      justify-content: center
+      flex-direction: column
+
+      form
+        max-width: 600px
+        margin: auto
 </style>

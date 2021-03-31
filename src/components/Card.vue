@@ -71,5 +71,65 @@
   }
 </script>
 <style lang="sass">
-  @import "~@/styles/card"
+.card
+  position: relative
+  display: inline-block
+  transition: 200ms all ease-in-out
+
+  .card-bounds
+    width: 126px
+    height: 176px
+    background-repeat: no-repeat
+    background-size: 100% 100%
+
+  .pt-indicator
+    position: absolute
+
+    bottom: 5px
+    right: 5px
+
+    color: white
+    background-color: rgba(0, 0, 0, 0.5)
+    padding: 4px
+    font-size: .8em
+    border-radius: 5px
+    text-align: center
+
+  img
+    width: 100%
+    height: 100%
+    clip-path: inset(0px 0px 0px 0px round 10px 10px)
+
+  button
+    width: 20px
+    height: 20px
+    border-radius: 10px
+    padding: 0
+    position: absolute
+    bottom: 5px
+
+    &.tap-card, &.untap-card
+      left: 5px
+    &.destroy-card
+      left: 30px
+
+    img
+      width: 10px
+      height: 10px
+    &.untap-card img
+      width: 100%
+      height: 100%
+
+  &.tapped
+    width: 176px
+    height: 126px
+    transform-origin: center
+    transform: translate(25px, 25px) rotate(90deg)
+
+    button
+      bottom: -45px
+
+    .pt-indicator
+      margin-right: 50px
+      margin-bottom: -50px
 </style>

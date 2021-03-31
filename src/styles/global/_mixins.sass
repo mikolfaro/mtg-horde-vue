@@ -1,0 +1,24 @@
+@import "~bootstrap/scss/mixins/clearfix"
+@import "~bootstrap/scss/mixins/screen-reader"
+@import "~bootstrap/scss/mixins/text-truncate"
+@import "~bootstrap/scss/mixins/breakpoints"
+
+@mixin TypoStyle($size, $line: false, $weight: false, $style: false)
+  font-size: $size
+
+  @if $line
+    line-height: $line
+
+  @if $weight
+    font-weight: $weight
+
+  @if $style
+    font-style: $style
+
+@mixin ScrollTouchFix()
+  -webkit-overflow-scrolling: touch
+  overscroll-behavior: contain
+
+@mixin OverflowFix()
+  backface-visibility: hidden
+  transform: translate3d(0, 0, 0)

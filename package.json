@@ -25,6 +25,8 @@
     "@vue/cli-plugin-router": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "babel-eslint": "^10.1.0",
+    "bootstrap": "^4.6.0",
+    "destyle.css": "^2.0.2",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
     "sass": "^1.32.8",

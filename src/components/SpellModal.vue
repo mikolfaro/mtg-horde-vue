@@ -8,8 +8,8 @@
     </template>
     <template v-slot:footer>
       <div class="buttons">
-        <button @click="resolveSpell">Resolve</button>
-        <button @click="counterSpell">Counter spell</button>
+        <button class="button-small" @click="resolveSpell">Resolve</button>
+        <button class="button-small" @click="counterSpell">Counter spell</button>
       </div>
     </template>
   </Modal>
@@ -42,3 +42,9 @@
     }
   }
 </script>
+<style lang="sass">
+  .spell-modal .buttons
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+</style>

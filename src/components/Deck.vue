@@ -5,7 +5,7 @@
         :cards=cards
         :background="background"
         @removeCards="mill"
-        removeCardLabel="Mill cards">
+        removeCardLabel="Mill">
     </CardPile>
   </div>
 </template>
@@ -31,6 +31,9 @@
     }
   }
 </script>
+
 <style lang="sass">
-  @import "~@/styles/deck"
+  .graveyard
+    width: 100%
+    height: 100%
 </style>

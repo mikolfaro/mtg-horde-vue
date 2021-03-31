@@ -1,18 +1,33 @@
 <template>
   <div class="game-page">
-    <PhaseTracker />
-
-    <Graveyard :cards="board.graveyard"></Graveyard>
-
-    <Deck :cards="deck.cards" @mill="millDeck"></Deck>
-
-    <Hand :cards="hand.cards" @draw="draw"></Hand>
-
-    <TokenCreator :tokenDefaultData="spawnableToken" @spawnToken="spawnToken"></TokenCreator>
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <PhaseTracker />
+        </div>
+        <div class="col-3"></div>
+        <div class="col-1">
+          <Hand
+              class="mt-2"
+              :cards="hand.cards" @draw="draw"></Hand>
+          <TokenCreator
+              class="mt-2"
+              :tokenDefaultData="spawnableToken"
+              @spawnToken="spawnToken"></TokenCreator>
+        </div>
+        <div class="col-2">
+          <Deck :cards="deck.cards" @mill="millDeck"></Deck>
+        </div>
+        <div class="col-2">
+          <Graveyard :cards="board.graveyard"></Graveyard>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <CardZone id="board"></CardZone>
+    </div>
 
     <!-- BoardWipe></BoardWipe -->
-
-    <CardZone id="board"></CardZone>
 
     <SpellModal
       :spell="topStack"

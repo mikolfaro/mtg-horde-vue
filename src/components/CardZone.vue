@@ -1,14 +1,26 @@
 <template>
   <div>
     <div :id="id" class="card-zone">
-      <Card
-          v-for="(card, index) in board.permanents"
-          v-bind:key="index"
-          :card="card"
-          @destroy="destroyPermanent"
-          @tap="tapPermanent"
-          @untap="untapPermanent"
-      />
+      <div class="non-tokens">
+        <Card
+            v-for="(card, index) in nonTokens"
+            v-bind:key="index"
+            :card="card"
+            @destroy="destroyPermanent"
+            @tap="tapPermanent"
+            @untap="untapPermanent"
+        />
+      </div>
+      <div class="tokens">
+        <Card
+            v-for="(card, index) in tokens"
+            v-bind:key="index"
+            :card="card"
+            @destroy="destroyPermanent"
+            @tap="tapPermanent"
+            @untap="untapPermanent"
+        />
+      </div>
     </div>
   </div>
 </template>
@@ -27,7 +39,17 @@
       id: { type: String, },
     },
     computed: {
-      ...mapState(['board'])
+      ...mapState(['board']),
+      nonTokens() {
+        return this.board.permanents.filter((card) => {
+          return !card.isToken()
+        })
+      },
+      tokens() {
+        return this.board.permanents.filter((card) => {
+          return card.isToken()
+        })
+      }
     },
     methods: {
       ...mapActions(['tapPermanent', 'untapPermanent', 'destroyPermanent'])
@@ -35,5 +57,19 @@
   }
 </script>
 <style lang="sass">
-  @import "~@/styles/card-zone"
+  .card-zone
+    display: flex
+    flex-direction: column
+
+    .tokens, .non-tokens
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+
+      margin: 15px
+      margin-top: 50px
+
+      .card
+        margin-left: 10px
+        margin-right: 10px
 </style>

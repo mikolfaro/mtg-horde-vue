@@ -1,0 +1,53 @@
+$Regular: 400;
+$Medium: 500;
+$Bold: 700;
+
+$weights: (
+  'regular': $Regular,
+  'medium': $Medium,
+  'bold': $Bold
+);
+
+$view-min-width: 320px;
+
+$color-white: #ffffff;
+$color-black: #000000;
+$color-white-two: #e2e2e2;
+$color-white-three: #eee;
+$color-light-grey: #f3f2ec;
+$color-dark-grey: #2b2b2b;
+$color-red: #ff0000;
+
+$colors: (
+  'white': $color-white,
+  'black': $color-black,
+  'white-two': $color-white-two,
+  'white-three': $color-white-three,
+  'light-grey': $color-light-grey,
+  'dark-grey': $color-dark-grey
+);
+
+$container-width: 1240px;
+$grid-gutter-width: 20px !default;
+$spacer: 20px !default;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1280px
+) !default;
+
+$container-max-widths: (
+  xl: $container-width + $grid-gutter-width * 2
+) !default;
+
+$spacers: (
+  0: 0,
+  1: ($spacer * .25),
+  2: ($spacer * .5),
+  3: $spacer,
+  4: ($spacer * 1.5),
+  5: ($spacer * 2),
+) !default;

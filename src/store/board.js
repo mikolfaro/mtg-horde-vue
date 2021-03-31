@@ -28,7 +28,7 @@ export default {
       })
     },
     tapPermanent(state, permanent) {
-      state.board.cards = state.board.cards.map((card) => {
+      state.permanents = state.permanents.map((card) => {
         if (card.index === permanent.index) {
           return card.tap()
         }
