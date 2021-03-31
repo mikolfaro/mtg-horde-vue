@@ -29,7 +29,6 @@
     },
     computed: {
       open() {
-        console.log("Open", this.spell)
         return !!this.spell
       }
     },

@@ -2,7 +2,7 @@
   <div>
     <div :id="id" class="card-zone">
       <Card
-          v-for="(card, index) in board"
+          v-for="(card, index) in board.permanents"
           v-bind:key="index"
           :card="card"
           @destroy="destroyPermanent"

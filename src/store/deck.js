@@ -9,5 +9,8 @@ export default {
     setDeck({ commit }, newDeck) {
       commit('setDeck', newDeck)
     },
+    millDeck(context, count) {
+      context.commit('millDeck', count)
+    },
   }
 }

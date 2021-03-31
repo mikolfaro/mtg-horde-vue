@@ -1,15 +1,16 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import board from './board'
-import hand from './hand'
 import deck from './deck'
+import graveyard from './graveyard'
+import hand from './hand'
+import phases from './phases'
 import settings from './settings'
 
 Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    graveyard: [],
     exile: [],
     stack: []
   },
@@ -36,63 +37,55 @@ export default new Vuex.Store({
       if (spell.isPermanent()) {
         state.board.permanents.push(spell)
       } else {
-        state.graveyard.push(spell)
+        state.graveyard.cards.push(spell)
       }
       state.stack.shift()
     },
     counterSpell(state, spell) {
-      state.graveyard.push(spell)
+      state.graveyard.cards.push(spell)
       state.stack.shift()
     },
     millDeck(state, count) {
       const milledCards = state.deck.cards.slice(0, count)
-      state.graveyard = state.graveyard.concat(milledCards)
+      state.graveyard.cards = state.graveyard.cards.concat(milledCards)
       state.deck.cards = state.deck.cards.slice(count)
-    },
-    tapPermanent(state, permanent) {
-      state.board.cards = state.board.cards.map((card) => {
-        if (card.index === permanent.index) {
-          return card.tap()
-        }
-
-        return card
-      })
     },
     destroyPermanent(state, permanent) {
       state.board.permanents = state.board.permanents.filter(card => card.index !== permanent.index)
       if (!state.settings.graveyardTokens && permanent.isToken()) {
         state.exile.push(permanent)
       } else {
-        state.graveyard.push(permanent)
+        state.graveyard.cards.push(permanent)
       }
 
     }
   },
   actions: {
-    stepPhase(context) {
-      context.commit('stepPhase')
+    stepPhase({ commit, state }) {
+      commit('stepPhase')
 
-      if (context.state.phase.id === 'HORDE_DRAW') {
-        context.commit('draw')
-        context.commit('untapAll')
-      } else if (context.state.phase.id === 'HORDE_PLAY') {
-        context.commit('play')
-      } else if (context.state.phase.id === 'HORDE_ATTACK') {
-        context.commit('attack')
+      if (state.phases.current.id === 'HORDE_DRAW') {
+        commit('draw')
+        commit('untapAll')
+      } else if (state.phases.current.id === 'HORDE_PLAY') {
+        commit('play')
+      } else if (state.phases.current.id === 'HORDE_ATTACK') {
+        commit('attack')
       }
     },
-    resolveSpell(context, spell) {
-      context.commit('resolveSpell', spell)
+    resolveSpell({ commit }, spell) {
+      commit('resolveSpell', spell)
     },
-    counterSpell(context, spell) {
-      context.commit('counterSpell', spell)
+    counterSpell({ commit }, spell) {
+      commit('counterSpell', spell)
     },
   },
   modules: {
     board,
     deck,
+    graveyard,
     hand,
     settings,
-    phase
+    phases,
   }
 })

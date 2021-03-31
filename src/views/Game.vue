@@ -2,7 +2,7 @@
   <div class="game-page">
     <PhaseTracker />
 
-    <Graveyard :cards="graveyard"></Graveyard>
+    <Graveyard :cards="graveyard.cards"></Graveyard>
 
     <Deck :cards="deck.cards" @mill="millDeck"></Deck>
 
@@ -43,7 +43,7 @@
       return {}
     },
     computed: {
-      ...mapState(['phase', 'deck', 'hand', 'graveyard', 'exile', 'board', 'stack']),
+      ...mapState(['deck', 'hand', 'graveyard', 'exile', 'board', 'stack']),
       topStack() {
         if (this.stack.length) {
           return this.stack[0]

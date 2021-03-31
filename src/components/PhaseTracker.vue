@@ -19,7 +19,10 @@ import { mapActions, mapState } from 'vuex'
       return {}
     },
     computed: {
-      ...mapState(['phase'])
+      ...mapState(['phases']),
+      phase() {
+        return this.phases.current
+      }
     },
     methods: {
       onNextPhase() {
