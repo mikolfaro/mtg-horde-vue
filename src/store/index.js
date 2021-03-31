@@ -33,7 +33,7 @@ export default new Vuex.Store({
         state.hand.push(card)
       } while (card.isToken());
     },
-    untap(state) {
+    untapAll(state) {
       state.board = state.board.map((card) => {
         if (card.tapped) {
           return card.set('tapped', false)
@@ -79,11 +79,18 @@ export default new Vuex.Store({
       state.graveyard = state.graveyard.concat(milledCards)
       state.deck = state.deck.slice(count)
     },
-    destroy(state, permanent) {
-      state.board = state.board.filter((card) => {
-        card.index !== permanent.index
-      })
-      state.graveyard.push(permanent)
+    // tapPermanent(state, permanent) {
+    // },
+    // untapPermanent(state, permanent) {
+    // },
+    destroyPermanent(state, permanent) {
+      state.board = state.board.filter(card => card.index !== permanent.index)
+      if (!state.graveyardTokens && permanent.isToken()) {
+        state.exile.push(permanent)
+      } else {
+        state.graveyard.push(permanent)
+      }
+
     }
   },
   actions: {
@@ -95,7 +102,7 @@ export default new Vuex.Store({
 
       if (context.state.phase.id === 'HORDE_DRAW') {
         context.commit('draw')
-        context.commit('untap')
+        context.commit('untapAll')
       } else if (context.state.phase.id === 'HORDE_PLAY') {
         context.commit('play')
       } else if (context.state.phase.id === 'HORDE_ATTACK') {
@@ -111,6 +118,15 @@ export default new Vuex.Store({
     millDeck(context, count) {
       console.log('mill')
       context.commit('millDeck', count)
+    },
+    tapPermanent(context, permanent) {
+      context.commit('tapPermanent', permanent)
+    },
+    untapPermanent(context, permanent) {
+      context.commit('untapPermanent', permanent)
+    },
+    destroyPermanent(context, permanent) {
+      context.commit('destroyPermanent', permanent)
     }
   },
   modules: {

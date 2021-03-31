@@ -5,12 +5,13 @@
           v-for="(card, index) in board"
           v-bind:key="index"
           :card="card"
+          @destroy="destroyPermanent"
       />
     </div>
   </div>
 </template>
 <script>
-  import { mapState } from 'vuex'
+  import { mapActions, mapState } from 'vuex'
 
   import Card from '@/components/Card'
 
@@ -26,6 +27,9 @@
     computed: {
       ...mapState(['board'])
     },
+    methods: {
+      ...mapActions(['tapPermanent', 'untapPermanent', 'destroyPermanent'])
+    }
   }
 </script>
 <style lang="sass">

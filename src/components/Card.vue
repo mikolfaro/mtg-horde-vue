@@ -4,8 +4,11 @@
       <img :src=image :alt="name" @click=onCardClick />
       <span v-if="card.isCreature()" class="pt-indicator">{{power}}/{{toughness}}</span>
     </div>
-    <button class="tap-card" @click=onTap>
+    <button v-if="!card.tapped" class="tap-card" @click=onTap>
       <img alt="Tap card" :src="tapIcon" role="presentation" />
+    </button>
+    <button v-else class="untap-card" @click="onUntap">
+      <img alt="Untap card" :src="untapIcon" role="presentation" />
     </button>
     <button class="destroy-card" @click="onDestroy">
       <img alt="Destroy card" :src="destroyIcon" role="presentation" />
@@ -14,16 +17,18 @@
 </template>
 <script>
   import faceDownImage from '@/assets/back-card.png'
-  import tapIcon from '@/assets/tap-icon.png'
   import destroyIcon from '@/assets/destroy-icon.png'
+  import tapIcon from '@/assets/tap-icon.png'
+  import untapIcon from '@/assets/untap-icon.png'
   import Card from '@/models/Card'
 
   export default {
     name: 'Card',
     data() {
       return {
-        tapIcon: tapIcon,
         destroyIcon: destroyIcon,
+        tapIcon: tapIcon,
+        untapIcon: untapIcon,
       }
     },
     props: {
@@ -54,10 +59,10 @@
         return "Card click"
       },
       onTap() {
-        return "Tap card"
+        this.$emit("tap", this.card)
       },
       onDestroy() {
-        return "Destroy card"
+        this.$emit("destroy", this.card)
       }
     }
   }

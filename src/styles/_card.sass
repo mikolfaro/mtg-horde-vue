@@ -35,7 +35,7 @@
     position: absolute
     bottom: 5px
 
-    &.tap-card
+    &.tap-card, &.untap-card
       left: 5px
     &.destroy-card
       left: 30px
@@ -43,6 +43,9 @@
     img
       width: 10px
       height: 10px
+    &.untap-card img
+      width: 100%
+      height: 100%
 
   &.tapped
     width: 176px
