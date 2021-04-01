@@ -1,6 +1,8 @@
 # mtg-horde-vue
 
-Porting of https://github.com/dkniffin/mtg-horde to VueJS
+Available at https://mikolfaro.github.io/mtg-horde-vue.
+
+This is a porting of [dkniffin/mtg-horde](https://github.com/dkniffin/mtg-horde) to VueJS.
 
 ## Project setup
 ```
