@@ -104,21 +104,20 @@
     width: 20px
     height: 20px
     border-radius: 10px
-    padding: 0
+    padding: 2px
     position: absolute
     bottom: 5px
+    background: $color-light-grey
+    border: 1px solid $color-black
 
     &.tap-card, &.untap-card
       left: 5px
     &.destroy-card
       left: 30px
-
+    &.untap-card
+      padding: 0
     img
-      width: 10px
-      height: 10px
-    &.untap-card img
-      width: 100%
-      height: 100%
+      display: block
 
   &.tapped
     width: 176px

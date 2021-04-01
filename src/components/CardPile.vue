@@ -84,7 +84,7 @@
         display: inline-block
 
     .card-pile-count
-      margin-top: 1em
+      margin-top: 3em
       color: $color-white
       @include TypoStyle(22px, 1.1, $Bold)
 
