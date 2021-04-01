@@ -30,12 +30,12 @@ export default {
         const cards = deckData[deckName]['deckList'].map((cardData, i) => {
           return Card.createFromCardData(cardData, i)
         })
-
-        this.setDeck(shuffle(cards))
-        this.setSpawnableToken(deckData[deckName]['spawnableToken'])
+        const spawnableToken = deckData[deckName]['spawnableToken']
+        console.log("spawnableToken", spawnableToken)
+        this.resetGame([shuffle(cards), spawnableToken])
       }
     },
-    ...mapActions(['setDeck', 'setPlayersCount', 'setGraveyardTokens', 'setSpawnableToken'])
+    ...mapActions(['resetGame', 'setPlayersCount', 'setGraveyardTokens'])
   },
 }
 </script>

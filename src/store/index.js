@@ -82,6 +82,13 @@ export default new Vuex.Store({
     }
   },
   actions: {
+    resetGame({commit}, [deck, spawnableToken]) {
+      commit('setDeck', deck)
+      commit('setSpawnableToken', spawnableToken)
+      commit('clearBoard')
+      commit('clearHand')
+      commit('resetPhase')
+    },
     stepPhase({ commit, state }) {
       commit('stepPhase')
 
@@ -103,9 +110,6 @@ export default new Vuex.Store({
     newCardId({ commit, state }) {
       commit('incCardId')
       return state.cardNextId
-    },
-    setSpawnableToken({ commit }, cardData) {
-      commit('setSpawnableToken', cardData)
     },
     spawnToken({ commit, dispatch, state }, stats) {
       const card = Card.createFromCardData(Object.assign({}, state.spawnableToken, {

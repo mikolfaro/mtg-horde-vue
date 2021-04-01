@@ -1,3 +1,8 @@
 export default {
-  state: () => ({ cards: [] })
+  state: () => ({ cards: [] }),
+  mutations: {
+    clearHand(state) {
+      state.cards = []
+    }
+  }
 }
