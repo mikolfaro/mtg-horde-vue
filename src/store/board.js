@@ -6,6 +6,12 @@ export default {
     exile: [],
  }),
   mutations: {
+    clearBoard(state) {
+      state.permanents = []
+      state.graveyard = []
+      state.stack = []
+      state.exile = []
+    },
     attack(state) {
       state.permanents = state.permanents.map((card) => {
         if (!card.tapped && card.isCreature()) {
