@@ -5,5 +5,8 @@ module.exports = {
         additionalData: `@import "@/styles/global/vars"`
       }
     }
-  }
+  },
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/mtg-horde-vue/'
+    : '/'
 }
