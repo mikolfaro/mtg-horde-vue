@@ -29,6 +29,21 @@ export default new Vuex.Store({
         state.hand.cards.push(state.deck.cards.shift())
       }
     },
+    discardCard(state) {
+      if (!state.hand.cards) {
+          return
+      }
+
+      const cardIdx = Math.floor(Math.random() * state.hand.cards.length)
+      const discardedCards = state.hand.cards.splice(cardIdx, 1)
+      discardedCards.map((card) => {
+        if (!state.settings.graveyardTokens && card.isToken()) {
+          state.board.exile.push(card)
+        } else {
+          state.board.graveyard.push(card)
+        }
+      })
+    },
     play(state) {
       state.hand.cards.forEach((card) => {
         if (card.isToken()) {
@@ -102,6 +117,9 @@ export default new Vuex.Store({
     },
     draw({ commit }) {
       commit('drawCards', 1)
+    },
+    discard({ commit }) {
+      commit('discardCard')
     }
   },
   modules: {

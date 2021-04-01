@@ -9,7 +9,9 @@
         <div class="col-1">
           <Hand
               class="mt-2"
-              :cards="hand.cards" @draw="draw"></Hand>
+              :cards="hand.cards"
+              @draw="draw"
+              @discard="discard"></Hand>
           <TokenCreator
               class="mt-2"
               :tokenDefaultData="spawnableToken"
@@ -71,7 +73,7 @@
       }
     },
     methods: {
-      ...mapActions(['resolveSpell', 'counterSpell', 'millDeck', 'spawnToken', 'draw']),
+      ...mapActions(['resolveSpell', 'counterSpell', 'millDeck', 'spawnToken', 'draw', 'discard']),
       resoveTopStack(spell) {
         this.resolveSpell(spell)
       },
