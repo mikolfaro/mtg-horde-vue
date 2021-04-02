@@ -30,7 +30,6 @@ export default {
       })
 
       const spawnableToken = deck['spawnableToken']
-      console.log("spawnableToken", spawnableToken)
       this.resetGame([shuffle(cards), spawnableToken])
     },
     ...mapActions(['resetGame', 'setPlayersCount', 'setGraveyardTokens'])
