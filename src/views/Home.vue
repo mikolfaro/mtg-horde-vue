@@ -31,7 +31,6 @@ export default {
           return Card.createFromCardData(cardData, i)
         })
         const spawnableToken = deckData[deckName]['spawnableToken']
-        console.log("spawnableToken", spawnableToken)
         this.resetGame([shuffle(cards), spawnableToken])
       }
     },
