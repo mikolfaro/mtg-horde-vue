@@ -1,0 +1,956 @@
+{
+  "name": "Elemental",
+  "deckList": [
+    {
+      "name": "Circle of Flame",
+      "type": "Enchantment",
+      "types": ["Enchantment"],
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=383211&type=card"
+    },
+    {
+      "name": "Elemental Bond",
+      "type": "Enchantment",
+      "types": ["Enchantment"],
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=398406&type=card"
+    },
+    {
+      "name": "Havoc Festival",
+      "type": "Enchantment",
+      "types": ["Enchantment"],
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=356450&type=card"
+    },
+    {
+      "name": "Creeping Corrosion",
+      "type": "Sorcery",
+      "types": ["Sorcery"],
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=214029&type=card"
+    },
+    {
+      "name": "Storm's Wrath",
+      "type": "Sorcery",
+      "types": ["Sorcery"],
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=476408&type=card"
+    },
+    {
+      "name": "Wrath of God",
+      "type": "Sorcery",
+      "types": ["Sorcery"],
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=489712&type=card"
+    },
+    {
+      "name": "Animar, Soul of Elements",
+      "type": "Legendary Creature - Elemental",
+      "types": ["Legendary", "Creature"],
+      "subtypes": ["Elemental"],
+      "power": "1",
+      "toughness": "1",
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=442185&type=card"
+    },
+    {
+      "name": "Ashenmoor Liege",
+      "type": "Creature - Elemental Warrior",
+      "types": ["Creature"],
+      "subtypes": ["Elemental", "Warrior"],
+      "power": "4",
+      "toughness": "1",
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=146065&type=card"
+    },
+    {
+      "name": "Bane of Progress",
+      "type": "Creature - Elemental",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "2",
+      "toughness": "2",
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=509339&type=card"
+    },
+    {
+      "name": "Blistering Firecat",
+      "type": "Creature - Elemental Cat",
+      "types": ["Creature"],
+      "subtypes": ["Elemental", "Cat"],
+      "power": "7",
+      "toughness": "1",
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=39737&type=card"
+    },
+    {
+      "name": "Bolt Hound",
+      "type": "Creature - Elemental Dog",
+      "types": ["Creature"],
+      "subtypes": ["Elemental", "Dog"],
+      "power": "2",
+      "toughness": "2",
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=485454&type=card"
+    },
+    {
+      "name": "Celestial Ancient",
+      "type": "Creature - Elemental",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "3",
+      "toughness": "3",
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=423430&type=card"
+    },
+    {
+      "name": "Cloudkin Seer",
+      "type": "Creature - Elemental Wizard",
+      "types": ["Creature"],
+      "subtypes": ["Elemental", "Wizard"],
+      "power": "2",
+      "toughness": "1",
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=466808&type=card"
+    },
+    {
+      "name": "Cloudthresher",
+      "type": "Creature - Elemental",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "7",
+      "toughness": "7",
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=430315&type=card"
+    },
+    {
+      "name": "Creeping Trailblazer",
+      "type": "Creature - Elemental",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "2",
+      "toughness": "2",
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=466961&type=card"
+    },
+    {
+      "name": "Destiny Spinner",
+      "type": "Enchantment Creature - Human",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "2",
+      "toughness": "3",
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=476419&type=card"
+    },
+    {
+      "name": "Eidolon of the Great Revel",
+      "type": "Enchantment Creature - Spirit",
+      "types": ["Enchantment","Creature"],
+      "subtypes": ["Spirit"],
+      "power": "2",
+      "toughness": "2",
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=442117&type=card"
+    },
+    {
+      "name": "Fire Servant",
+      "type": "Creature - Elemental",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "4",
+      "toughness": "3",
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=234702&type=card"
+    },
+    {
+      "name": "Force of Savagery",
+      "type": "Creature - Elemental",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "8",
+      "toughness": "0",
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=130713&type=card"
+    },
+    {
+      "name": "Frost Walker",
+      "type": "Creature - Elemental",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "4",
+      "toughness": "1",
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=391841&type=card"
+    },
+    {
+      "name": "Fusion Elemental",
+      "type": "Creature - Elemental",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "8",
+      "toughness": "8",
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=489434&type=card"
+    },
+    {
+      "name": "Hell's Thunder",
+      "type": "Creature - Elemental",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "4",
+      "toughness": "4",
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386326&type=card"
+    },
+    {
+      "name": "Master of Waves",
+      "type": "Creature - Merfolk Wizard",
+      "types": ["Creature"],
+      "subtypes": ["Merfolk", "Wizard"],
+      "power": "2",
+      "toughness": "1",
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=438441&type=card"
+    },
+    {
+      "name": "Mulldrifter",
+      "type": "Creature - Elemental",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "2",
+      "toughness": "2",
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=512277&type=card"
+    },
+    {
+      "name": "Pako, Arcane Retriever",
+      "type": "Creature - Elemental Hound",
+      "types": ["Creature"],
+      "subtypes": ["Elemental", "Hound"],
+      "power": "3",
+      "toughness": "3",
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=484720&type=card"
+    },
+    {
+      "name": "Regal Force",
+      "type": "Creature - Elemental",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "5",
+      "toughness": "5",
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=442758&type=card"
+    },
+    {
+      "name": "Rockslide Elemental",
+      "type": "Creature - Elemental",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "1",
+      "toughness": "1",
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=205327&type=card"
+    },
+    {
+      "name": "Scorch Spitter",
+      "type": "Creature - Elemental Lizard",
+      "types": ["Creature"],
+      "subtypes": ["Elemental", "Lizard"],
+      "power": "1",
+      "toughness": "1",
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=466913&type=card"
+    },
+    {
+      "name": "Scourge of Geier Reach",
+      "type": "Creature - Elemental",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "3",
+      "toughness": "3",
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=227077&type=card"
+    },
+    {
+      "name": "Sickle Ripper",
+      "type": "Creature - Elemental Warrior",
+      "types": ["Creature"],
+      "subtypes": ["Elemental", "Warrior"],
+      "power": "2",
+      "toughness": "1",
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=397834&type=card"
+    },
+    {
+      "name": "Skizzik",
+      "type": "Creature - Elemental",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "5",
+      "toughness": "3",
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=443033&type=card"
+    },
+    {
+      "name": "Skycat Sovereign",
+      "type": "Creature - Elemental Cat",
+      "types": ["Creature"],
+      "subtypes": ["Elemental", "Cat"],
+      "power": "1",
+      "toughness": "1",
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=479727&type=card"
+    },
+    {
+      "name": "Soul Snuffers",
+      "type": "Creature - Elemental Shaman",
+      "types": ["Creature"],
+      "subtypes": ["Elemental", "Shaman"],
+      "power": "3",
+      "toughness": "3",
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=142054&type=card"
+    },
+    {
+      "name": "Soul of the Harvest",
+      "type": "Creature - Elemental",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "6",
+      "toughness": "6",
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=489415&type=card"
+    },
+    {
+      "name": "Soul of the Rapids",
+      "type": "Creature - Elemental",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "3",
+      "toughness": "2",
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=439713&type=card"
+    },
+    {
+      "name": "Subterranean Shambler",
+      "type": "Creature - Elemental",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "2",
+      "toughness": "3",
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=113611&type=card"
+    },
+    {
+      "name": "Sulfur Elemental",
+      "type": "Creature - Elemental",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "3",
+      "toughness": "2",
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=509560&type=card"
+    },
+    {
+      "name": "Thicket Crasher",
+      "type": "Creature - Elemental Rhino",
+      "types": ["Creature"],
+      "subtypes": ["Elemental", "Rhino"],
+      "power": "4",
+      "toughness": "3",
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=466950&type=card"
+    },
+    {
+      "name": "Thunder Spirit",
+      "type": "Creature - Elemental Spirit",
+      "types": ["Creature"],
+      "subtypes": ["Elemental", "Spirit"],
+      "power": "2",
+      "toughness": "2",
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=159318&type=card"
+    },
+    {
+      "name": "Vine Mare",
+      "type": "Creature - Elemental Horse",
+      "types": ["Creature"],
+      "subtypes": ["Elemental", "Horse"],
+      "power": "5",
+      "toughness": "3",
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=447343&type=card"
+    },
+    {
+      "name": "Elemental",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "5",
+      "toughness": "5",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/e/elemental__s365__cn11_lnen.jpg?m=1617117585",
+      "originalType": "Token Creature - Elemental"
+    },
+    {
+      "name": "Elemental",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "5",
+      "toughness": "5",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/e/elemental__s365__cn11_lnen.jpg?m=1617117585",
+      "originalType": "Token Creature - Elemental"
+    },
+    {
+      "name": "Elemental",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "5",
+      "toughness": "5",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/e/elemental__s360__cn14_lnen.jpg?m=1616098928",
+      "originalType": "Token Creature - Elemental"
+    },
+    {
+      "name": "Elemental",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "5",
+      "toughness": "5",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/e/elemental__s360__cn14_lnen.jpg?m=1616098928",
+      "originalType": "Token Creature - Elemental"
+    },
+    {
+      "name": "Elemental",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "3",
+      "toughness": "1",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/e/elemental__s459__cn9_lnen.jpg?m=1616374899",
+      "originalType": "Token Creature - Elemental"
+    },
+    {
+      "name": "Elemental",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "3",
+      "toughness": "1",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/e/elemental__s459__cn9_lnen.jpg?m=1616374899",
+      "originalType": "Token Creature - Elemental"
+    },
+    {
+      "name": "Elemental",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "3",
+      "toughness": "1",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/e/elemental__s459__cn9_lnen.jpg?m=1616374899",
+      "originalType": "Token Creature - Elemental"
+    },
+    {
+      "name": "Elemental",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "3",
+      "toughness": "1",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/e/elemental__s459__cn9_lnen.jpg?m=1616374899",
+      "originalType": "Token Creature - Elemental"
+    },
+    {
+      "name": "Elemental",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "3",
+      "toughness": "1",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/e/elemental__s459__cn9_lnen.jpg?m=1616374899",
+      "originalType": "Token Creature - Elemental"
+    },
+    {
+      "name": "Elemental",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "3",
+      "toughness": "1",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/e/elemental__s459__cn9_lnen.jpg?m=1616374899",
+      "originalType": "Token Creature - Elemental"
+    },
+    {
+      "name": "Elemental",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "3",
+      "toughness": "1",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/e/elemental__s459__cn9_lnen.jpg?m=1616374899",
+      "originalType": "Token Creature - Elemental"
+    },
+    {
+      "name": "Elemental",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "3",
+      "toughness": "1",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/e/elemental__s459__cn9_lnen.jpg?m=1616374899",
+      "originalType": "Token Creature - Elemental"
+    },
+    {
+      "name": "Elemental",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "3",
+      "toughness": "1",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/e/elemental__s459__cn9_lnen.jpg?m=1616374899",
+      "originalType": "Token Creature - Elemental"
+    },
+    {
+      "name": "Elemental",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "5",
+      "toughness": "3",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/e/elemental__s351__cn9_lnen.jpg?m=1616029466",
+      "originalType": "Token Creature - Elemental"
+    },
+    {
+      "name": "Elemental",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "5",
+      "toughness": "3",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/e/elemental__s351__cn9_lnen.jpg?m=1616029466",
+      "originalType": "Token Creature - Elemental"
+    },
+    {
+      "name": "Elemental",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "5",
+      "toughness": "3",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/e/elemental__s351__cn9_lnen.jpg?m=1616029466",
+      "originalType": "Token Creature - Elemental"
+    },
+    {
+      "name": "Elemental",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "*",
+      "toughness": "*",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/e/elemental__s659__cn20_lnen.jpg?m=1616882278",
+      "originalType": "Token Creature - Elemental"
+    },
+    {
+      "name": "Elemental",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "*",
+      "toughness": "*",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/e/elemental__s659__cn20_lnen.jpg?m=1616882278",
+      "originalType": "Token Creature - Elemental"
+    },
+    {
+      "name": "Elemental",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "1",
+      "toughness": "1",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/e/elemental__s496__cn4_lnen.jpg?m=1617395687",
+      "originalType": "Token Creature - Elemental"
+    },
+    {
+      "name": "Elemental",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "1",
+      "toughness": "1",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/e/elemental__s496__cn4_lnen.jpg?m=1617395687",
+      "originalType": "Token Creature - Elemental"
+    },
+    {
+      "name": "Elemental",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "1",
+      "toughness": "1",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/e/elemental__s496__cn4_lnen.jpg?m=1617395687",
+      "originalType": "Token Creature - Elemental"
+    },
+    {
+      "name": "Elemental",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "1",
+      "toughness": "1",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/e/elemental__s496__cn4_lnen.jpg?m=1617395687",
+      "originalType": "Token Creature - Elemental"
+    },
+    {
+      "name": "Elemental",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "1",
+      "toughness": "1",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/e/elemental__s496__cn4_lnen.jpg?m=1617395687",
+      "originalType": "Token Creature - Elemental"
+    },
+    {
+      "name": "Elemental",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "1",
+      "toughness": "1",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/e/elemental__s496__cn4_lnen.jpg?m=1617395687",
+      "originalType": "Token Creature - Elemental"
+    },
+    {
+      "name": "Elemental",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "1",
+      "toughness": "1",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/e/elemental__s496__cn4_lnen.jpg?m=1617395687",
+      "originalType": "Token Creature - Elemental"
+    },
+    {
+      "name": "Elemental",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "1",
+      "toughness": "1",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/e/elemental__s496__cn4_lnen.jpg?m=1617395687",
+      "originalType": "Token Creature - Elemental"
+    },
+    {
+      "name": "Elemental",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "1",
+      "toughness": "1",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/e/elemental__s496__cn4_lnen.jpg?m=1617395687",
+      "originalType": "Token Creature - Elemental"
+    },
+    {
+      "name": "Elemental",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "1",
+      "toughness": "1",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/e/elemental__s496__cn4_lnen.jpg?m=1617395687",
+      "originalType": "Token Creature - Elemental"
+    },
+    {
+      "name": "Elemental",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "1",
+      "toughness": "1",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/e/elemental__s496__cn4_lnen.jpg?m=1617395687",
+      "originalType": "Token Creature - Elemental"
+    },
+    {
+      "name": "Elemental",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "7",
+      "toughness": "1",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/e/elemental__s488__cn8_lnen.jpg?m=1617391161",
+      "originalType": "Token Creature - Elemental"
+    },
+    {
+      "name": "Elemental",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "7",
+      "toughness": "1",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/e/elemental__s488__cn8_lnen.jpg?m=1617391161",
+      "originalType": "Token Creature - Elemental"
+    },
+    {
+      "name": "Elemental",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "7",
+      "toughness": "1",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/e/elemental__s488__cn8_lnen.jpg?m=1617391161",
+      "originalType": "Token Creature - Elemental"
+    },
+    {
+      "name": "Elemental",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "7",
+      "toughness": "1",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/e/elemental__s488__cn8_lnen.jpg?m=1617391161",
+      "originalType": "Token Creature - Elemental"
+    },
+    {
+      "name": "Elemental",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "7",
+      "toughness": "1",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/e/elemental__s488__cn8_lnen.jpg?m=1617391161",
+      "originalType": "Token Creature - Elemental"
+    },
+    {
+      "name": "Elemental",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "2",
+      "toughness": "2",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/e/elemental__s367__cn8_lnen.jpg?m=1616795815",
+      "originalType": "Token Creature - Elemental"
+    },
+    {
+      "name": "Elemental",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "2",
+      "toughness": "2",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/e/elemental__s367__cn8_lnen.jpg?m=1616795815",
+      "originalType": "Token Creature - Elemental"
+    },
+    {
+      "name": "Elemental",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "2",
+      "toughness": "2",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/e/elemental__s367__cn8_lnen.jpg?m=1616795815",
+      "originalType": "Token Creature - Elemental"
+    },
+    {
+      "name": "Elemental",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "2",
+      "toughness": "2",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/e/elemental__s367__cn8_lnen.jpg?m=1616795815",
+      "originalType": "Token Creature - Elemental"
+    },
+    {
+      "name": "Elemental",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "2",
+      "toughness": "2",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/e/elemental__s367__cn8_lnen.jpg?m=1616795815",
+      "originalType": "Token Creature - Elemental"
+    },
+    {
+      "name": "Elemental",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "2",
+      "toughness": "2",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/e/elemental__s367__cn8_lnen.jpg?m=1616795815",
+      "originalType": "Token Creature - Elemental"
+    },
+    {
+      "name": "Elemental",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "2",
+      "toughness": "2",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/e/elemental__s367__cn8_lnen.jpg?m=1616795815",
+      "originalType": "Token Creature - Elemental"
+    },
+    {
+      "name": "Elemental",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "2",
+      "toughness": "2",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/e/elemental__s367__cn8_lnen.jpg?m=1616795815",
+      "originalType": "Token Creature - Elemental"
+    },
+    {
+      "name": "Elemental",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "2",
+      "toughness": "2",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/e/elemental__s367__cn8_lnen.jpg?m=1616795815",
+      "originalType": "Token Creature - Elemental"
+    },
+    {
+      "name": "Elemental",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "1",
+      "toughness": "1",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/e/elemental__s329__cn8_lnen.jpg?m=1616100608",
+      "originalType": "Token Creature - Elemental"
+    },
+    {
+      "name": "Elemental",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "1",
+      "toughness": "1",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/e/elemental__s329__cn8_lnen.jpg?m=1616100608",
+      "originalType": "Token Creature - Elemental"
+    },
+    {
+      "name": "Elemental",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "1",
+      "toughness": "1",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/e/elemental__s329__cn8_lnen.jpg?m=1616100608",
+      "originalType": "Token Creature - Elemental"
+    },
+    {
+      "name": "Elemental",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "1",
+      "toughness": "1",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/e/elemental__s329__cn8_lnen.jpg?m=1616100608",
+      "originalType": "Token Creature - Elemental"
+    },
+    {
+      "name": "Elemental",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "1",
+      "toughness": "1",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/e/elemental__s329__cn8_lnen.jpg?m=1616100608",
+      "originalType": "Token Creature - Elemental"
+    },
+    {
+      "name": "Elemental",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "3",
+      "toughness": "1",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/e/elemental__s383__cn7_lnen.jpg?m=1616197550",
+      "originalType": "Token Enchantment Creature - Elemental"
+    },
+    {
+      "name": "Elemental",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "3",
+      "toughness": "1",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/e/elemental__s383__cn7_lnen.jpg?m=1616197550",
+      "originalType": "Token Enchantment Creature - Elemental"
+    },
+    {
+      "name": "Elemental",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "3",
+      "toughness": "1",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/e/elemental__s383__cn7_lnen.jpg?m=1616197550",
+      "originalType": "Token Enchantment Creature - Elemental"
+    },
+    {
+      "name": "Lightning Rager",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "5",
+      "toughness": "1",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/l/lightning_rager__s342__cn10_lnen.jpg?m=1617003343",
+      "originalType": "Token Creature - Elemental"
+    },
+    {
+      "name": "Lightning Rager",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "5",
+      "toughness": "1",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/l/lightning_rager__s342__cn10_lnen.jpg?m=1617003343",
+      "originalType": "Token Creature - Elemental"
+    },
+    {
+      "name": "Lightning Rager",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "5",
+      "toughness": "1",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/l/lightning_rager__s342__cn10_lnen.jpg?m=1617003343",
+      "originalType": "Token Creature - Elemental"
+    },
+    {
+      "name": "Lightning Rager",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "5",
+      "toughness": "1",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/l/lightning_rager__s342__cn10_lnen.jpg?m=1617003343",
+      "originalType": "Token Creature - Elemental"
+    },
+    {
+      "name": "Spark Elemental",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "3",
+      "toughness": "1",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/s/spark_elemental__s444__cn12_lnen.jpg?m=1617395987",
+      "originalType": "Token Creature - Elemental"
+    },
+    {
+      "name": "Spark Elemental",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "3",
+      "toughness": "1",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/s/spark_elemental__s444__cn12_lnen.jpg?m=1617395987",
+      "originalType": "Token Creature - Elemental"
+    },
+    {
+      "name": "Spark Elemental",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "3",
+      "toughness": "1",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/s/spark_elemental__s444__cn12_lnen.jpg?m=1617395987",
+      "originalType": "Token Creature - Elemental"
+    },
+    {
+      "name": "Spark Elemental",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "3",
+      "toughness": "1",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/s/spark_elemental__s444__cn12_lnen.jpg?m=1617395987",
+      "originalType": "Token Creature - Elemental"
+    },
+    {
+      "name": "Spark Elemental",
+      "type": "Creature",
+      "types": ["Creature"],
+      "subtypes": ["Elemental"],
+      "power": "3",
+      "toughness": "1",
+      "imageUrl": "https://www.mtg-forum.de/db/karten/s/spark_elemental__s444__cn12_lnen.jpg?m=1617395987",
+      "originalType": "Token Creature - Elemental"
+    }
+  ],
+  "spawnableToken": {
+    "name": "Elemental",
+    "type": "Creature — Elemental",
+    "types": ["Creature"],
+    "subtypes": ["Elemental"],
+    "imageUrl": "https://cdn11.bigcommerce.com/s-3b5vpig99v/images/stencil/1280x1280/products/466554/442186/ElementalToken__95179.1590612028.jpg?c=2",
+    "originalType": "Token Creature — Zombie"
+  }
+}
+
