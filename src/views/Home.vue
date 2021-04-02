@@ -10,7 +10,7 @@
 import { mapActions } from 'vuex'
 import Card from '@/models/Card'
 import GameForm from '@/components/GameForm.vue'
-import { shuffle } from '../helpers'
+import { shuffle } from '@/helpers'
 
 export default {
   name: 'Home',
