@@ -68,11 +68,12 @@
       flex-wrap: wrap
 
       margin: 15px
-      margin-top: 50px
+      margin-top: 20px
 
       .card
         margin-left: 10px
         margin-right: 10px
+        margin-top: 10px
 
   .bigger-card
     .card-bounds

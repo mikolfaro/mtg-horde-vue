@@ -1,0 +1,3809 @@
+{
+  "name": "Zombie",
+  "deckList": [
+    {
+      "name": "Nocturnal Raid",
+      "type": "Instant",
+      "types": ["Instant"],
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=3301&type=card"
+    },
+    {
+      "name": "Army of the Damned",
+      "manaCost": "{5}{B}{B}{B}",
+      "cmc": 8,
+      "colors": [
+        "Black"
+      ],
+      "colorIdentity": [
+        "B"
+      ],
+      "type": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "rarity": "Mythic Rare",
+      "set": "C16",
+      "setName": "Commander 2016",
+      "text": "Create thirteen tapped 2/2 black Zombie creature tokens.\nFlashback {7}{B}{B}{B} (You may cast this card from your graveyard for its flashback cost. Then exile it.)",
+      "flavor": "Sometimes death comes knocking. Sometimes it tears down the walls.",
+      "artist": "Ryan Pancoast",
+      "number": "105",
+      "layout": "normal",
+      "multiverseid": 420722,
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=420722&type=card",
+      "foreignNames": [
+        {
+          "name": "厄亡者大军",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=421073&type=card",
+          "language": "Chinese Simplified",
+          "multiverseid": 421073
+        },
+        {
+          "name": "Armée des damnés",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=421775&type=card",
+          "language": "French",
+          "multiverseid": 421775
+        },
+        {
+          "name": "Armee der Verdammten",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=421424&type=card",
+          "language": "German",
+          "multiverseid": 421424
+        },
+        {
+          "name": "Esercito dei Dannati",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=422126&type=card",
+          "language": "Italian",
+          "multiverseid": 422126
+        },
+        {
+          "name": "忌むべき者の軍団",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=422477&type=card",
+          "language": "Japanese",
+          "multiverseid": 422477
+        },
+        {
+          "name": "Exército dos Malditos",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=422828&type=card",
+          "language": "Portuguese (Brazil)",
+          "multiverseid": 422828
+        },
+        {
+          "name": "Ejército de los condenados",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=423179&type=card",
+          "language": "Spanish",
+          "multiverseid": 423179
+        }
+      ],
+      "printings": [
+        "ISD",
+        "C13",
+        "C16"
+      ],
+      "originalText": "Create thirteen tapped 2/2 black Zombie creature tokens.\nFlashback {7}{B}{B}{B} (You may cast this card from your graveyard for its flashback cost. Then exile it.)",
+      "originalType": "Sorcery",
+      "legalities": [
+        {
+          "format": "Commander",
+          "legality": "Legal"
+        },
+        {
+          "format": "Innistrad Block",
+          "legality": "Legal"
+        },
+        {
+          "format": "Legacy",
+          "legality": "Legal"
+        },
+        {
+          "format": "Modern",
+          "legality": "Legal"
+        },
+        {
+          "format": "Vintage",
+          "legality": "Legal"
+        }
+      ],
+      "id": "6a1300d67dc3ff0b39f2c89e82b89b58128e6977"
+    },
+    {
+      "name": "Barter in Blood",
+      "type": "Sorcery",
+      "types": ["Sorcery"],
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=489208&type=card"
+    },
+    {
+      "name": "Delirium Skeins",
+      "type": "Sorcery",
+      "types": ["Sorcery"],
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=425890&type=card"
+    },
+    {
+      "name": "Plague Wind",
+      "manaCost": "{7}{B}{B}",
+      "cmc": 9,
+      "colors": [
+        "Black"
+      ],
+      "colorIdentity": [
+        "B"
+      ],
+      "type": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "rarity": "Rare",
+      "set": "10E",
+      "setName": "Tenth Edition",
+      "text": "Destroy all creatures you don't control. They can't be regenerated.",
+      "artist": "Alan Pollack",
+      "number": "169",
+      "layout": "normal",
+      "multiverseid": 129679,
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=129679&type=card",
+      "foreignNames": [
+        {
+          "name": "疫病之风",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=147867&type=card",
+          "language": "Chinese Simplified",
+          "multiverseid": 147867
+        },
+        {
+          "name": "疫病之風",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=151397&type=card",
+          "language": "Chinese Traditional",
+          "multiverseid": 151397
+        },
+        {
+          "name": "Vent de peste",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=150102&type=card",
+          "language": "French",
+          "multiverseid": 150102
+        },
+        {
+          "name": "Seuchenwind",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=148633&type=card",
+          "language": "German",
+          "multiverseid": 148633
+        },
+        {
+          "name": "Vento Pestilenziale",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=149016&type=card",
+          "language": "Italian",
+          "multiverseid": 149016
+        },
+        {
+          "name": "疫病風",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=148250&type=card",
+          "language": "Japanese",
+          "multiverseid": 148250
+        },
+        {
+          "name": "Vento Pestilento",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=149719&type=card",
+          "language": "Portuguese (Brazil)",
+          "multiverseid": 149719
+        },
+        {
+          "name": "Чумной Ветер",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=149336&type=card",
+          "language": "Russian",
+          "multiverseid": 149336
+        },
+        {
+          "name": "Viento pestilente",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=150485&type=card",
+          "language": "Spanish",
+          "multiverseid": 150485
+        }
+      ],
+      "printings": [
+        "PCY",
+        "8ED",
+        "9ED",
+        "10E"
+      ],
+      "originalText": "Destroy all creatures you don't control. They can't be regenerated.",
+      "originalType": "Sorcery",
+      "legalities": [
+        {
+          "format": "Commander",
+          "legality": "Legal"
+        },
+        {
+          "format": "Legacy",
+          "legality": "Legal"
+        },
+        {
+          "format": "Masques Block",
+          "legality": "Legal"
+        },
+        {
+          "format": "Modern",
+          "legality": "Legal"
+        },
+        {
+          "format": "Vintage",
+          "legality": "Legal"
+        }
+      ],
+      "id": "dd32b61c08b157e80b092e1f1cdcc24208314e32"
+    },
+    {
+      "name": "Smallpox",
+      "manaCost": "{B}{B}",
+      "cmc": 2,
+      "colors": [
+        "Black"
+      ],
+      "colorIdentity": [
+        "B"
+      ],
+      "type": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "rarity": "Uncommon",
+      "set": "DDR",
+      "setName": "Duel Decks: Nissa vs. Ob Nixilis",
+      "text": "Each player loses 1 life, discards a card, sacrifices a creature, then sacrifices a land.",
+      "flavor": "Take away a few things, and a rebellion may ensue. Take away everything, and the oppression will be accepted as fate.",
+      "artist": "Ryan Pancoast",
+      "number": "61",
+      "layout": "normal",
+      "multiverseid": 417484,
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=417484&type=card",
+      "rulings": [
+        {
+          "date": "2006-09-25",
+          "text": "Each player loses 1 life. Then, starting with the active player and proceeding in turn order, each player chooses a card to discard (normally without seeing what other players have chosen) and all discards happen simultaneously. Then, starting with the active player and proceeding in turn order, each player chooses a creature to sacrifice (this time players can see what other players have chosen) and all sacrifices happen simultaneously. Then the process that happened for creatures is repeated for lands."
+        }
+      ],
+      "foreignNames": [
+        {
+          "name": "小悪疫",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=417559&type=card",
+          "language": "Japanese",
+          "multiverseid": 417559
+        }
+      ],
+      "printings": [
+        "TSP",
+        "M12",
+        "CNS",
+        "DDR"
+      ],
+      "originalText": "Each player loses 1 life, discards a card, sacrifices a creature, then sacrifices a land.",
+      "originalType": "Sorcery",
+      "legalities": [
+        {
+          "format": "Commander",
+          "legality": "Legal"
+        },
+        {
+          "format": "Legacy",
+          "legality": "Legal"
+        },
+        {
+          "format": "Modern",
+          "legality": "Legal"
+        },
+        {
+          "format": "Time Spiral Block",
+          "legality": "Legal"
+        },
+        {
+          "format": "Vintage",
+          "legality": "Legal"
+        }
+      ],
+      "id": "9c16036a2dac9e557a9b8d71110c2cd0fbb3f54c"
+    },
+    {
+      "name": "Syphon Flesh",
+      "manaCost": "{4}{B}",
+      "cmc": 5,
+      "colors": [
+        "Black"
+      ],
+      "colorIdentity": [
+        "B"
+      ],
+      "type": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "rarity": "Uncommon",
+      "set": "CMD",
+      "setName": "Magic: The Gathering-Commander",
+      "text": "Each other player sacrifices a creature. You create a 2/2 black Zombie creature token for each creature sacrificed this way.",
+      "flavor": "Necromancers deal in commodities far more precious than gold and grain.",
+      "artist": "Ironbrush",
+      "number": "103",
+      "layout": "normal",
+      "multiverseid": 233218,
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=233218&type=card",
+      "foreignNames": [
+        {
+          "name": "Siphonner la chair",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=261426&type=card",
+          "language": "French",
+          "multiverseid": 261426
+        },
+        {
+          "name": "Fleischansauger",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=260441&type=card",
+          "language": "German",
+          "multiverseid": 260441
+        },
+        {
+          "name": "Riflusso della Carne",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=262063&type=card",
+          "language": "Italian",
+          "multiverseid": 262063
+        },
+        {
+          "name": "吸肉",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=261745&type=card",
+          "language": "Japanese",
+          "multiverseid": 261745
+        },
+        {
+          "name": "Extraer la carne",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=260759&type=card",
+          "language": "Spanish",
+          "multiverseid": 260759
+        }
+      ],
+      "printings": [
+        "CMD"
+      ],
+      "originalText": "Each other player sacrifices a creature. You put a 2/2 black Zombie creature token onto the battlefield for each creature sacrificed this way.",
+      "originalType": "Sorcery",
+      "legalities": [
+        {
+          "format": "Commander",
+          "legality": "Legal"
+        },
+        {
+          "format": "Legacy",
+          "legality": "Legal"
+        },
+        {
+          "format": "Vintage",
+          "legality": "Legal"
+        }
+      ],
+      "id": "6a10052852c911a03bb51c008a554700a4927dc6"
+    },
+    {
+      "name": "Twilight's Call",
+      "type": "Sorcery",
+      "types": ["Sorcery"],
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=338399&type=card"
+    },
+    {
+      "name": "Zombie Apocalypse",
+      "manaCost": "{3}{B}{B}{B}",
+      "cmc": 6,
+      "colors": [
+        "Black"
+      ],
+      "colorIdentity": [
+        "B"
+      ],
+      "type": "Sorcery",
+      "types": [
+        "Sorcery"
+      ],
+      "rarity": "Rare",
+      "set": "DKA",
+      "setName": "Dark Ascension",
+      "text": "Return all Zombie creature cards from your graveyard to the battlefield tapped, then destroy all Humans.",
+      "flavor": "\"There will come a day so dark you will pray for death. On that day your prayers will be answered.\"\n—Minaldra, the Vizag Atum",
+      "artist": "Peter Mohrbacher",
+      "number": "80",
+      "layout": "normal",
+      "multiverseid": 262669,
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=262669&type=card",
+      "rulings": [
+        {
+          "date": "2011-01-22",
+          "text": "All Humans are destroyed, not just ones you control."
+        },
+        {
+          "date": "2011-01-22",
+          "text": "If a creature card in your graveyard is both a Zombie and a Human, it will be returned to the battlefield tapped, then be destroyed."
+        }
+      ],
+      "foreignNames": [
+        {
+          "name": "灵俑末日战",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=335992&type=card",
+          "language": "Chinese Simplified",
+          "multiverseid": 335992
+        },
+        {
+          "name": "殭屍末日戰",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=336334&type=card",
+          "language": "Chinese Traditional",
+          "multiverseid": 336334
+        },
+        {
+          "name": "Apocalypse des zombies",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=336676&type=card",
+          "language": "French",
+          "multiverseid": 336676
+        },
+        {
+          "name": "Zombie-Apokalypse",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=337018&type=card",
+          "language": "German",
+          "multiverseid": 337018
+        },
+        {
+          "name": "Apocalisse di Zombie",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=337360&type=card",
+          "language": "Italian",
+          "multiverseid": 337360
+        },
+        {
+          "name": "ゾンビの黙示録",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=337531&type=card",
+          "language": "Japanese",
+          "multiverseid": 337531
+        },
+        {
+          "name": "좀비의 묵시록",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=336163&type=card",
+          "language": "Korean",
+          "multiverseid": 336163
+        },
+        {
+          "name": "Apocalipse dos Zumbis",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=336505&type=card",
+          "language": "Portuguese (Brazil)",
+          "multiverseid": 336505
+        },
+        {
+          "name": "Апокалипсис Зомби",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=336847&type=card",
+          "language": "Russian",
+          "multiverseid": 336847
+        },
+        {
+          "name": "Apocalipsis zombie",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=337189&type=card",
+          "language": "Spanish",
+          "multiverseid": 337189
+        }
+      ],
+      "printings": [
+        "pMGD",
+        "DKA"
+      ],
+      "originalText": "Return all Zombie creature cards from your graveyard to the battlefield tapped, then destroy all Humans.",
+      "originalType": "Sorcery",
+      "legalities": [
+        {
+          "format": "Commander",
+          "legality": "Legal"
+        },
+        {
+          "format": "Freeform",
+          "legality": "Legal"
+        },
+        {
+          "format": "Innistrad Block",
+          "legality": "Legal"
+        },
+        {
+          "format": "Legacy",
+          "legality": "Legal"
+        },
+        {
+          "format": "Modern",
+          "legality": "Legal"
+        },
+        {
+          "format": "Prismatic",
+          "legality": "Legal"
+        },
+        {
+          "format": "Singleton 100",
+          "legality": "Legal"
+        },
+        {
+          "format": "Tribal Wars Legacy",
+          "legality": "Legal"
+        },
+        {
+          "format": "Vintage",
+          "legality": "Legal"
+        }
+      ],
+      "id": "8527be3b433f5074f159ae277cc349fe18fbf8c1"
+    },
+    {
+      "name": "Bad Moon",
+      "manaCost": "{1}{B}",
+      "cmc": 2,
+      "colors": [
+        "Black"
+      ],
+      "colorIdentity": [
+        "B"
+      ],
+      "type": "Enchantment",
+      "types": [
+        "Enchantment"
+      ],
+      "rarity": "Rare",
+      "set": "DD3_GVL",
+      "setName": "Duel Decks Anthology, Garruk vs. Liliana",
+      "text": "Black creatures get +1/+1.",
+      "artist": "Gary Leach",
+      "number": "48",
+      "layout": "normal",
+      "multiverseid": 393879,
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=393879&type=card",
+      "printings": [
+        "LEA",
+        "LEB",
+        "2ED",
+        "CED",
+        "CEI",
+        "3ED",
+        "4ED",
+        "5ED",
+        "TSB",
+        "DDD",
+        "C14",
+        "DD3_GVL"
+      ],
+      "originalText": "Black creatures get +1/+1.",
+      "originalType": "Enchantment",
+      "legalities": [
+        {
+          "format": "Commander",
+          "legality": "Legal"
+        },
+        {
+          "format": "Legacy",
+          "legality": "Legal"
+        },
+        {
+          "format": "Modern",
+          "legality": "Legal"
+        },
+        {
+          "format": "Time Spiral Block",
+          "legality": "Legal"
+        },
+        {
+          "format": "Vintage",
+          "legality": "Legal"
+        }
+      ],
+      "id": "2a53e833e8413f7d15c5c1364beb5052199abece"
+    },
+    {
+      "name": "Call to the Grave",
+      "manaCost": "{4}{B}",
+      "cmc": 5,
+      "colors": [
+        "Black"
+      ],
+      "colorIdentity": [
+        "B"
+      ],
+      "type": "Enchantment",
+      "types": [
+        "Enchantment"
+      ],
+      "rarity": "Rare",
+      "set": "M12",
+      "setName": "Magic 2012",
+      "text": "At the beginning of each player's upkeep, that player sacrifices a non-Zombie creature.\nAt the beginning of the end step, if no creatures are on the battlefield, sacrifice Call to the Grave.",
+      "artist": "Daarken",
+      "number": "85",
+      "layout": "normal",
+      "multiverseid": 236460,
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=236460&type=card",
+      "rulings": [
+        {
+          "date": "2011-09-22",
+          "text": "If a player controls no creatures, or each creature he or she controls is a Zombie, that player does nothing when the first ability resolves."
+        },
+        {
+          "date": "2011-09-22",
+          "text": "If there is at least one creature on the battlefield at the beginning of the end step, the last ability won't trigger. If it does trigger, but a creature enters the battlefield before it resolves, the ability won't do anything when it resolves. Call to the Grave's controller won't sacrifice it."
+        },
+        {
+          "date": "2011-09-22",
+          "text": "In a Two-Headed Giant game, Call to the Grave will trigger twice during each team's upkeep, once for each player. Each of the two players will sacrifice a non-Zombie creature when the ability referring to that player resolves."
+        }
+      ],
+      "foreignNames": [
+        {
+          "name": "邀众入土",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=262962&type=card",
+          "language": "Chinese Simplified",
+          "multiverseid": 262962
+        },
+        {
+          "name": "邀眾入土",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=263211&type=card",
+          "language": "Chinese Traditional",
+          "multiverseid": 263211
+        },
+        {
+          "name": "Appel à la tombe",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=263460&type=card",
+          "language": "French",
+          "multiverseid": 263460
+        },
+        {
+          "name": "Ruf in das Grab",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=263709&type=card",
+          "language": "German",
+          "multiverseid": 263709
+        },
+        {
+          "name": "Richiamo del Sepolcro",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=263958&type=card",
+          "language": "Italian",
+          "multiverseid": 263958
+        },
+        {
+          "name": "墓への呼び声",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=264207&type=card",
+          "language": "Japanese",
+          "multiverseid": 264207
+        },
+        {
+          "name": "Chamado ao Túmulo",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=264456&type=card",
+          "language": "Portuguese (Brazil)",
+          "multiverseid": 264456
+        },
+        {
+          "name": "Призыв в Могилу",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=264705&type=card",
+          "language": "Russian",
+          "multiverseid": 264705
+        },
+        {
+          "name": "Llamar a la tumba",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=264954&type=card",
+          "language": "Spanish",
+          "multiverseid": 264954
+        }
+      ],
+      "printings": [
+        "SCG",
+        "M12"
+      ],
+      "originalText": "At the beginning of each player's upkeep, that player sacrifices a non-Zombie creature.\nAt the beginning of the end step, if no creatures are on the battlefield, sacrifice Call to the Grave.",
+      "originalType": "Enchantment",
+      "legalities": [
+        {
+          "format": "Commander",
+          "legality": "Legal"
+        },
+        {
+          "format": "Legacy",
+          "legality": "Legal"
+        },
+        {
+          "format": "Modern",
+          "legality": "Legal"
+        },
+        {
+          "format": "Onslaught Block",
+          "legality": "Legal"
+        },
+        {
+          "format": "Vintage",
+          "legality": "Legal"
+        }
+      ],
+      "id": "e151b6ef3e308fb8924364c4e839a88f0d7abed7"
+    },
+    {
+      "name": "Endless Ranks of the Dead",
+      "manaCost": "{2}{B}{B}",
+      "cmc": 4,
+      "colors": [
+        "Black"
+      ],
+      "colorIdentity": [
+        "B"
+      ],
+      "type": "Enchantment",
+      "types": [
+        "Enchantment"
+      ],
+      "rarity": "Rare",
+      "set": "ISD",
+      "setName": "Innistrad",
+      "text": "At the beginning of your upkeep, create X 2/2 black Zombie creature tokens, where X is half the number of Zombies you control, rounded down.",
+      "flavor": "With Thraben's army recalled to its city walls, outlying villages were left to fend for themselves.",
+      "artist": "Ryan Yee",
+      "number": "99",
+      "layout": "normal",
+      "multiverseid": 234430,
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=234430&type=card",
+      "rulings": [
+        {
+          "date": "2011-09-22",
+          "text": "If you control fewer than two Zombies, you won't get any tokens."
+        },
+        {
+          "date": "2011-09-22",
+          "text": "The number of Zombies you control is counted when the ability resolves. If you control multiple Endless Ranks of the Dead, the tokens you get when the first ability resolves will count for the subsequent abilities (if the tokens are still under your control at that time)."
+        }
+      ],
+      "foreignNames": [
+        {
+          "name": "无尽亡者行列",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=272180&type=card",
+          "language": "Chinese Simplified",
+          "multiverseid": 272180
+        },
+        {
+          "name": "無盡亡者行列",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=272464&type=card",
+          "language": "Chinese Traditional",
+          "multiverseid": 272464
+        },
+        {
+          "name": "Interminables colonnes de morts",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=273032&type=card",
+          "language": "French",
+          "multiverseid": 273032
+        },
+        {
+          "name": "Endlose Reihen des Todes",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=273600&type=card",
+          "language": "German",
+          "multiverseid": 273600
+        },
+        {
+          "name": "Interminabili Truppe di Morti",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=274168&type=card",
+          "language": "Italian",
+          "multiverseid": 274168
+        },
+        {
+          "name": "終わり無き死者の列",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=274452&type=card",
+          "language": "Japanese",
+          "multiverseid": 274452
+        },
+        {
+          "name": "Fileira Interminável de Mortos",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=272748&type=card",
+          "language": "Portuguese (Brazil)",
+          "multiverseid": 272748
+        },
+        {
+          "name": "Бесчисленные Ряды Мертвецов",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=273316&type=card",
+          "language": "Russian",
+          "multiverseid": 273316
+        },
+        {
+          "name": "Filas interminables de muertos",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=273884&type=card",
+          "language": "Spanish",
+          "multiverseid": 273884
+        }
+      ],
+      "printings": [
+        "ISD"
+      ],
+      "originalText": "At the beginning of your upkeep, put X 2/2 black Zombie creature tokens onto the battlefield, where X is half the number of Zombies you control, rounded down.",
+      "originalType": "Enchantment",
+      "legalities": [
+        {
+          "format": "Commander",
+          "legality": "Legal"
+        },
+        {
+          "format": "Innistrad Block",
+          "legality": "Legal"
+        },
+        {
+          "format": "Legacy",
+          "legality": "Legal"
+        },
+        {
+          "format": "Modern",
+          "legality": "Legal"
+        },
+        {
+          "format": "Vintage",
+          "legality": "Legal"
+        }
+      ],
+      "id": "9c75680da747f061a481018f41658b56a748c3f6"
+    },
+    {
+      "name": "Grave Betrayal",
+      "manaCost": "{5}{B}{B}",
+      "cmc": 7,
+      "colors": [
+        "Black"
+      ],
+      "colorIdentity": [
+        "B"
+      ],
+      "type": "Enchantment",
+      "types": [
+        "Enchantment"
+      ],
+      "rarity": "Rare",
+      "set": "RTR",
+      "setName": "Return to Ravnica",
+      "text": "Whenever a creature you don't control dies, return it to the battlefield under your control with an additional +1/+1 counter on it at the beginning of the next end step. That creature is a black Zombie in addition to its other colors and types.",
+      "artist": "Lucas Graciano",
+      "number": "67",
+      "layout": "normal",
+      "multiverseid": 270960,
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=270960&type=card",
+      "rulings": [
+        {
+          "date": "2012-10-01",
+          "text": "Grave Betrayal doesn't overwrite any previous colors or types. Rather, it adds another color and another creature type."
+        },
+        {
+          "date": "2012-10-01",
+          "text": "If the creature is normally colorless, it will simply be black. It won't be both black and colorless."
+        },
+        {
+          "date": "2012-10-01",
+          "text": "If a creature you don't control dies during the end step, that creature won't return to the battlefield until the beginning of the next end step."
+        },
+        {
+          "date": "2012-10-01",
+          "text": "Each creature you don't control that dies causes a delayed triggered ability to trigger at the beginning of the next end step. If there are multiple such abilities, you can put them on the stack in any order. The creatures will return to the battlefield one at a time as each ability resolves. The last ability you put on the stack will be the first one to resolve."
+        },
+        {
+          "date": "2012-10-01",
+          "text": "If the creature card leaves the graveyard before the delayed triggered ability resolves, it won't return to the battlefield. This is also true if the card leaves the graveyard and returns to the graveyard before that ability resolves."
+        },
+        {
+          "date": "2012-10-01",
+          "text": "The phrase \"with an additional +1/+1 counter on it\" means that the creature enters the battlefield with one more +1/+1 counter than it would normally enter the battlefield with. It doesn't keep any counters it had on it when it died."
+        },
+        {
+          "date": "2012-10-01",
+          "text": "In a multiplayer game, if more than one player controls a Grave Betrayal and a creature controlled by none of those players dies, each Grave Betrayal will create a delayed triggered ability at the beginning of the next end step. The first such ability to resolve will return the creature. Usually, this will be one controlled by the player furthest from the active player in turn order."
+        }
+      ],
+      "foreignNames": [
+        {
+          "name": "坟场叛行",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=357173&type=card",
+          "language": "Chinese Simplified",
+          "multiverseid": 357173
+        },
+        {
+          "name": "墳場叛行",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=355529&type=card",
+          "language": "Chinese Traditional",
+          "multiverseid": 355529
+        },
+        {
+          "name": "Trahison de la tombe",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=356077&type=card",
+          "language": "French",
+          "multiverseid": 356077
+        },
+        {
+          "name": "Verrat aus dem Jenseits",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=355803&type=card",
+          "language": "German",
+          "multiverseid": 355803
+        },
+        {
+          "name": "Tradimento del Sepolcro",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=356351&type=card",
+          "language": "Italian",
+          "multiverseid": 356351
+        },
+        {
+          "name": "墓所の裏切り",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=356625&type=card",
+          "language": "Japanese",
+          "multiverseid": 356625
+        },
+        {
+          "name": "죽은 자의 배신",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=357447&type=card",
+          "language": "Korean",
+          "multiverseid": 357447
+        },
+        {
+          "name": "Traição Tumular",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=356899&type=card",
+          "language": "Portuguese (Brazil)",
+          "multiverseid": 356899
+        },
+        {
+          "name": "Могильное Предательство",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=355255&type=card",
+          "language": "Russian",
+          "multiverseid": 355255
+        },
+        {
+          "name": "Traición sepulcral",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=365525&type=card",
+          "language": "Spanish",
+          "multiverseid": 365525
+        }
+      ],
+      "printings": [
+        "RTR"
+      ],
+      "originalText": "Whenever a creature you don't control dies, return it to the battlefield under your control with an additional +1/+1 counter on it at the beginning of the next end step. That creature is a black Zombie in addition to its other colors and types.",
+      "originalType": "Enchantment",
+      "legalities": [
+        {
+          "format": "Commander",
+          "legality": "Legal"
+        },
+        {
+          "format": "Legacy",
+          "legality": "Legal"
+        },
+        {
+          "format": "Modern",
+          "legality": "Legal"
+        },
+        {
+          "format": "Return to Ravnica Block",
+          "legality": "Legal"
+        },
+        {
+          "format": "Vintage",
+          "legality": "Legal"
+        }
+      ],
+      "id": "8aa7ea30656691f4ea96d32ebdb7604d46468d84"
+    },
+    {
+      "name": "Intimidation",
+      "type": "Enchantment",
+      "types": ["Enchantment"],
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=19833&type=card"
+    },
+    {
+      "name": "Cackling Fiend",
+      "type": "Creature - Zombie",
+      "types": ["Creature"],
+      "subtypes": ["Zombie"],
+      "power": "2",
+      "toughness": "1",
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=21168&type=card"
+    },
+    {
+      "name": "Cemetery Reaper",
+      "type": "Creature - Zombie",
+      "types": ["Creature"],
+      "subtypes": ["Zombie"],
+      "power": "2",
+      "toughness": "2",
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=234070&type=card"
+    },
+    {
+      "name": "Death Baron",
+      "manaCost": "{1}{B}{B}",
+      "cmc": 3,
+      "colors": [
+        "Black"
+      ],
+      "colorIdentity": [
+        "B"
+      ],
+      "type": "Creature — Zombie Wizard",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie",
+        "Wizard"
+      ],
+      "rarity": "Rare",
+      "set": "HOP",
+      "setName": "Planechase",
+      "text": "Skeleton creatures you control and other Zombie creatures you control get +1/+1 and have deathtouch.",
+      "flavor": "For the necromancer barons, killing and recruitment are one and the same.",
+      "artist": "Nils Hamm",
+      "number": "25",
+      "power": "2",
+      "toughness": "2",
+      "layout": "normal",
+      "multiverseid": 205322,
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=205322&type=card",
+      "rulings": [
+        {
+          "date": "2008-10-01",
+          "text": "A creature that's both a Skeleton and a Zombie will get the bonus only once."
+        },
+        {
+          "date": "2008-10-01",
+          "text": "Death Baron doesn't normally affect itself. If you manage to turn it into a Skeleton, however, then it will give itself +1/+1 and deathtouch."
+        }
+      ],
+      "printings": [
+        "ALA",
+        "HOP"
+      ],
+      "originalText": "Skeleton creatures you control and other Zombie creatures you control get +1/+1 and have deathtouch.",
+      "originalType": "Creature — Zombie Wizard",
+      "legalities": [
+        {
+          "format": "Commander",
+          "legality": "Legal"
+        },
+        {
+          "format": "Legacy",
+          "legality": "Legal"
+        },
+        {
+          "format": "Modern",
+          "legality": "Legal"
+        },
+        {
+          "format": "Shards of Alara Block",
+          "legality": "Legal"
+        },
+        {
+          "format": "Vintage",
+          "legality": "Legal"
+        }
+      ],
+      "id": "4efa5eef4bb199c75efa4a5fa0a093fb04e24348"
+    },
+    {
+      "name": "Diregraf Ghoul",
+      "type": "Creature - Zombie",
+      "types": ["Creature"],
+      "subtypes": ["Zombie"],
+      "power": "2",
+      "toughness": "2",
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=447228&type=card"
+    },
+    {
+      "name": "Dread Slaver",
+      "type": "Creature - Zombie Horror",
+      "types": ["Creature"],
+      "subtypes": ["Zombie", "Horror"],
+      "power": "3",
+      "toughness": "5",
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=240007&type=card"
+    },
+    {
+      "name": "Erebos, God of the Dead",
+      "type": "Legendary Enchantment Creature — God",
+      "types": ["Legendary", "Enchantment", "Creature"],
+      "subtypes": ["God"],
+      "power": "5",
+      "toughness": "7",
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=479503&type=card"
+    },
+    {
+      "name": "Fleshbag Marauder",
+      "type": "Creature — Zombie Warrior",
+      "types": ["Creature"],
+      "subtypes": ["Zombie", "Warrior"],
+      "power": "3",
+      "toughness": "1",
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=497648&type=card"
+    },
+    {
+      "name": "Ghoulraiser",
+      "type": "Creature — Zombie",
+      "types": ["Creature"],
+      "subtypes": ["Zombie"],
+      "power": "2",
+      "toughness": "2",
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=489244&type=card"
+    },
+    {
+      "name": "Gluttonous Zombie",
+      "type": "Creature — Zombie",
+      "types": ["Creature"],
+      "subtypes": ["Zombie"],
+      "power": "3",
+      "toughness": "3",
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=33713&type=card"
+    },
+    {
+      "name": "Grave Titan",
+      "manaCost": "{4}{B}{B}",
+      "cmc": 6,
+      "colors": [
+        "Black"
+      ],
+      "colorIdentity": [
+        "B"
+      ],
+      "type": "Creature — Giant",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Giant"
+      ],
+      "rarity": "Mythic Rare",
+      "set": "C14",
+      "setName": "Commander 2014",
+      "text": "Deathtouch\nWhenever Grave Titan enters the battlefield or attacks, create two 2/2 black Zombie creature tokens.",
+      "flavor": "Death in form and function.",
+      "artist": "Nils Hamm",
+      "number": "145",
+      "power": "6",
+      "toughness": "6",
+      "layout": "normal",
+      "multiverseid": 389540,
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=389540&type=card",
+      "foreignNames": [
+        {
+          "name": "墓地泰坦",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=389877&type=card",
+          "language": "Chinese Simplified",
+          "multiverseid": 389877
+        },
+        {
+          "name": "Titan des tombes",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=390551&type=card",
+          "language": "French",
+          "multiverseid": 390551
+        },
+        {
+          "name": "Grabes-Titan",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=390214&type=card",
+          "language": "German",
+          "multiverseid": 390214
+        },
+        {
+          "name": "Titano Sepolcrale",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=390888&type=card",
+          "language": "Italian",
+          "multiverseid": 390888
+        },
+        {
+          "name": "墓所のタイタン",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=391225&type=card",
+          "language": "Japanese",
+          "multiverseid": 391225
+        },
+        {
+          "name": "Titán de la tumba",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=391562&type=card",
+          "language": "Spanish",
+          "multiverseid": 391562
+        }
+      ],
+      "printings": [
+        "pMEI",
+        "M11",
+        "M12",
+        "C14"
+      ],
+      "originalText": "Deathtouch\nWhenever Grave Titan enters the battlefield or attacks, put two 2/2 black Zombie creature tokens onto the battlefield.",
+      "originalType": "Creature — Giant",
+      "legalities": [
+        {
+          "format": "Commander",
+          "legality": "Legal"
+        },
+        {
+          "format": "Legacy",
+          "legality": "Legal"
+        },
+        {
+          "format": "Modern",
+          "legality": "Legal"
+        },
+        {
+          "format": "Vintage",
+          "legality": "Legal"
+        }
+      ],
+      "id": "86f3fa8b245e4c9083ad2e45963d828d5a434683"
+    },
+    {
+      "name": "Infectious Horror",
+      "manaCost": "{3}{B}",
+      "cmc": 4,
+      "colors": [
+        "Black"
+      ],
+      "colorIdentity": [
+        "B"
+      ],
+      "type": "Creature — Zombie Horror",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie",
+        "Horror"
+      ],
+      "rarity": "Common",
+      "set": "CNS",
+      "setName": "Magic: The Gathering—Conspiracy",
+      "text": "Whenever Infectious Horror attacks, each opponent loses 2 life.",
+      "flavor": "Not once in the history of Grixis has anyone died of old age.",
+      "artist": "Pete Venters",
+      "number": "115",
+      "power": "2",
+      "toughness": "2",
+      "layout": "normal",
+      "multiverseid": 382290,
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=382290&type=card",
+      "foreignNames": [
+        {
+          "name": "播疫惊惧兽",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=382500&type=card",
+          "language": "Chinese Simplified",
+          "multiverseid": 382500
+        },
+        {
+          "name": "感染性の恐怖",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=382710&type=card",
+          "language": "Japanese",
+          "multiverseid": 382710
+        }
+      ],
+      "printings": [
+        "CON",
+        "ARC",
+        "CNS"
+      ],
+      "originalText": "Whenever Infectious Horror attacks, each opponent loses 2 life.",
+      "originalType": "Creature — Zombie Horror",
+      "legalities": [
+        {
+          "format": "Commander",
+          "legality": "Legal"
+        },
+        {
+          "format": "Legacy",
+          "legality": "Legal"
+        },
+        {
+          "format": "Modern",
+          "legality": "Legal"
+        },
+        {
+          "format": "Shards of Alara Block",
+          "legality": "Legal"
+        },
+        {
+          "format": "Vintage",
+          "legality": "Legal"
+        }
+      ],
+      "id": "b73d9d8a7505450e65c4b020cdb6da2a869040b6"
+    },
+    {
+      "name": "Liliana's Reaver",
+      "type": "Creature — Zombie",
+      "types": ["Creature"],
+      "subtypes": ["Zombie"],
+      "power": "4",
+      "toughness": "3",
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=489257&type=card"
+    },
+    {
+      "name": "Maalfeld Twins",
+      "type": "Creature — Zombie",
+      "types": ["Creature"],
+      "subtypes": ["Zombie"],
+      "power": "4",
+      "toughness": "4",
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=497652&type=card"
+    },
+    {
+      "name": "Nested Ghoul",
+      "type": "Creature - Zombie Warrior",
+      "types": ["Creature"],
+      "subtypes": ["Zombie", "Warrior"],
+      "power": "4",
+      "toughness": "2",
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=213816&type=card"
+    },
+    {
+      "name": "Noxious Ghoul",
+      "manaCost": "{3}{B}{B}",
+      "cmc": 5,
+      "colors": [
+        "Black"
+      ],
+      "colorIdentity": [
+        "B"
+      ],
+      "type": "Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Uncommon",
+      "set": "HOP",
+      "setName": "Planechase",
+      "text": "Whenever Noxious Ghoul or another Zombie enters the battlefield, all non-Zombie creatures get -1/-1 until end of turn.",
+      "flavor": "Plague and death wrapped in one convenient package.",
+      "artist": "Luca Zontini",
+      "number": "35",
+      "power": "3",
+      "toughness": "3",
+      "layout": "normal",
+      "multiverseid": 205420,
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=205420&type=card",
+      "printings": [
+        "LGN",
+        "HOP"
+      ],
+      "originalText": "Whenever Noxious Ghoul or another Zombie enters the battlefield, all non-Zombie creatures get -1/-1 until end of turn.",
+      "originalType": "Creature — Zombie",
+      "legalities": [
+        {
+          "format": "Commander",
+          "legality": "Legal"
+        },
+        {
+          "format": "Legacy",
+          "legality": "Legal"
+        },
+        {
+          "format": "Onslaught Block",
+          "legality": "Legal"
+        },
+        {
+          "format": "Vintage",
+          "legality": "Legal"
+        }
+      ],
+      "id": "ceab412b559f66cfd8d2e8d4e98a63919e691fb9"
+    },
+    {
+      "name": "Raving Dead",
+      "type": "Creature — Zombie",
+      "types": ["Creature"],
+      "subtypes": ["Zombie"],
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=389648&type=card"
+    },
+    {
+      "name": "Rotting Fensnake",
+      "type": "Creature — Zombie Snake",
+      "types": ["Creature"],
+      "subtypes": ["Zombie", "Snake"],
+      "power": "5",
+      "toughness": "1",
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=237011&type=card"
+    },
+    {
+      "name": "Rotting Mastodon",
+      "type": "Creature — Zombie Elephant",
+      "types": ["Creature"],
+      "subtypes": ["Zombie", "Elephant"],
+      "power": "2",
+      "toughness": "8",
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386640&type=card"
+    },
+    {
+      "name": "Sibsig Icebreakers",
+      "type": "Creature — Zombie",
+      "types": ["Creature"],
+      "subtypes": ["Zombie"],
+      "power": "2",
+      "toughness": "3",
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=394694&type=card"
+    },
+    {
+      "name": "Soulless One",
+      "type": "Creature — Zombie Avatar",
+      "types": ["Creature"],
+      "subtypes": ["Zombie", "Avatar"],
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=205373&type=card"
+    },
+    {
+      "name": "Sutured Ghoul",
+      "manaCost": "{4}{B}{B}{B}",
+      "cmc": 7,
+      "colors": [
+        "Black"
+      ],
+      "colorIdentity": [
+        "B"
+      ],
+      "type": "Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Rare",
+      "set": "M12",
+      "setName": "Magic 2012",
+      "text": "Trample\nAs Sutured Ghoul enters the battlefield, exile any number of creature cards from your graveyard.\nSutured Ghoul's power is equal to the total power of the exiled cards and its toughness is equal to their total toughness.",
+      "artist": "Carl Critchlow",
+      "number": "112",
+      "power": "*",
+      "toughness": "*",
+      "layout": "normal",
+      "multiverseid": 220157,
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=220157&type=card",
+      "rulings": [
+        {
+          "date": "2011-09-22",
+          "text": "If any of the creature cards you exile has a characteristic-defining ability that defines its power and/or toughness, that ability will apply. For example, if Dungrove Elder is exiled this way, its power and toughness while it's in exile are equal to the number of Forests you control, and Sutured Ghoul's power and toughness will change as the number of Forests you control changes. If the characteristic-defining ability can't be applied (for instance, it relies on a choice made as the card enters the battlefield), then use 0."
+        },
+        {
+          "date": "2011-09-22",
+          "text": "In zones other than the battlefield, Sutured Ghoul's power and toughness are each 0."
+        },
+        {
+          "date": "2011-09-22",
+          "text": "You can't have Sutured Ghoul exile itself, even if it's entering the battlefield from your graveyard."
+        }
+      ],
+      "foreignNames": [
+        {
+          "name": "缝组食尸鬼",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=262989&type=card",
+          "language": "Chinese Simplified",
+          "multiverseid": 262989
+        },
+        {
+          "name": "縫組食屍鬼",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=263238&type=card",
+          "language": "Chinese Traditional",
+          "multiverseid": 263238
+        },
+        {
+          "name": "Goule suturée",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=263487&type=card",
+          "language": "French",
+          "multiverseid": 263487
+        },
+        {
+          "name": "Genähter Ghul",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=263736&type=card",
+          "language": "German",
+          "multiverseid": 263736
+        },
+        {
+          "name": "Ghoul Ricucito",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=263985&type=card",
+          "language": "Italian",
+          "multiverseid": 263985
+        },
+        {
+          "name": "縫合グール",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=264234&type=card",
+          "language": "Japanese",
+          "multiverseid": 264234
+        },
+        {
+          "name": "Carniçal Suturado",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=264483&type=card",
+          "language": "Portuguese (Brazil)",
+          "multiverseid": 264483
+        },
+        {
+          "name": "Упырь Зашитых Ран",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=264732&type=card",
+          "language": "Russian",
+          "multiverseid": 264732
+        },
+        {
+          "name": "Necrófago suturado",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=264981&type=card",
+          "language": "Spanish",
+          "multiverseid": 264981
+        }
+      ],
+      "printings": [
+        "JUD",
+        "M12"
+      ],
+      "originalText": "Trample\nAs Sutured Ghoul enters the battlefield, exile any number of creature cards from your graveyard.\nSutured Ghoul's power is equal to the total power of the exiled cards and its toughness is equal to their total toughness.",
+      "originalType": "Creature — Zombie",
+      "legalities": [
+        {
+          "format": "Commander",
+          "legality": "Legal"
+        },
+        {
+          "format": "Legacy",
+          "legality": "Legal"
+        },
+        {
+          "format": "Modern",
+          "legality": "Legal"
+        },
+        {
+          "format": "Odyssey Block",
+          "legality": "Legal"
+        },
+        {
+          "format": "Vintage",
+          "legality": "Legal"
+        }
+      ],
+      "id": "c57c4d61f18583893a0a29be4b6727b50aa83a41"
+    },
+    {
+      "name": "Unbreathing Horde",
+      "manaCost": "{2}{B}",
+      "cmc": 3,
+      "colors": [
+        "Black"
+      ],
+      "colorIdentity": [
+        "B"
+      ],
+      "type": "Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Rare",
+      "set": "DDQ",
+      "setName": "Duel Decks: Blessed vs. Cursed",
+      "text": "Unbreathing Horde enters the battlefield with a +1/+1 counter on it for each other Zombie you control and each Zombie card in your graveyard.\nIf Unbreathing Horde would be dealt damage, prevent that damage and remove a +1/+1 counter from it.",
+      "artist": "Dave Kendall",
+      "number": "66",
+      "power": "0",
+      "toughness": "0",
+      "layout": "normal",
+      "multiverseid": 409642,
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409642&type=card",
+      "rulings": [
+        {
+          "date": "2011-09-22",
+          "text": "Only one +1/+1 counter will be removed, no matter how much damage is prevented."
+        },
+        {
+          "date": "2011-09-22",
+          "text": "If Unbreathing Horde has no +1/+1 counters on it (but its toughness is raised above 0 by another effect), any damage dealt to it will still be prevented, even though no counter will be removed."
+        },
+        {
+          "date": "2011-09-22",
+          "text": "If Unbreathing Horde enters the battlefield from a graveyard, it will count itself when determining how many +1/+1 counters it enters the battlefield with."
+        }
+      ],
+      "foreignNames": [
+        {
+          "name": "息せぬ群れ",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409722&type=card",
+          "language": "Japanese",
+          "multiverseid": 409722
+        }
+      ],
+      "printings": [
+        "ISD",
+        "DDQ"
+      ],
+      "originalText": "Unbreathing Horde enters the battlefield with a +1/+1 counter on it for each other Zombie you control and each Zombie card in your graveyard.\nIf Unbreathing Horde would be dealt damage, prevent that damage and remove a +1/+1 counter from it.",
+      "originalType": "Creature — Zombie",
+      "legalities": [
+        {
+          "format": "Commander",
+          "legality": "Legal"
+        },
+        {
+          "format": "Innistrad Block",
+          "legality": "Legal"
+        },
+        {
+          "format": "Legacy",
+          "legality": "Legal"
+        },
+        {
+          "format": "Modern",
+          "legality": "Legal"
+        },
+        {
+          "format": "Vintage",
+          "legality": "Legal"
+        }
+      ],
+      "id": "07ab5d054151485e4e38322b05c048d782511410"
+    },
+    {
+      "name": "Undead Warchief",
+      "manaCost": "{2}{B}{B}",
+      "cmc": 4,
+      "colors": [
+        "Black"
+      ],
+      "colorIdentity": [
+        "B"
+      ],
+      "type": "Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Uncommon",
+      "set": "HOP",
+      "setName": "Planechase",
+      "text": "Zombie spells you cast cost {1} less to cast.\nZombie creatures you control get +2/+1.",
+      "flavor": "It has the strength of seven men. In fact, it used to be seven men.",
+      "artist": "Greg Hildebrandt",
+      "number": "44",
+      "power": "1",
+      "toughness": "1",
+      "layout": "normal",
+      "multiverseid": 205410,
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=205410&type=card",
+      "printings": [
+        "SCG",
+        "TSB",
+        "HOP"
+      ],
+      "originalText": "Zombie spells you cast cost {1} less to cast.\nZombie creatures you control get +2/+1.",
+      "originalType": "Creature — Zombie",
+      "legalities": [
+        {
+          "format": "Commander",
+          "legality": "Legal"
+        },
+        {
+          "format": "Legacy",
+          "legality": "Legal"
+        },
+        {
+          "format": "Modern",
+          "legality": "Legal"
+        },
+        {
+          "format": "Onslaught Block",
+          "legality": "Legal"
+        },
+        {
+          "format": "Time Spiral Block",
+          "legality": "Legal"
+        },
+        {
+          "format": "Vintage",
+          "legality": "Legal"
+        }
+      ],
+      "id": "801e21b6cddc4eded007fc077f0cc22278e91d6b"
+    },
+    {
+      "name": "Vengeful Dead",
+      "manaCost": "{3}{B}",
+      "cmc": 4,
+      "colors": [
+        "Black"
+      ],
+      "colorIdentity": [
+        "B"
+      ],
+      "type": "Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Common",
+      "set": "SCG",
+      "setName": "Scourge",
+      "text": "Whenever Vengeful Dead or another Zombie dies, each opponent loses 1 life.",
+      "flavor": "Those who don't learn from their deaths are destined to repeat them.",
+      "artist": "Alex Horley-Orlandelli",
+      "number": "80",
+      "power": "3",
+      "toughness": "2",
+      "layout": "normal",
+      "multiverseid": 45862,
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=45862&type=card",
+      "foreignNames": [
+        {
+          "name": "Mort vengeur",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=166180&type=card",
+          "language": "French",
+          "multiverseid": 166180
+        },
+        {
+          "name": "Rachsüchtiger Toter",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=166037&type=card",
+          "language": "German",
+          "multiverseid": 166037
+        },
+        {
+          "name": "Morto Vendicativo",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=166323&type=card",
+          "language": "Italian",
+          "multiverseid": 166323
+        },
+        {
+          "name": "Morto Vingativo",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=166466&type=card",
+          "language": "Portuguese (Brazil)",
+          "multiverseid": 166466
+        },
+        {
+          "name": "Muerto vengativo",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=166610&type=card",
+          "language": "Spanish",
+          "multiverseid": 166610
+        }
+      ],
+      "printings": [
+        "SCG"
+      ],
+      "originalText": "Whenever Vengeful Dead or another Zombie is put into a graveyard from play, each opponent loses 1 life.",
+      "originalType": "Creature — Zombie",
+      "legalities": [
+        {
+          "format": "Commander",
+          "legality": "Legal"
+        },
+        {
+          "format": "Freeform",
+          "legality": "Legal"
+        },
+        {
+          "format": "Legacy",
+          "legality": "Legal"
+        },
+        {
+          "format": "Onslaught Block",
+          "legality": "Legal"
+        },
+        {
+          "format": "Prismatic",
+          "legality": "Legal"
+        },
+        {
+          "format": "Singleton 100",
+          "legality": "Legal"
+        },
+        {
+          "format": "Tribal Wars Legacy",
+          "legality": "Legal"
+        },
+        {
+          "format": "Vintage",
+          "legality": "Legal"
+        }
+      ],
+      "id": "71baf8f6665762d1f875a376aa6e54c5632f549f"
+    },
+    {
+      "name": "Wight of Precinct Six",
+      "type": "Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "power": "1",
+      "toughness": "1",
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=489293&type=card"
+    },
+    {
+      "name": "Zombie Brute",
+      "type": "Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=42270&type=card"
+    },
+    {
+      "name": "Zombie Giant",
+      "type": " Creature — Zombie Giant",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie",
+        "Giant"
+      ],
+      "rarity": "Common",
+      "set": "DDR",
+      "setName": "Duel Decks: Nissa vs. Ob Nixilis",
+      "artist": "Igor Kieryluk",
+      "number": "73",
+      "power": "5",
+      "toughness": "5",
+      "layout": "token",
+      "multiverseid": 417496,
+      "imageUrl": "https://cdn11.bigcommerce.com/s-3b5vpig99v/images/stencil/1280x1280/products/475145/442865/ZombieGiantToken__66161.1590611974.jpg?c=2",
+      "foreignNames": [
+        {
+          "name": "ゾンビ・巨人",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=417571&type=card",
+          "language": "Japanese",
+          "multiverseid": 417571
+        }
+      ],
+      "printings": [
+        "DDR"
+      ],
+      "originalType": "Token Creature — Zombie Giant",
+      "id": "9fd05ade14f83badd065886a64aa57c9404a98dc"
+    },
+    {
+      "name": "Zombie Giant",
+      "type": " Creature — Zombie Giant",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie",
+        "Giant"
+      ],
+      "rarity": "Common",
+      "set": "DDR",
+      "setName": "Duel Decks: Nissa vs. Ob Nixilis",
+      "artist": "Igor Kieryluk",
+      "number": "73",
+      "power": "5",
+      "toughness": "5",
+      "layout": "token",
+      "multiverseid": 417496,
+      "imageUrl": "https://cdn11.bigcommerce.com/s-3b5vpig99v/images/stencil/1280x1280/products/475145/442865/ZombieGiantToken__66161.1590611974.jpg?c=2",
+      "foreignNames": [
+        {
+          "name": "ゾンビ・巨人",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=417571&type=card",
+          "language": "Japanese",
+          "multiverseid": 417571
+        }
+      ],
+      "printings": [
+        "DDR"
+      ],
+      "originalType": "Token Creature — Zombie Giant",
+      "id": "9fd05ade14f83badd065886a64aa57c9404a98dc"
+    },
+    {
+      "name": "Zombie Giant",
+      "type": " Creature — Zombie Giant",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie",
+        "Giant"
+      ],
+      "rarity": "Common",
+      "set": "DDR",
+      "setName": "Duel Decks: Nissa vs. Ob Nixilis",
+      "artist": "Igor Kieryluk",
+      "number": "73",
+      "power": "5",
+      "toughness": "5",
+      "layout": "token",
+      "multiverseid": 417496,
+      "imageUrl": "https://cdn11.bigcommerce.com/s-3b5vpig99v/images/stencil/1280x1280/products/475145/442865/ZombieGiantToken__66161.1590611974.jpg?c=2",
+      "foreignNames": [
+        {
+          "name": "ゾンビ・巨人",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=417571&type=card",
+          "language": "Japanese",
+          "multiverseid": 417571
+        }
+      ],
+      "printings": [
+        "DDR"
+      ],
+      "originalType": "Token Creature — Zombie Giant",
+      "id": "9fd05ade14f83badd065886a64aa57c9404a98dc"
+    },
+    {
+      "name": "Zombie Giant",
+      "type": " Creature — Zombie Giant",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie",
+        "Giant"
+      ],
+      "rarity": "Common",
+      "set": "DDR",
+      "setName": "Duel Decks: Nissa vs. Ob Nixilis",
+      "artist": "Igor Kieryluk",
+      "number": "73",
+      "power": "5",
+      "toughness": "5",
+      "layout": "token",
+      "multiverseid": 417496,
+      "imageUrl": "https://cdn11.bigcommerce.com/s-3b5vpig99v/images/stencil/1280x1280/products/475145/442865/ZombieGiantToken__66161.1590611974.jpg?c=2",
+      "foreignNames": [
+        {
+          "name": "ゾンビ・巨人",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=417571&type=card",
+          "language": "Japanese",
+          "multiverseid": 417571
+        }
+      ],
+      "printings": [
+        "DDR"
+      ],
+      "originalType": "Token Creature — Zombie Giant",
+      "id": "9fd05ade14f83badd065886a64aa57c9404a98dc"
+    },
+    {
+      "name": "Zombie Giant",
+      "type": " Creature — Zombie Giant",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie",
+        "Giant"
+      ],
+      "rarity": "Common",
+      "set": "DDR",
+      "setName": "Duel Decks: Nissa vs. Ob Nixilis",
+      "artist": "Igor Kieryluk",
+      "number": "73",
+      "power": "5",
+      "toughness": "5",
+      "layout": "token",
+      "multiverseid": 417496,
+      "imageUrl": "https://cdn11.bigcommerce.com/s-3b5vpig99v/images/stencil/1280x1280/products/475145/442865/ZombieGiantToken__66161.1590611974.jpg?c=2",
+      "foreignNames": [
+        {
+          "name": "ゾンビ・巨人",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=417571&type=card",
+          "language": "Japanese",
+          "multiverseid": 417571
+        }
+      ],
+      "printings": [
+        "DDR"
+      ],
+      "originalType": "Token Creature — Zombie Giant",
+      "id": "9fd05ade14f83badd065886a64aa57c9404a98dc"
+    },
+    {
+      "name": "Zombie",
+      "type": " Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Common",
+      "set": "DDQ",
+      "setName": "Duel Decks: Blessed vs. Cursed",
+      "artist": "Lucas Graciano",
+      "number": "80",
+      "power": "2",
+      "toughness": "2",
+      "layout": "token",
+      "multiverseid": 409656,
+      "imageUrl": "https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg",
+      "foreignNames": [
+        {
+          "name": "ゾンビ",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409736&type=card",
+          "language": "Japanese",
+          "multiverseid": 409736
+        }
+      ],
+      "printings": [
+        "DDQ"
+      ],
+      "originalType": "Token Creature — Zombie",
+      "id": "e5eff329472998514ad2803a16b8ff8cec1fd793"
+    },
+    {
+      "name": "Zombie",
+      "type": " Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Common",
+      "set": "DDQ",
+      "setName": "Duel Decks: Blessed vs. Cursed",
+      "artist": "Lucas Graciano",
+      "number": "80",
+      "power": "2",
+      "toughness": "2",
+      "layout": "token",
+      "multiverseid": 409656,
+      "imageUrl": "https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg",
+      "foreignNames": [
+        {
+          "name": "ゾンビ",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409736&type=card",
+          "language": "Japanese",
+          "multiverseid": 409736
+        }
+      ],
+      "printings": [
+        "DDQ"
+      ],
+      "originalType": "Token Creature — Zombie",
+      "id": "e5eff329472998514ad2803a16b8ff8cec1fd793"
+    },
+    {
+      "name": "Zombie",
+      "type": " Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Common",
+      "set": "DDQ",
+      "setName": "Duel Decks: Blessed vs. Cursed",
+      "artist": "Lucas Graciano",
+      "number": "80",
+      "power": "2",
+      "toughness": "2",
+      "layout": "token",
+      "multiverseid": 409656,
+      "imageUrl": "https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg",
+      "foreignNames": [
+        {
+          "name": "ゾンビ",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409736&type=card",
+          "language": "Japanese",
+          "multiverseid": 409736
+        }
+      ],
+      "printings": [
+        "DDQ"
+      ],
+      "originalType": "Token Creature — Zombie",
+      "id": "e5eff329472998514ad2803a16b8ff8cec1fd793"
+    },
+    {
+      "name": "Zombie",
+      "type": " Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Common",
+      "set": "DDQ",
+      "setName": "Duel Decks: Blessed vs. Cursed",
+      "artist": "Lucas Graciano",
+      "number": "80",
+      "power": "2",
+      "toughness": "2",
+      "layout": "token",
+      "multiverseid": 409656,
+      "imageUrl": "https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg",
+      "foreignNames": [
+        {
+          "name": "ゾンビ",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409736&type=card",
+          "language": "Japanese",
+          "multiverseid": 409736
+        }
+      ],
+      "printings": [
+        "DDQ"
+      ],
+      "originalType": "Token Creature — Zombie",
+      "id": "e5eff329472998514ad2803a16b8ff8cec1fd793"
+    },
+    {
+      "name": "Zombie",
+      "type": " Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Common",
+      "set": "DDQ",
+      "setName": "Duel Decks: Blessed vs. Cursed",
+      "artist": "Lucas Graciano",
+      "number": "80",
+      "power": "2",
+      "toughness": "2",
+      "layout": "token",
+      "multiverseid": 409656,
+      "imageUrl": "https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg",
+      "foreignNames": [
+        {
+          "name": "ゾンビ",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409736&type=card",
+          "language": "Japanese",
+          "multiverseid": 409736
+        }
+      ],
+      "printings": [
+        "DDQ"
+      ],
+      "originalType": "Token Creature — Zombie",
+      "id": "e5eff329472998514ad2803a16b8ff8cec1fd793"
+    },
+    {
+      "name": "Zombie",
+      "type": " Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Common",
+      "set": "DDQ",
+      "setName": "Duel Decks: Blessed vs. Cursed",
+      "artist": "Lucas Graciano",
+      "number": "80",
+      "power": "2",
+      "toughness": "2",
+      "layout": "token",
+      "multiverseid": 409656,
+      "imageUrl": "https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg",
+      "foreignNames": [
+        {
+          "name": "ゾンビ",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409736&type=card",
+          "language": "Japanese",
+          "multiverseid": 409736
+        }
+      ],
+      "printings": [
+        "DDQ"
+      ],
+      "originalType": "Token Creature — Zombie",
+      "id": "e5eff329472998514ad2803a16b8ff8cec1fd793"
+    },
+    {
+      "name": "Zombie",
+      "type": " Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Common",
+      "set": "DDQ",
+      "setName": "Duel Decks: Blessed vs. Cursed",
+      "artist": "Lucas Graciano",
+      "number": "80",
+      "power": "2",
+      "toughness": "2",
+      "layout": "token",
+      "multiverseid": 409656,
+      "imageUrl": "https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg",
+      "foreignNames": [
+        {
+          "name": "ゾンビ",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409736&type=card",
+          "language": "Japanese",
+          "multiverseid": 409736
+        }
+      ],
+      "printings": [
+        "DDQ"
+      ],
+      "originalType": "Token Creature — Zombie",
+      "id": "e5eff329472998514ad2803a16b8ff8cec1fd793"
+    },
+    {
+      "name": "Zombie",
+      "type": " Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Common",
+      "set": "DDQ",
+      "setName": "Duel Decks: Blessed vs. Cursed",
+      "artist": "Lucas Graciano",
+      "number": "80",
+      "power": "2",
+      "toughness": "2",
+      "layout": "token",
+      "multiverseid": 409656,
+      "imageUrl": "https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg",
+      "foreignNames": [
+        {
+          "name": "ゾンビ",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409736&type=card",
+          "language": "Japanese",
+          "multiverseid": 409736
+        }
+      ],
+      "printings": [
+        "DDQ"
+      ],
+      "originalType": "Token Creature — Zombie",
+      "id": "e5eff329472998514ad2803a16b8ff8cec1fd793"
+    },
+    {
+      "name": "Zombie",
+      "type": " Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Common",
+      "set": "DDQ",
+      "setName": "Duel Decks: Blessed vs. Cursed",
+      "artist": "Lucas Graciano",
+      "number": "80",
+      "power": "2",
+      "toughness": "2",
+      "layout": "token",
+      "multiverseid": 409656,
+      "imageUrl": "https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg",
+      "foreignNames": [
+        {
+          "name": "ゾンビ",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409736&type=card",
+          "language": "Japanese",
+          "multiverseid": 409736
+        }
+      ],
+      "printings": [
+        "DDQ"
+      ],
+      "originalType": "Token Creature — Zombie",
+      "id": "e5eff329472998514ad2803a16b8ff8cec1fd793"
+    },
+    {
+      "name": "Zombie",
+      "type": " Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Common",
+      "set": "DDQ",
+      "setName": "Duel Decks: Blessed vs. Cursed",
+      "artist": "Lucas Graciano",
+      "number": "80",
+      "power": "2",
+      "toughness": "2",
+      "layout": "token",
+      "multiverseid": 409656,
+      "imageUrl": "https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg",
+      "foreignNames": [
+        {
+          "name": "ゾンビ",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409736&type=card",
+          "language": "Japanese",
+          "multiverseid": 409736
+        }
+      ],
+      "printings": [
+        "DDQ"
+      ],
+      "originalType": "Token Creature — Zombie",
+      "id": "e5eff329472998514ad2803a16b8ff8cec1fd793"
+    },
+    {
+      "name": "Zombie",
+      "type": " Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Common",
+      "set": "DDQ",
+      "setName": "Duel Decks: Blessed vs. Cursed",
+      "artist": "Lucas Graciano",
+      "number": "80",
+      "power": "2",
+      "toughness": "2",
+      "layout": "token",
+      "multiverseid": 409656,
+      "imageUrl": "https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg",
+      "foreignNames": [
+        {
+          "name": "ゾンビ",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409736&type=card",
+          "language": "Japanese",
+          "multiverseid": 409736
+        }
+      ],
+      "printings": [
+        "DDQ"
+      ],
+      "originalType": "Token Creature — Zombie",
+      "id": "e5eff329472998514ad2803a16b8ff8cec1fd793"
+    },
+    {
+      "name": "Zombie",
+      "type": " Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Common",
+      "set": "DDQ",
+      "setName": "Duel Decks: Blessed vs. Cursed",
+      "artist": "Lucas Graciano",
+      "number": "80",
+      "power": "2",
+      "toughness": "2",
+      "layout": "token",
+      "multiverseid": 409656,
+      "imageUrl": "https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg",
+      "foreignNames": [
+        {
+          "name": "ゾンビ",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409736&type=card",
+          "language": "Japanese",
+          "multiverseid": 409736
+        }
+      ],
+      "printings": [
+        "DDQ"
+      ],
+      "originalType": "Token Creature — Zombie",
+      "id": "e5eff329472998514ad2803a16b8ff8cec1fd793"
+    },
+    {
+      "name": "Zombie",
+      "type": " Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Common",
+      "set": "DDQ",
+      "setName": "Duel Decks: Blessed vs. Cursed",
+      "artist": "Lucas Graciano",
+      "number": "80",
+      "power": "2",
+      "toughness": "2",
+      "layout": "token",
+      "multiverseid": 409656,
+      "imageUrl": "https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg",
+      "foreignNames": [
+        {
+          "name": "ゾンビ",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409736&type=card",
+          "language": "Japanese",
+          "multiverseid": 409736
+        }
+      ],
+      "printings": [
+        "DDQ"
+      ],
+      "originalType": "Token Creature — Zombie",
+      "id": "e5eff329472998514ad2803a16b8ff8cec1fd793"
+    },
+    {
+      "name": "Zombie",
+      "type": " Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Common",
+      "set": "DDQ",
+      "setName": "Duel Decks: Blessed vs. Cursed",
+      "artist": "Lucas Graciano",
+      "number": "80",
+      "power": "2",
+      "toughness": "2",
+      "layout": "token",
+      "multiverseid": 409656,
+      "imageUrl": "https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg",
+      "foreignNames": [
+        {
+          "name": "ゾンビ",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409736&type=card",
+          "language": "Japanese",
+          "multiverseid": 409736
+        }
+      ],
+      "printings": [
+        "DDQ"
+      ],
+      "originalType": "Token Creature — Zombie",
+      "id": "e5eff329472998514ad2803a16b8ff8cec1fd793"
+    },
+    {
+      "name": "Zombie",
+      "type": " Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Common",
+      "set": "DDQ",
+      "setName": "Duel Decks: Blessed vs. Cursed",
+      "artist": "Lucas Graciano",
+      "number": "80",
+      "power": "2",
+      "toughness": "2",
+      "layout": "token",
+      "multiverseid": 409656,
+      "imageUrl": "https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg",
+      "foreignNames": [
+        {
+          "name": "ゾンビ",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409736&type=card",
+          "language": "Japanese",
+          "multiverseid": 409736
+        }
+      ],
+      "printings": [
+        "DDQ"
+      ],
+      "originalType": "Token Creature — Zombie",
+      "id": "e5eff329472998514ad2803a16b8ff8cec1fd793"
+    },
+    {
+      "name": "Zombie",
+      "type": " Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Common",
+      "set": "DDQ",
+      "setName": "Duel Decks: Blessed vs. Cursed",
+      "artist": "Lucas Graciano",
+      "number": "80",
+      "power": "2",
+      "toughness": "2",
+      "layout": "token",
+      "multiverseid": 409656,
+      "imageUrl": "https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg",
+      "foreignNames": [
+        {
+          "name": "ゾンビ",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409736&type=card",
+          "language": "Japanese",
+          "multiverseid": 409736
+        }
+      ],
+      "printings": [
+        "DDQ"
+      ],
+      "originalType": "Token Creature — Zombie",
+      "id": "e5eff329472998514ad2803a16b8ff8cec1fd793"
+    },
+    {
+      "name": "Zombie",
+      "type": " Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Common",
+      "set": "DDQ",
+      "setName": "Duel Decks: Blessed vs. Cursed",
+      "artist": "Lucas Graciano",
+      "number": "80",
+      "power": "2",
+      "toughness": "2",
+      "layout": "token",
+      "multiverseid": 409656,
+      "imageUrl": "https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg",
+      "foreignNames": [
+        {
+          "name": "ゾンビ",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409736&type=card",
+          "language": "Japanese",
+          "multiverseid": 409736
+        }
+      ],
+      "printings": [
+        "DDQ"
+      ],
+      "originalType": "Token Creature — Zombie",
+      "id": "e5eff329472998514ad2803a16b8ff8cec1fd793"
+    },
+    {
+      "name": "Zombie",
+      "type": " Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Common",
+      "set": "DDQ",
+      "setName": "Duel Decks: Blessed vs. Cursed",
+      "artist": "Lucas Graciano",
+      "number": "80",
+      "power": "2",
+      "toughness": "2",
+      "layout": "token",
+      "multiverseid": 409656,
+      "imageUrl": "https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg",
+      "foreignNames": [
+        {
+          "name": "ゾンビ",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409736&type=card",
+          "language": "Japanese",
+          "multiverseid": 409736
+        }
+      ],
+      "printings": [
+        "DDQ"
+      ],
+      "originalType": "Token Creature — Zombie",
+      "id": "e5eff329472998514ad2803a16b8ff8cec1fd793"
+    },
+    {
+      "name": "Zombie",
+      "type": " Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Common",
+      "set": "DDQ",
+      "setName": "Duel Decks: Blessed vs. Cursed",
+      "artist": "Lucas Graciano",
+      "number": "80",
+      "power": "2",
+      "toughness": "2",
+      "layout": "token",
+      "multiverseid": 409656,
+      "imageUrl": "https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg",
+      "foreignNames": [
+        {
+          "name": "ゾンビ",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409736&type=card",
+          "language": "Japanese",
+          "multiverseid": 409736
+        }
+      ],
+      "printings": [
+        "DDQ"
+      ],
+      "originalType": "Token Creature — Zombie",
+      "id": "e5eff329472998514ad2803a16b8ff8cec1fd793"
+    },
+    {
+      "name": "Zombie",
+      "type": " Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Common",
+      "set": "DDQ",
+      "setName": "Duel Decks: Blessed vs. Cursed",
+      "artist": "Lucas Graciano",
+      "number": "80",
+      "power": "2",
+      "toughness": "2",
+      "layout": "token",
+      "multiverseid": 409656,
+      "imageUrl": "https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg",
+      "foreignNames": [
+        {
+          "name": "ゾンビ",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409736&type=card",
+          "language": "Japanese",
+          "multiverseid": 409736
+        }
+      ],
+      "printings": [
+        "DDQ"
+      ],
+      "originalType": "Token Creature — Zombie",
+      "id": "e5eff329472998514ad2803a16b8ff8cec1fd793"
+    },
+    {
+      "name": "Zombie",
+      "type": " Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Common",
+      "set": "DDQ",
+      "setName": "Duel Decks: Blessed vs. Cursed",
+      "artist": "Lucas Graciano",
+      "number": "80",
+      "power": "2",
+      "toughness": "2",
+      "layout": "token",
+      "multiverseid": 409656,
+      "imageUrl": "https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg",
+      "foreignNames": [
+        {
+          "name": "ゾンビ",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409736&type=card",
+          "language": "Japanese",
+          "multiverseid": 409736
+        }
+      ],
+      "printings": [
+        "DDQ"
+      ],
+      "originalType": "Token Creature — Zombie",
+      "id": "e5eff329472998514ad2803a16b8ff8cec1fd793"
+    },
+    {
+      "name": "Zombie",
+      "type": " Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Common",
+      "set": "DDQ",
+      "setName": "Duel Decks: Blessed vs. Cursed",
+      "artist": "Lucas Graciano",
+      "number": "80",
+      "power": "2",
+      "toughness": "2",
+      "layout": "token",
+      "multiverseid": 409656,
+      "imageUrl": "https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg",
+      "foreignNames": [
+        {
+          "name": "ゾンビ",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409736&type=card",
+          "language": "Japanese",
+          "multiverseid": 409736
+        }
+      ],
+      "printings": [
+        "DDQ"
+      ],
+      "originalType": "Token Creature — Zombie",
+      "id": "e5eff329472998514ad2803a16b8ff8cec1fd793"
+    },
+    {
+      "name": "Zombie",
+      "type": " Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Common",
+      "set": "DDQ",
+      "setName": "Duel Decks: Blessed vs. Cursed",
+      "artist": "Lucas Graciano",
+      "number": "80",
+      "power": "2",
+      "toughness": "2",
+      "layout": "token",
+      "multiverseid": 409656,
+      "imageUrl": "https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg",
+      "foreignNames": [
+        {
+          "name": "ゾンビ",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409736&type=card",
+          "language": "Japanese",
+          "multiverseid": 409736
+        }
+      ],
+      "printings": [
+        "DDQ"
+      ],
+      "originalType": "Token Creature — Zombie",
+      "id": "e5eff329472998514ad2803a16b8ff8cec1fd793"
+    },
+    {
+      "name": "Zombie",
+      "type": " Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Common",
+      "set": "DDQ",
+      "setName": "Duel Decks: Blessed vs. Cursed",
+      "artist": "Lucas Graciano",
+      "number": "80",
+      "power": "2",
+      "toughness": "2",
+      "layout": "token",
+      "multiverseid": 409656,
+      "imageUrl": "https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg",
+      "foreignNames": [
+        {
+          "name": "ゾンビ",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409736&type=card",
+          "language": "Japanese",
+          "multiverseid": 409736
+        }
+      ],
+      "printings": [
+        "DDQ"
+      ],
+      "originalType": "Token Creature — Zombie",
+      "id": "e5eff329472998514ad2803a16b8ff8cec1fd793"
+    },
+    {
+      "name": "Zombie",
+      "type": " Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Common",
+      "set": "DDQ",
+      "setName": "Duel Decks: Blessed vs. Cursed",
+      "artist": "Lucas Graciano",
+      "number": "80",
+      "power": "2",
+      "toughness": "2",
+      "layout": "token",
+      "multiverseid": 409656,
+      "imageUrl": "https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg",
+      "foreignNames": [
+        {
+          "name": "ゾンビ",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409736&type=card",
+          "language": "Japanese",
+          "multiverseid": 409736
+        }
+      ],
+      "printings": [
+        "DDQ"
+      ],
+      "originalType": "Token Creature — Zombie",
+      "id": "e5eff329472998514ad2803a16b8ff8cec1fd793"
+    },
+    {
+      "name": "Zombie",
+      "type": " Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Common",
+      "set": "DDQ",
+      "setName": "Duel Decks: Blessed vs. Cursed",
+      "artist": "Lucas Graciano",
+      "number": "80",
+      "power": "2",
+      "toughness": "2",
+      "layout": "token",
+      "multiverseid": 409656,
+      "imageUrl": "https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg",
+      "foreignNames": [
+        {
+          "name": "ゾンビ",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409736&type=card",
+          "language": "Japanese",
+          "multiverseid": 409736
+        }
+      ],
+      "printings": [
+        "DDQ"
+      ],
+      "originalType": "Token Creature — Zombie",
+      "id": "e5eff329472998514ad2803a16b8ff8cec1fd793"
+    },
+    {
+      "name": "Zombie",
+      "type": " Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Common",
+      "set": "DDQ",
+      "setName": "Duel Decks: Blessed vs. Cursed",
+      "artist": "Lucas Graciano",
+      "number": "80",
+      "power": "2",
+      "toughness": "2",
+      "layout": "token",
+      "multiverseid": 409656,
+      "imageUrl": "https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg",
+      "foreignNames": [
+        {
+          "name": "ゾンビ",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409736&type=card",
+          "language": "Japanese",
+          "multiverseid": 409736
+        }
+      ],
+      "printings": [
+        "DDQ"
+      ],
+      "originalType": "Token Creature — Zombie",
+      "id": "e5eff329472998514ad2803a16b8ff8cec1fd793"
+    },
+    {
+      "name": "Zombie",
+      "type": " Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Common",
+      "set": "DDQ",
+      "setName": "Duel Decks: Blessed vs. Cursed",
+      "artist": "Lucas Graciano",
+      "number": "80",
+      "power": "2",
+      "toughness": "2",
+      "layout": "token",
+      "multiverseid": 409656,
+      "imageUrl": "https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg",
+      "foreignNames": [
+        {
+          "name": "ゾンビ",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409736&type=card",
+          "language": "Japanese",
+          "multiverseid": 409736
+        }
+      ],
+      "printings": [
+        "DDQ"
+      ],
+      "originalType": "Token Creature — Zombie",
+      "id": "e5eff329472998514ad2803a16b8ff8cec1fd793"
+    },
+    {
+      "name": "Zombie",
+      "type": " Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Common",
+      "set": "DDQ",
+      "setName": "Duel Decks: Blessed vs. Cursed",
+      "artist": "Lucas Graciano",
+      "number": "80",
+      "power": "2",
+      "toughness": "2",
+      "layout": "token",
+      "multiverseid": 409656,
+      "imageUrl": "https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg",
+      "foreignNames": [
+        {
+          "name": "ゾンビ",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409736&type=card",
+          "language": "Japanese",
+          "multiverseid": 409736
+        }
+      ],
+      "printings": [
+        "DDQ"
+      ],
+      "originalType": "Token Creature — Zombie",
+      "id": "e5eff329472998514ad2803a16b8ff8cec1fd793"
+    },
+    {
+      "name": "Zombie",
+      "type": " Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Common",
+      "set": "DDQ",
+      "setName": "Duel Decks: Blessed vs. Cursed",
+      "artist": "Lucas Graciano",
+      "number": "80",
+      "power": "2",
+      "toughness": "2",
+      "layout": "token",
+      "multiverseid": 409656,
+      "imageUrl": "https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg",
+      "foreignNames": [
+        {
+          "name": "ゾンビ",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409736&type=card",
+          "language": "Japanese",
+          "multiverseid": 409736
+        }
+      ],
+      "printings": [
+        "DDQ"
+      ],
+      "originalType": "Token Creature — Zombie",
+      "id": "e5eff329472998514ad2803a16b8ff8cec1fd793"
+    },
+    {
+      "name": "Zombie",
+      "type": " Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Common",
+      "set": "DDQ",
+      "setName": "Duel Decks: Blessed vs. Cursed",
+      "artist": "Lucas Graciano",
+      "number": "80",
+      "power": "2",
+      "toughness": "2",
+      "layout": "token",
+      "multiverseid": 409656,
+      "imageUrl": "https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg",
+      "foreignNames": [
+        {
+          "name": "ゾンビ",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409736&type=card",
+          "language": "Japanese",
+          "multiverseid": 409736
+        }
+      ],
+      "printings": [
+        "DDQ"
+      ],
+      "originalType": "Token Creature — Zombie",
+      "id": "e5eff329472998514ad2803a16b8ff8cec1fd793"
+    },
+    {
+      "name": "Zombie",
+      "type": " Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Common",
+      "set": "DDQ",
+      "setName": "Duel Decks: Blessed vs. Cursed",
+      "artist": "Lucas Graciano",
+      "number": "80",
+      "power": "2",
+      "toughness": "2",
+      "layout": "token",
+      "multiverseid": 409656,
+      "imageUrl": "https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg",
+      "foreignNames": [
+        {
+          "name": "ゾンビ",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409736&type=card",
+          "language": "Japanese",
+          "multiverseid": 409736
+        }
+      ],
+      "printings": [
+        "DDQ"
+      ],
+      "originalType": "Token Creature — Zombie",
+      "id": "e5eff329472998514ad2803a16b8ff8cec1fd793"
+    },
+    {
+      "name": "Zombie",
+      "type": " Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Common",
+      "set": "DDQ",
+      "setName": "Duel Decks: Blessed vs. Cursed",
+      "artist": "Lucas Graciano",
+      "number": "80",
+      "power": "2",
+      "toughness": "2",
+      "layout": "token",
+      "multiverseid": 409656,
+      "imageUrl": "https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg",
+      "foreignNames": [
+        {
+          "name": "ゾンビ",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409736&type=card",
+          "language": "Japanese",
+          "multiverseid": 409736
+        }
+      ],
+      "printings": [
+        "DDQ"
+      ],
+      "originalType": "Token Creature — Zombie",
+      "id": "e5eff329472998514ad2803a16b8ff8cec1fd793"
+    },
+    {
+      "name": "Zombie",
+      "type": " Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Common",
+      "set": "DDQ",
+      "setName": "Duel Decks: Blessed vs. Cursed",
+      "artist": "Lucas Graciano",
+      "number": "80",
+      "power": "2",
+      "toughness": "2",
+      "layout": "token",
+      "multiverseid": 409656,
+      "imageUrl": "https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg",
+      "foreignNames": [
+        {
+          "name": "ゾンビ",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409736&type=card",
+          "language": "Japanese",
+          "multiverseid": 409736
+        }
+      ],
+      "printings": [
+        "DDQ"
+      ],
+      "originalType": "Token Creature — Zombie",
+      "id": "e5eff329472998514ad2803a16b8ff8cec1fd793"
+    },
+    {
+      "name": "Zombie",
+      "type": " Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Common",
+      "set": "DDQ",
+      "setName": "Duel Decks: Blessed vs. Cursed",
+      "artist": "Lucas Graciano",
+      "number": "80",
+      "power": "2",
+      "toughness": "2",
+      "layout": "token",
+      "multiverseid": 409656,
+      "imageUrl": "https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg",
+      "foreignNames": [
+        {
+          "name": "ゾンビ",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409736&type=card",
+          "language": "Japanese",
+          "multiverseid": 409736
+        }
+      ],
+      "printings": [
+        "DDQ"
+      ],
+      "originalType": "Token Creature — Zombie",
+      "id": "e5eff329472998514ad2803a16b8ff8cec1fd793"
+    },
+    {
+      "name": "Zombie",
+      "type": " Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Common",
+      "set": "DDQ",
+      "setName": "Duel Decks: Blessed vs. Cursed",
+      "artist": "Lucas Graciano",
+      "number": "80",
+      "power": "2",
+      "toughness": "2",
+      "layout": "token",
+      "multiverseid": 409656,
+      "imageUrl": "https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg",
+      "foreignNames": [
+        {
+          "name": "ゾンビ",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409736&type=card",
+          "language": "Japanese",
+          "multiverseid": 409736
+        }
+      ],
+      "printings": [
+        "DDQ"
+      ],
+      "originalType": "Token Creature — Zombie",
+      "id": "e5eff329472998514ad2803a16b8ff8cec1fd793"
+    },
+    {
+      "name": "Zombie",
+      "type": " Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Common",
+      "set": "DDQ",
+      "setName": "Duel Decks: Blessed vs. Cursed",
+      "artist": "Lucas Graciano",
+      "number": "80",
+      "power": "2",
+      "toughness": "2",
+      "layout": "token",
+      "multiverseid": 409656,
+      "imageUrl": "https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg",
+      "foreignNames": [
+        {
+          "name": "ゾンビ",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409736&type=card",
+          "language": "Japanese",
+          "multiverseid": 409736
+        }
+      ],
+      "printings": [
+        "DDQ"
+      ],
+      "originalType": "Token Creature — Zombie",
+      "id": "e5eff329472998514ad2803a16b8ff8cec1fd793"
+    },
+    {
+      "name": "Zombie",
+      "type": " Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Common",
+      "set": "DDQ",
+      "setName": "Duel Decks: Blessed vs. Cursed",
+      "artist": "Lucas Graciano",
+      "number": "80",
+      "power": "2",
+      "toughness": "2",
+      "layout": "token",
+      "multiverseid": 409656,
+      "imageUrl": "https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg",
+      "foreignNames": [
+        {
+          "name": "ゾンビ",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409736&type=card",
+          "language": "Japanese",
+          "multiverseid": 409736
+        }
+      ],
+      "printings": [
+        "DDQ"
+      ],
+      "originalType": "Token Creature — Zombie",
+      "id": "e5eff329472998514ad2803a16b8ff8cec1fd793"
+    },
+    {
+      "name": "Zombie",
+      "type": " Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Common",
+      "set": "DDQ",
+      "setName": "Duel Decks: Blessed vs. Cursed",
+      "artist": "Lucas Graciano",
+      "number": "80",
+      "power": "2",
+      "toughness": "2",
+      "layout": "token",
+      "multiverseid": 409656,
+      "imageUrl": "https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg",
+      "foreignNames": [
+        {
+          "name": "ゾンビ",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409736&type=card",
+          "language": "Japanese",
+          "multiverseid": 409736
+        }
+      ],
+      "printings": [
+        "DDQ"
+      ],
+      "originalType": "Token Creature — Zombie",
+      "id": "e5eff329472998514ad2803a16b8ff8cec1fd793"
+    },
+    {
+      "name": "Zombie",
+      "type": " Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Common",
+      "set": "DDQ",
+      "setName": "Duel Decks: Blessed vs. Cursed",
+      "artist": "Lucas Graciano",
+      "number": "80",
+      "power": "2",
+      "toughness": "2",
+      "layout": "token",
+      "multiverseid": 409656,
+      "imageUrl": "https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg",
+      "foreignNames": [
+        {
+          "name": "ゾンビ",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409736&type=card",
+          "language": "Japanese",
+          "multiverseid": 409736
+        }
+      ],
+      "printings": [
+        "DDQ"
+      ],
+      "originalType": "Token Creature — Zombie",
+      "id": "e5eff329472998514ad2803a16b8ff8cec1fd793"
+    },
+    {
+      "name": "Zombie",
+      "type": " Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Common",
+      "set": "DDQ",
+      "setName": "Duel Decks: Blessed vs. Cursed",
+      "artist": "Lucas Graciano",
+      "number": "80",
+      "power": "2",
+      "toughness": "2",
+      "layout": "token",
+      "multiverseid": 409656,
+      "imageUrl": "https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg",
+      "foreignNames": [
+        {
+          "name": "ゾンビ",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409736&type=card",
+          "language": "Japanese",
+          "multiverseid": 409736
+        }
+      ],
+      "printings": [
+        "DDQ"
+      ],
+      "originalType": "Token Creature — Zombie",
+      "id": "e5eff329472998514ad2803a16b8ff8cec1fd793"
+    },
+    {
+      "name": "Zombie",
+      "type": " Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Common",
+      "set": "DDQ",
+      "setName": "Duel Decks: Blessed vs. Cursed",
+      "artist": "Lucas Graciano",
+      "number": "80",
+      "power": "2",
+      "toughness": "2",
+      "layout": "token",
+      "multiverseid": 409656,
+      "imageUrl": "https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg",
+      "foreignNames": [
+        {
+          "name": "ゾンビ",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409736&type=card",
+          "language": "Japanese",
+          "multiverseid": 409736
+        }
+      ],
+      "printings": [
+        "DDQ"
+      ],
+      "originalType": "Token Creature — Zombie",
+      "id": "e5eff329472998514ad2803a16b8ff8cec1fd793"
+    },
+    {
+      "name": "Zombie",
+      "type": " Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Common",
+      "set": "DDQ",
+      "setName": "Duel Decks: Blessed vs. Cursed",
+      "artist": "Lucas Graciano",
+      "number": "80",
+      "power": "2",
+      "toughness": "2",
+      "layout": "token",
+      "multiverseid": 409656,
+      "imageUrl": "https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg",
+      "foreignNames": [
+        {
+          "name": "ゾンビ",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409736&type=card",
+          "language": "Japanese",
+          "multiverseid": 409736
+        }
+      ],
+      "printings": [
+        "DDQ"
+      ],
+      "originalType": "Token Creature — Zombie",
+      "id": "e5eff329472998514ad2803a16b8ff8cec1fd793"
+    },
+    {
+      "name": "Zombie",
+      "type": " Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Common",
+      "set": "DDQ",
+      "setName": "Duel Decks: Blessed vs. Cursed",
+      "artist": "Lucas Graciano",
+      "number": "80",
+      "power": "2",
+      "toughness": "2",
+      "layout": "token",
+      "multiverseid": 409656,
+      "imageUrl": "https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg",
+      "foreignNames": [
+        {
+          "name": "ゾンビ",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409736&type=card",
+          "language": "Japanese",
+          "multiverseid": 409736
+        }
+      ],
+      "printings": [
+        "DDQ"
+      ],
+      "originalType": "Token Creature — Zombie",
+      "id": "e5eff329472998514ad2803a16b8ff8cec1fd793"
+    },
+    {
+      "name": "Zombie",
+      "type": " Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Common",
+      "set": "DDQ",
+      "setName": "Duel Decks: Blessed vs. Cursed",
+      "artist": "Lucas Graciano",
+      "number": "80",
+      "power": "2",
+      "toughness": "2",
+      "layout": "token",
+      "multiverseid": 409656,
+      "imageUrl": "https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg",
+      "foreignNames": [
+        {
+          "name": "ゾンビ",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409736&type=card",
+          "language": "Japanese",
+          "multiverseid": 409736
+        }
+      ],
+      "printings": [
+        "DDQ"
+      ],
+      "originalType": "Token Creature — Zombie",
+      "id": "e5eff329472998514ad2803a16b8ff8cec1fd793"
+    },
+    {
+      "name": "Zombie",
+      "type": " Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Common",
+      "set": "DDQ",
+      "setName": "Duel Decks: Blessed vs. Cursed",
+      "artist": "Lucas Graciano",
+      "number": "80",
+      "power": "2",
+      "toughness": "2",
+      "layout": "token",
+      "multiverseid": 409656,
+      "imageUrl": "https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg",
+      "foreignNames": [
+        {
+          "name": "ゾンビ",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409736&type=card",
+          "language": "Japanese",
+          "multiverseid": 409736
+        }
+      ],
+      "printings": [
+        "DDQ"
+      ],
+      "originalType": "Token Creature — Zombie",
+      "id": "e5eff329472998514ad2803a16b8ff8cec1fd793"
+    },
+    {
+      "name": "Zombie",
+      "type": " Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Common",
+      "set": "DDQ",
+      "setName": "Duel Decks: Blessed vs. Cursed",
+      "artist": "Lucas Graciano",
+      "number": "80",
+      "power": "2",
+      "toughness": "2",
+      "layout": "token",
+      "multiverseid": 409656,
+      "imageUrl": "https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg",
+      "foreignNames": [
+        {
+          "name": "ゾンビ",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409736&type=card",
+          "language": "Japanese",
+          "multiverseid": 409736
+        }
+      ],
+      "printings": [
+        "DDQ"
+      ],
+      "originalType": "Token Creature — Zombie",
+      "id": "e5eff329472998514ad2803a16b8ff8cec1fd793"
+    },
+    {
+      "name": "Zombie",
+      "type": " Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Common",
+      "set": "DDQ",
+      "setName": "Duel Decks: Blessed vs. Cursed",
+      "artist": "Lucas Graciano",
+      "number": "80",
+      "power": "2",
+      "toughness": "2",
+      "layout": "token",
+      "multiverseid": 409656,
+      "imageUrl": "https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg",
+      "foreignNames": [
+        {
+          "name": "ゾンビ",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409736&type=card",
+          "language": "Japanese",
+          "multiverseid": 409736
+        }
+      ],
+      "printings": [
+        "DDQ"
+      ],
+      "originalType": "Token Creature — Zombie",
+      "id": "e5eff329472998514ad2803a16b8ff8cec1fd793"
+    },
+    {
+      "name": "Zombie",
+      "type": " Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Common",
+      "set": "DDQ",
+      "setName": "Duel Decks: Blessed vs. Cursed",
+      "artist": "Lucas Graciano",
+      "number": "80",
+      "power": "2",
+      "toughness": "2",
+      "layout": "token",
+      "multiverseid": 409656,
+      "imageUrl": "https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg",
+      "foreignNames": [
+        {
+          "name": "ゾンビ",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409736&type=card",
+          "language": "Japanese",
+          "multiverseid": 409736
+        }
+      ],
+      "printings": [
+        "DDQ"
+      ],
+      "originalType": "Token Creature — Zombie",
+      "id": "e5eff329472998514ad2803a16b8ff8cec1fd793"
+    },
+    {
+      "name": "Zombie",
+      "type": " Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Common",
+      "set": "DDQ",
+      "setName": "Duel Decks: Blessed vs. Cursed",
+      "artist": "Lucas Graciano",
+      "number": "80",
+      "power": "2",
+      "toughness": "2",
+      "layout": "token",
+      "multiverseid": 409656,
+      "imageUrl": "https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg",
+      "foreignNames": [
+        {
+          "name": "ゾンビ",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409736&type=card",
+          "language": "Japanese",
+          "multiverseid": 409736
+        }
+      ],
+      "printings": [
+        "DDQ"
+      ],
+      "originalType": "Token Creature — Zombie",
+      "id": "e5eff329472998514ad2803a16b8ff8cec1fd793"
+    },
+    {
+      "name": "Zombie",
+      "type": " Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Common",
+      "set": "DDQ",
+      "setName": "Duel Decks: Blessed vs. Cursed",
+      "artist": "Lucas Graciano",
+      "number": "80",
+      "power": "2",
+      "toughness": "2",
+      "layout": "token",
+      "multiverseid": 409656,
+      "imageUrl": "https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg",
+      "foreignNames": [
+        {
+          "name": "ゾンビ",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409736&type=card",
+          "language": "Japanese",
+          "multiverseid": 409736
+        }
+      ],
+      "printings": [
+        "DDQ"
+      ],
+      "originalType": "Token Creature — Zombie",
+      "id": "e5eff329472998514ad2803a16b8ff8cec1fd793"
+    },
+    {
+      "name": "Zombie",
+      "type": " Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Common",
+      "set": "DDQ",
+      "setName": "Duel Decks: Blessed vs. Cursed",
+      "artist": "Lucas Graciano",
+      "number": "80",
+      "power": "2",
+      "toughness": "2",
+      "layout": "token",
+      "multiverseid": 409656,
+      "imageUrl": "https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg",
+      "foreignNames": [
+        {
+          "name": "ゾンビ",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409736&type=card",
+          "language": "Japanese",
+          "multiverseid": 409736
+        }
+      ],
+      "printings": [
+        "DDQ"
+      ],
+      "originalType": "Token Creature — Zombie",
+      "id": "e5eff329472998514ad2803a16b8ff8cec1fd793"
+    },
+    {
+      "name": "Zombie",
+      "type": " Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Common",
+      "set": "DDQ",
+      "setName": "Duel Decks: Blessed vs. Cursed",
+      "artist": "Lucas Graciano",
+      "number": "80",
+      "power": "2",
+      "toughness": "2",
+      "layout": "token",
+      "multiverseid": 409656,
+      "imageUrl": "https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg",
+      "foreignNames": [
+        {
+          "name": "ゾンビ",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409736&type=card",
+          "language": "Japanese",
+          "multiverseid": 409736
+        }
+      ],
+      "printings": [
+        "DDQ"
+      ],
+      "originalType": "Token Creature — Zombie",
+      "id": "e5eff329472998514ad2803a16b8ff8cec1fd793"
+    },
+    {
+      "name": "Zombie",
+      "type": " Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Common",
+      "set": "DDQ",
+      "setName": "Duel Decks: Blessed vs. Cursed",
+      "artist": "Lucas Graciano",
+      "number": "80",
+      "power": "2",
+      "toughness": "2",
+      "layout": "token",
+      "multiverseid": 409656,
+      "imageUrl": "https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg",
+      "foreignNames": [
+        {
+          "name": "ゾンビ",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409736&type=card",
+          "language": "Japanese",
+          "multiverseid": 409736
+        }
+      ],
+      "printings": [
+        "DDQ"
+      ],
+      "originalType": "Token Creature — Zombie",
+      "id": "e5eff329472998514ad2803a16b8ff8cec1fd793"
+    },
+    {
+      "name": "Zombie",
+      "type": " Creature — Zombie",
+      "types": [
+        "Creature"
+      ],
+      "subtypes": [
+        "Zombie"
+      ],
+      "rarity": "Common",
+      "set": "DDQ",
+      "setName": "Duel Decks: Blessed vs. Cursed",
+      "artist": "Lucas Graciano",
+      "number": "80",
+      "power": "2",
+      "toughness": "2",
+      "layout": "token",
+      "multiverseid": 409656,
+      "imageUrl": "https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg",
+      "foreignNames": [
+        {
+          "name": "ゾンビ",
+          "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409736&type=card",
+          "language": "Japanese",
+          "multiverseid": 409736
+        }
+      ],
+      "printings": [
+        "DDQ"
+      ],
+      "originalType": "Token Creature — Zombie",
+      "id": "e5eff329472998514ad2803a16b8ff8cec1fd793"
+    }
+  ],
+  "spawnableToken": {
+    "name": "Zombie",
+    "type": "Creature — Zombie",
+    "types": ["Creature"],
+    "subtypes": ["Zombie"],
+    "imageUrl": "https://cloud10.todocoleccion.online/trading-cards/tc/2019/02/01/20/149519114.jpg",
+    "originalType": "Token Creature — Zombie"
+  }
+}
