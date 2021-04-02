@@ -17,7 +17,7 @@
               <option v-for="aDeck in decks"
                       v-bind:value="aDeck"
                       v-bind:key="aDeck.name">
-                {{ aDeck.name }}
+                {{ aDeck.name }} - {{ aDeck.deckList.length }}
               </option>
             </select>
         </div>
