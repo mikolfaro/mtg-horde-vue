@@ -1,5 +1,5 @@
-import zombie200 from './zombie200.json'
+import zombie200difficult from './zombie200difficult.json'
 
-export default {
-  zombie200
-}
+export default [
+  zombie200difficult
+]

@@ -13,7 +13,12 @@
             <label for="deck">Deck</label>
             <select class="form-control" id="deck" name="deck"
                     v-model="deck" @change="handleInputChange">
-              <option value="zombie200">Zombies - 200</option>
+              <option value=""></option>
+              <option v-for="aDeck in decks"
+                      v-bind:value="aDeck"
+                      v-bind:key="aDeck.name">
+                {{ aDeck.name }}
+              </option>
             </select>
         </div>
 
@@ -32,10 +37,13 @@
   </div>
 </template>
 <script>
+  import decks from '@/decks'
+
   export default {
     name: "GameForm",
     data() {
       return {
+        decks: decks,
         players: 4,
         deck: 'zombie200',
         graveyardTokens: false
@@ -45,7 +53,7 @@
       handleSubmit(e) {
         e.preventDefault()
         this.$emit("play", {
-          deckName: this.deck,
+          deck: this.deck,
           playersCount: this.players,
           graveyardTokens: this.graveyardTokens
         })
