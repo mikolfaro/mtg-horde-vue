@@ -1,18 +1,20 @@
 <template>
-  <div class="card" :class="{ tapped: tapped }">
+  <div class="card" :class="{ tapped: tapped, token: card.isToken() }">
     <div class="card-bounds">
       <img :src=image :alt="name" @click=onCardClick />
       <span v-if="card.isCreature()" class="pt-indicator">{{power}}/{{toughness}}</span>
     </div>
-    <button v-if="!card.tapped" class="tap-card" @click=onTap>
-      <img alt="Tap card" :src="tapIcon" role="presentation" />
-    </button>
-    <button v-else class="untap-card" @click="onUntap">
-      <img alt="Untap card" :src="untapIcon" role="presentation" />
-    </button>
-    <button class="destroy-card" @click="onDestroy">
-      <img alt="Destroy card" :src="destroyIcon" role="presentation" />
-    </button>
+    <slot name="buttons">
+      <button v-if="!card.tapped" class="tap-card" @click=onTap>
+        <img alt="Tap card" :src="tapIcon" role="presentation" />
+      </button>
+      <button v-else class="untap-card" @click="onUntap">
+        <img alt="Untap card" :src="untapIcon" role="presentation" />
+      </button>
+      <button class="destroy-card" @click="onDestroy">
+        <img alt="Destroy card" :src="destroyIcon" role="presentation" />
+      </button>
+    </slot>
   </div>
 </template>
 <script>
@@ -84,14 +86,12 @@
 
   .pt-indicator
     position: absolute
-
-    bottom: 5px
-    right: 5px
-
+    bottom: 0
+    right: 4%
+    padding: 2% 4%
+    font-size: .8em
     color: white
     background-color: rgba(0, 0, 0, 0.5)
-    padding: 4px
-    font-size: .8em
     border-radius: 5px
     text-align: center
 
@@ -101,34 +101,25 @@
     clip-path: inset(0px 0px 0px 0px round 10px 10px)
 
   button
-    width: 20px
-    height: 20px
-    border-radius: 10px
-    padding: 2px
+    width: 15%
+    height: auto
+    border-radius: 50%
+    padding: 1.5%
     position: absolute
-    bottom: 5px
+    bottom: 3%
     background: $color-light-grey
     border: 1px solid $color-black
 
     &.tap-card, &.untap-card
-      left: 5px
+      left: 5%
     &.destroy-card
-      left: 30px
+      left: 25%
     &.untap-card
       padding: 0
     img
       display: block
 
   &.tapped
-    width: 176px
-    height: 126px
     transform-origin: center
     transform: translate(25px, 25px) rotate(90deg)
-
-    button
-      bottom: -45px
-
-    .pt-indicator
-      margin-right: 50px
-      margin-bottom: -50px
 </style>

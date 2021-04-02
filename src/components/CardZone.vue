@@ -3,6 +3,7 @@
     <div :id="id" class="card-zone">
       <div class="non-tokens">
         <Card
+            class="bigger-card"
             v-for="(card, index) in nonTokens"
             v-bind:key="index"
             :card="card"
@@ -72,4 +73,9 @@
       .card
         margin-left: 10px
         margin-right: 10px
+
+  .bigger-card
+    .card-bounds
+      width: 126px * 1.3
+      height: 176px * 1.3
 </style>
