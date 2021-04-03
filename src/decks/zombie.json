@@ -1378,6 +1378,8 @@
       "type": "Creature — Zombie",
       "types": ["Creature"],
       "subtypes": ["Zombie"],
+      "power": "2",
+      "toughness": "6",
       "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=389648&type=card"
     },
     {
@@ -1810,6 +1812,8 @@
       "subtypes": [
         "Zombie"
       ],
+      "power": "5",
+      "toughness": "4",
       "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=42270&type=card"
     },
     {
