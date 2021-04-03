@@ -5,7 +5,7 @@
 
       <form v-on:submit="handleSubmit">
         <div class="mt-3 form-group">
-          <label for="players"># of Players)</label>
+          <label for="players"># of Players</label>
           <input class="form-control" id="players" name="players" type="number" min="1" max="6"
                  v-model="players" @change="handleInputChange">
         </div>
