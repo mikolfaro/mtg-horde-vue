@@ -28,7 +28,8 @@ export default class Card extends Record({
   }
 
   isToken() {
-    return this.cardData.originalType && this.cardData.originalType.startsWith('Token')
+    return this.cardData.originalType &&
+      this.cardData.originalType.startsWith('Token')
   }
 
    isPermanent() {
