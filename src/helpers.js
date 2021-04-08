@@ -31,3 +31,37 @@ export function shuffle(array) {
   }
   return shuffledArray
 }
+
+class CallableObject extends Function {
+  constructor () {
+    super('...args', 'return this.__self__.__call__(...args)')
+    var self = this.bind(this)
+    this.__self__ = self
+    return self
+  }
+
+  __call__() {
+    throw new TypeError(`${this.constructor.name} is not callable`)
+  }
+}
+
+class ImagePreloader extends CallableObject {
+  constructor () {
+    super()
+    this.preloadedUrls = []
+  }
+
+  __call__ (imageUrl) {
+    if (this.preloadedUrls.includes(imageUrl)) {
+      return;
+    }
+
+    const image = new Image()
+    image.src = imageUrl
+
+    this.preloadedUrls.push(imageUrl)
+    console.log(imageUrl)
+  }
+}
+
+export const preload = new ImagePreloader()

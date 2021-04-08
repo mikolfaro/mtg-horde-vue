@@ -6,6 +6,7 @@ import hand from './hand'
 import phases from './phases'
 import settings from './settings'
 import Card from '@/models/Card'
+import { preload } from '../helpers'
 
 Vue.use(Vuex)
 
@@ -95,6 +96,10 @@ export default new Vuex.Store({
       if (state.phases.current.id === 'HORDE_DRAW') {
         commit('drawToCard')
         commit('untapAll')
+
+        state.deck.cards.slice(0, 5).forEach((card) => {
+          preload(card.cardData.imageUrl)
+        })
       } else if (state.phases.current.id === 'HORDE_PLAY') {
         commit('play')
       } else if (state.phases.current.id === 'HORDE_ATTACK') {
