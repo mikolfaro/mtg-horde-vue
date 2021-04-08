@@ -35,28 +35,36 @@ const morph = CardModel.createFromCardData({
 
 export const faceUp = Template.bind({})
 faceUp.args = {
-  card: card
+  card: card,
+  canTap: true,
+  canDestroy: true,
 }
 
 export const faceDown = Template.bind({})
 faceDown.args = {
-  card: card.set('faceDown', true)
+  card: card.set('faceDown', true),
+  canTap: false,
+  canDestroy: true,
 }
 
 export const tapped = Template.bind({})
 tapped.args = {
-  card: card.set('tapped', true)
+  card: card.set('tapped', true),
 }
 
 export const tappedAndFaceDown = Template.bind({})
 tappedAndFaceDown.args = {
-  card: card.set('faceDown', true).set('tapped', true)
+  card: card.set('faceDown', true).set('tapped', true),
+  canTap: true,
+  canDestroy: false,
 }
 
 export const creature1_1 = Template.bind({})
 card.set('power', '1')
 creature1_1.args = {
-  card: creature
+  card: creature,
+  canTap: true,
+  canDestroy: false,
 }
 
 export const creature1_1Tapped = Template.bind({})

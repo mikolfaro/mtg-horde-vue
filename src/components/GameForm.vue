@@ -13,7 +13,6 @@
             <label for="deck">Deck</label>
             <select class="form-control" id="deck" name="deck"
                     v-model="deck" @change="handleInputChange">
-              <option value=""></option>
               <option v-for="aDeck in decks"
                       v-bind:value="aDeck"
                       v-bind:key="aDeck.name">

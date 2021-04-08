@@ -21,11 +21,11 @@ const Template = (args, { argTypes }) => ({
 export const empty = Template.bind({})
 empty.args = {
   title: "The card list",
-  open: true,
+  isOpen: true,
   cards: [],
 }
 
-const cards = [{
+let cards = [{
   "name": "Boneknitter",
   "power": "1",
   "toughness": "1",
@@ -40,11 +40,97 @@ const cards = [{
   "power": "2",
   "toughness": "2",
   "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=382290&type=card",
+}, {
+  "name": "Nocturnal Raid",
+  "type": "Instant",
+  "types": ["Instant"],
+  "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=3301&type=card"
 }].map(cardData => Card.createFromCardData(cardData))
 
 export const someCards = Template.bind({})
 someCards.args = {
   title: "The card list",
-  open: true,
+  isOpen: true,
+  cards: cards
+}
+
+cards = [
+  {
+    'name': 'Barter in Blood',
+    'type': 'Sorcery',
+    'types': ['Sorcery'],
+    'imageUrl': 'https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=489208&type=card',
+  },
+  {
+    'name': 'Delirium Skeins',
+    'type': 'Sorcery',
+    'types': ['Sorcery'],
+    'imageUrl': 'https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=425890&type=card',
+  },
+  {
+    'name': 'Zombie',
+    'type': ' Creature — Zombie',
+    'types': [
+      'Creature',
+    ],
+    'subtypes': [
+      'Zombie',
+    ],
+    'power': '2',
+    'toughness': '2',
+    'imageUrl': 'https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg',
+    'id': 'e5eff329472998514ad2803a16b8ff8cec1fd793',
+  },
+  {
+    'name': 'Barter in Blood',
+    'type': 'Sorcery',
+    'types': ['Sorcery'],
+    'imageUrl': 'https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=489208&type=card',
+  },
+  {
+    'name': 'Delirium Skeins',
+    'type': 'Sorcery',
+    'types': ['Sorcery'],
+    'imageUrl': 'https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=425890&type=card',
+  },
+  {
+    'name': 'Zombie',
+    'type': ' Creature — Zombie',
+    'types': [
+      'Creature',
+    ],
+    'subtypes': [
+      'Zombie',
+    ],
+    'rarity': 'Common',
+    'set': 'DDQ',
+    'setName': 'Duel Decks: Blessed vs. Cursed',
+    'artist': 'Lucas Graciano',
+    'number': '80',
+    'power': '2',
+    'toughness': '2',
+    'layout': 'token',
+    'multiverseid': 409656,
+    'imageUrl': 'https://static.cardmarket.com/img/28bf07f9097fdc9806419e48d1b66e2e/items/1/XM21/477554.jpg',
+    'foreignNames': [
+      {
+        'name': 'ゾンビ',
+        'imageUrl': 'https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409736&type=card',
+        'language': 'Japanese',
+        'multiverseid': 409736,
+      },
+    ],
+    'printings': [
+      'DDQ',
+    ],
+    'originalType': 'Token Creature — Zombie',
+    'id': 'e5eff329472998514ad2803a16b8ff8cec1fd793',
+  }
+].map(cardData => Card.createFromCardData(cardData))
+
+export const manyCards = Template.bind({})
+manyCards.args = {
+  title: "The card list",
+  isOpen: true,
   cards: cards
 }

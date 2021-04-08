@@ -32,9 +32,10 @@
     <!-- BoardWipe></BoardWipe -->
 
     <SpellModal
-      :spell="topStack"
-      @resolveSpell="resoveTopStack"
-      @counterSpell="counterTopStack" />
+        :spell="topStack"
+        @resolveSpell="resoveTopStack"
+        @counterSpell="counterTopStack"
+    />
 
     <!-- card-modal></card-modal -->
 
