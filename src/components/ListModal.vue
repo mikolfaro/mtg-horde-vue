@@ -15,8 +15,12 @@
       </div>
     </template>
     <template v-slot:footer>
-      <div>
-
+      <div class="button-group">
+        <button
+            v-for="(label, value) in actions"
+            v-bind:key="value"
+            @click="onAction(value)"
+        >{{ label }}</button>
       </div>
     </template>
   </Modal>
@@ -39,6 +43,7 @@
         default: false
       },
       cards: { type: Array },
+      actions: { type: Object }
     },
     data() {
       return {
@@ -68,6 +73,9 @@
       },
       onClose() {
         this.$emit("close")
+      },
+      onAction(action) {
+        this.$emit(action, this.activeCard)
       }
     }
   }
