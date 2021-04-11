@@ -6,7 +6,12 @@
         <p class="card-pile-count">{{cards.length}}</p>
       </div>
 
-      <form class="inline-form" id="remove-card-form" @submit="handleRemoveCard">
+      <form
+          v-if="removeCardLabel"
+          class="inline-form"
+          id="remove-card-form"
+          @submit="handleRemoveCard"
+      >
         <div class="form-group">
           <label class="sr-only" for="cards-number">Numero di carte</label>
           <input id="cards-number"
@@ -21,11 +26,15 @@
       </form>
     </div>
 
-    <ListModal :is-open="modalOpen"
-               :title="label"
-               :cards="cards"
-               @card-change="onActiveChange"
-               @close="onListClose" />
+    <ListModal
+        v-if="modalOpen"
+        :is-open="true"
+        :title="label"
+        :cards="cards"
+        :actions="actions"
+        @action="onAction"
+        @close="onListClose"
+    />
   </div>
 </template>
 <script>
@@ -43,7 +52,8 @@
       label: { type: String },
       cards: { type: Array },
       background: { type: String },
-      removeCardLabel: { type: String, default: "Remove cards" },
+      removeCardLabel: { type: String },
+      actions: { type: Object }
     },
     methods: {
       handleRemoveCard(e) {
@@ -59,9 +69,12 @@
       onListClose() {
         this.modalOpen = false
       },
-      onActiveChange(card) {
-        console.log(card.index, card.name())
-      }
+      onAction(action, card) {
+        this.modalOpen = false
+        this.$nextTick(function () {
+          this.$emit(action, card)
+        })
+      },
     },
     computed: {
       cardPileStyle() {
@@ -70,7 +83,6 @@
     }
   }
 </script>
-
 <style lang="sass">
   @import '~@/styles/global/mixins'
 

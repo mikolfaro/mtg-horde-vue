@@ -1,25 +1,56 @@
 <template>
-  <div class="hand">
+  <div class="hand" @click="onClick">
     <div class="hand-size">{{cards.length}}</div>
-    <button class="button-small" @click="onDraw">+</button>
-    <button class="button-small" @click="onDiscard">-</button>
+    <button class="button-small" v-on:click.stop @click="onPlusClick">+</button>
+    <button class="button-small" v-on:click.stop @click="onMinusClick">-</button>
+
+    <ListModal
+      v-if="modalOpen"
+      :is-open="true"
+      title="The Horde Hand"
+      :cards="cards"
+      :actions="actions"
+      @action="onAction"
+      @close="onClose"
+    />
   </div>
 </template>
 <script>
+  import ListModal from './ListModal'
   export default {
     name: 'Hand',
+    components: { ListModal },
     props: {
       cards: { type: Array }
     },
     data() {
-      return {}
+      return {
+        modalOpen: false,
+        actions: {
+          play: "Play",
+          discard: "Discard",
+          exile: "Exile",
+        }
+      }
     },
     methods: {
-      onDiscard() {
-        this.$emit("discard")
+      onClick() {
+        this.modalOpen = true
       },
-      onDraw() {
+      onMinusClick() {
+        this.$emit("discard-random")
+      },
+      onPlusClick() {
         this.$emit("draw")
+      },
+      onAction(action, card) {
+        this.modalOpen = false
+        this.$nextTick(function () {
+          this.$emit(action, card)
+        })
+      },
+      onClose() {
+        this.modalOpen = false
       }
     }
   }

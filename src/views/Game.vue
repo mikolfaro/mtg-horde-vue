@@ -11,17 +11,31 @@
               class="mt-2"
               :cards="hand.cards"
               @draw="draw"
-              @discard="discard"></Hand>
+              @discard="discardCard"
+              @discard-random="discardRandom"
+              @exile="exileFromHand"
+              @play="play"
+          />
           <TokenCreator
               class="mt-2"
               :tokenDefaultData="spawnableToken"
               @spawn-token="spawnToken"></TokenCreator>
         </div>
         <div class="col-2">
-          <Deck :cards="deck.cards" @mill="millDeck"></Deck>
+          <Deck
+              :cards="deck.cards"
+              @discard="discardCardFromDeck"
+              @exile="exileFromDeck"
+              @mill="millDeck"
+              @play="playFromDeck"
+          />
         </div>
         <div class="col-2">
-          <Graveyard :cards="board.graveyard"></Graveyard>
+          <Graveyard
+              :cards="board.graveyard"
+              @exile="exileFromGraveyard"
+              @play="playFromGraveyard"
+          />
         </div>
       </div>
     </div>
@@ -33,7 +47,7 @@
 
     <SpellModal
       :spell="topStack"
-      @resolve-spell="resoveTopStack"
+      @resolve-spell="resolveTopStack"
       @counter-spell="counterTopStack"
     />
 
@@ -74,8 +88,13 @@
       }
     },
     methods: {
-      ...mapActions(['resolveSpell', 'counterSpell', 'millDeck', 'spawnToken', 'draw', 'discard']),
-      resoveTopStack(spell) {
+      ...mapActions([
+        'resolveSpell', 'counterSpell', 'millDeck', 'spawnToken',
+        'draw', 'exileFromHand', 'discardRandom', 'discardCard',
+        'discardCardFromDeck', 'exileFromDeck', 'playFromDeck',
+        'exileFromGraveyard', 'play', 'playFromGraveyard',
+      ]),
+      resolveTopStack(spell) {
         this.resolveSpell(spell)
       },
       counterTopStack(spell) {

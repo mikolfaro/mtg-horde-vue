@@ -7,7 +7,7 @@
       </div>
     </template>
     <template v-slot:footer>
-      <div class="buttons">
+      <div class="button-group">
         <button class="button-small" @click="resolveSpell">Resolve</button>
         <button class="button-small" @click="counterSpell">Counter spell</button>
       </div>
@@ -47,4 +47,8 @@
     display: flex
     flex-direction: row
     justify-content: space-between
+
+  .button-group
+    margin: auto
+    width: 40%
 </style>

@@ -4,8 +4,10 @@
         label="Graveyard"
         :cards="cards"
         :background="background"
-        remove-card-label="Exile"
-        @remove-cards="onExile"
+        :actions="actions"
+        @exile="onExile"
+        @play="onPlay"
+        @shuffle-in-deck="onShuffleInDeck"
     />
   </div>
 </template>
@@ -15,7 +17,12 @@
     name: 'Graveyard',
     components: { CardPile },
     data() {
-      return {}
+      return {
+        actions: {
+          exile: "Exile",
+          play: "Play",
+        },
+      }
     },
     props: {
       cards: { type: Array }
@@ -23,15 +30,21 @@
     computed: {
       background: function () {
         if (this.cards.length > 0) {
-          return this.cards[this.cards.length - 1].imageUrl()
+          return this.cards[0].imageUrl()
         } else {
           return null;
         }
       }
     },
     methods: {
-      onExile() {
-        console.log('onExile')
+      onExile(card) {
+        this.$emit('exile', card)
+      },
+      onPlay(card) {
+        this.$emit("play", card)
+      },
+      onShuffleInDeck(card) {
+        this.$emit("shuffle-in-deck", card)
       }
     },
   }

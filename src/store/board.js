@@ -46,14 +46,23 @@ export default {
       if (spell.isPermanent()) {
         state.permanents.push(spell)
       } else {
-        state.graveyard.push(spell)
+        state.unshift.push(spell)
       }
       state.stack.shift()
     },
     counterSpell(state, spell) {
-      state.graveyard.push(spell)
+      state.graveyard.unshift(spell)
       state.stack.shift()
     },
+    removeFromBoard(state, permanent) {
+      state.permanents = state.permanents.filter(card => card.index !== permanent.index)
+    },
+    putInExile(state, card) {
+      state.exile.push(card)
+    },
+    removeFromGraveyard(state, card) {
+      state.graveyard = state.graveyard.filter(aCard => aCard.index !== card.index)
+    }
   },
   actions: {
     tapPermanent({ commit }, permanent) {
@@ -63,7 +72,8 @@ export default {
       commit('untapPermanent', permanent)
     },
     destroyPermanent({ commit }, permanent) {
-      commit('destroyPermanent', permanent)
+      commit('removeFromBoard', permanent)
+      commit('putInGraveyard', permanent)
     }
   }
 }

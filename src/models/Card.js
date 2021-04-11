@@ -32,7 +32,7 @@ export default class Card extends Record({
       this.cardData.originalType.startsWith('Token')
   }
 
-   isPermanent() {
+  isPermanent() {
     const types = this.cardData.types
     return types.includes('Creature') ||
            types.includes('Artifact') ||
@@ -41,6 +41,11 @@ export default class Card extends Record({
 
   isCreature() {
     return this.cardData.types && this.cardData.types.includes('Creature')
+  }
+
+  toString() {
+    const string = `${this.index} ${this.name()}`
+    return this.isCreature() ? `${string} ${this.power()}/${this.toughness()}` : string
   }
 
   static createFromCardData (cardData, i) {

@@ -2,10 +2,14 @@
   <div class="deck" >
     <CardPile
         label="Deck"
+        remove-card-label="Mill"
         :cards=cards
         :background="background"
-        remove-card-label="Mill"
-        @remove-cards="mill">
+        :actions="actions"
+        @discard="onDiscard"
+        @exile="onExile"
+        @play="onPlay"
+        @remove-cards="onMill">
     </CardPile>
   </div>
 </template>
@@ -19,19 +23,32 @@
     data() {
       return {
         background: backCard,
+        actions: {
+          discard: 'Discard',
+          exile: 'Exile',
+          play: 'Play',
+        }
       }
     },
     props: {
       cards: { type: Array }
     },
     methods: {
-      mill(count) {
+      onMill(count) {
         this.$emit("mill", count)
+      },
+      onDiscard(card) {
+        this.$emit('discard', card)
+      },
+      onExile(card) {
+        this.$emit('exile', card)
+      },
+      onPlay(card) {
+        this.$emit('play', card)
       },
     }
   }
 </script>
-
 <style lang="sass">
   .graveyard
     width: 100%
