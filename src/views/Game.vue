@@ -34,7 +34,8 @@
     <SpellModal
       :spell="topStack"
       @resolve-spell="resoveTopStack"
-      @counter-spell="counterTopStack" />
+      @counter-spell="counterTopStack"
+    />
 
     <!-- card-modal></card-modal -->
 

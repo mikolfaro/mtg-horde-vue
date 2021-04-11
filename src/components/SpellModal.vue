@@ -1,5 +1,5 @@
 <template>
-  <Modal v-if="spell" class="spell-modal" @close="resolveSpell">
+  <Modal :is-open="open" class="spell-modal" @close="resolveSpell">
     <template v-slot:header>The Horde cast</template>
     <template v-slot:body>
       <div class="spell">

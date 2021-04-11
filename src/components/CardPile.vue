@@ -1,7 +1,7 @@
 <template>
   <div class="card-pile">
-    <div :style="cardPileStyle">
-      <div class="content">
+    <div class="content" :style="cardPileStyle">
+      <div class="content" @click="onPileClick">
         <h2 class="mt-2 button-small">{{ label }}</h2>
         <p class="card-pile-count">{{cards.length}}</p>
       </div>
@@ -20,13 +20,22 @@
         <input type="submit" :value="removeCardLabel" class="button-small remove-card-button" />
       </form>
     </div>
+
+    <ListModal :is-open="modalOpen"
+               :title="label"
+               :cards="cards"
+               @card-change="onActiveChange"
+               @close="onListClose" />
   </div>
 </template>
 <script>
+  import ListModal from './ListModal'
   export default {
     name: 'CardPile',
+    components: { ListModal },
     data() {
       return {
+        modalOpen: false,
         cardsNumber: 1,
       }
     },
@@ -43,6 +52,15 @@
       },
       handleChange() {
         console.log("Change")
+      },
+      onPileClick() {
+        this.modalOpen = true
+      },
+      onListClose() {
+        this.modalOpen = false
+      },
+      onActiveChange(card) {
+        console.log(card.index, card.name())
       }
     },
     computed: {
@@ -61,7 +79,7 @@
     padding-top: 140%
     position: relative
 
-    > div
+    > .content
       position: absolute
       top: 0
       bottom: 0

@@ -5,13 +5,13 @@
       <span v-if="card.isCreature()" class="pt-indicator">{{power}}/{{toughness}}</span>
     </div>
     <slot name="buttons">
-      <button v-if="!card.tapped" class="tap-card" @click=onTap>
+      <button v-if="canTap && !card.tapped" class="tap-card" @click=onTap>
         <img alt="Tap card" :src="tapIcon" role="presentation" />
       </button>
-      <button v-else class="untap-card" @click="onUntap">
+      <button v-if="card.tapped" class="untap-card" @click="onUntap">
         <img alt="Untap card" :src="untapIcon" role="presentation" />
       </button>
-      <button class="destroy-card" @click="onDestroy">
+      <button v-if="canDestroy" class="destroy-card" @click="onDestroy">
         <img alt="Destroy card" :src="destroyIcon" role="presentation" />
       </button>
     </slot>
@@ -35,6 +35,8 @@
     },
     props: {
       card: { type: Card },
+      canTap: { type: Boolean, default: false },
+      canDestroy: { type: Boolean, default: false },
     },
     computed: {
       name() {

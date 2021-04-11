@@ -1,6 +1,6 @@
 <template>
-  <div class="modal-backdrop">
-    <div class="modal">
+  <div v-if="isOpen" class="modal-backdrop" @click="close">
+    <div class="modal" v-on:click.stop>
       <header class="modal-header">
         <slot name="header">
           This is the default title!
@@ -34,6 +34,9 @@
       }
     },
     methods: {
+      dummy(e) {
+        console.log("Click", e.target)
+      },
       close() {
         this.$emit('close');
       },
@@ -42,6 +45,7 @@
 </script>
 <style lang="sass">
   .modal-backdrop
+    z-index: 99
     position: fixed
     top: 0
     bottom: 0
@@ -53,6 +57,9 @@
     align-items: center
 
   .modal
+    width: 80%
+    max-width: 900px
+
     text-align: center
     border: 1px solid black
     border-radius: 5px
