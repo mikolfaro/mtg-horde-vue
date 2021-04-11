@@ -60,7 +60,6 @@ class ImagePreloader extends CallableObject {
     image.src = imageUrl
 
     this.preloadedUrls.push(imageUrl)
-    console.log(imageUrl)
   }
 }
 

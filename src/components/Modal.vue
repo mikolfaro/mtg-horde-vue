@@ -1,5 +1,5 @@
 <template>
-  <div v-if="isOpen" class="modal-backdrop" @click="close">
+  <div v-if="isOpen" class="modal-backdrop" v-on:click.stop @click="close">
     <div class="modal" v-on:click.stop>
       <header class="modal-header">
         <slot name="header">

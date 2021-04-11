@@ -30,21 +30,6 @@ export default new Vuex.Store({
         state.hand.cards.push(state.deck.cards.shift())
       }
     },
-    discardRandom(state) {
-      if (!state.hand.cards) {
-          return
-      }
-
-      const cardIdx = Math.floor(Math.random() * state.hand.cards.length)
-      const discardedCards = state.hand.cards.splice(cardIdx, 1)
-      discardedCards.map((card) => {
-        if (!state.settings.graveyardTokens && card.isToken()) {
-          state.board.exile.push(card)
-        } else {
-          state.board.graveyard.unshift(card)
-        }
-      })
-    },
     play(state, card) {
       if (card.isToken()) {
         state.board.permanents.push(card)
@@ -125,10 +110,22 @@ export default new Vuex.Store({
     draw({ commit }) {
       commit('drawCards', 1)
     },
-    discardRandom({ commit }) {
-      commit('discardRandom')
+    discardRandom({ commit, state }) {
+      if (!state.hand.cards) {
+        return
+      }
+
+      const cardIdx = Math.floor(Math.random() * state.hand.cards.length)
+
+      const card = state.hand.cards.splice(cardIdx, 1)[0]
+      commit('removeFromDeck', card)
+      if (!state.settings.graveyardTokens && card.isToken()) {
+        commit('putInExile', card)
+      } else {
+        commit('putInGraveyard', card)
+      }
     },
-    discardCard({ commit, state }, card) {
+    discardCardFromDeck({ commit, state }, card) {
       commit('removeFromDeck', card)
       if (!state.settings.graveyardTokens && card.isToken()) {
         commit('putInExile', card)
@@ -151,7 +148,19 @@ export default new Vuex.Store({
     playFromGraveyard({ commit }, card) {
       commit('removeFromGraveyard', card)
       commit('play', card)
-    }
+    },
+    discardCard({ commit }, card) {
+      commit('removeFromHand', card)
+      commit('putInGraveyard', card)
+    },
+    play({ commit }, card) {
+      commit('removeFromHand', card)
+      commit('play', card)
+    },
+    exileFromHand({ commit }, card) {
+      commit('removeFromHand', card)
+      commit('putInExile', card)
+    },
   },
   modules: {
     board,

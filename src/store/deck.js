@@ -5,7 +5,6 @@ export default {
       state.cards = newDeck
     },
     removeFromDeck(state, card) {
-      console.log("Remove from deck", card.toString())
       state.cards = state.cards.filter(function (aCard) {
         return card.index !== aCard.index
       })

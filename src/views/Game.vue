@@ -11,7 +11,11 @@
               class="mt-2"
               :cards="hand.cards"
               @draw="draw"
-              @discard="discardRandom"></Hand>
+              @discard="discardCard"
+              @discard-random="discardRandom"
+              @exile="exileFromHand"
+              @play="play"
+          />
           <TokenCreator
               class="mt-2"
               :tokenDefaultData="spawnableToken"
@@ -20,7 +24,7 @@
         <div class="col-2">
           <Deck
               :cards="deck.cards"
-              @discard="discardCard"
+              @discard="discardCardFromDeck"
               @exile="exileFromDeck"
               @mill="millDeck"
               @play="playFromDeck"
@@ -86,8 +90,9 @@
     methods: {
       ...mapActions([
         'resolveSpell', 'counterSpell', 'millDeck', 'spawnToken',
-        'draw', 'discardRandom', 'discardCard', 'exileFromDeck',
-        'playFromDeck', 'exileFromGraveyard', 'playFromGraveyard',
+        'draw', 'exileFromHand', 'discardRandom', 'discardCard',
+        'discardCardFromDeck', 'exileFromDeck', 'playFromDeck',
+        'exileFromGraveyard', 'play', 'playFromGraveyard',
       ]),
       resolveTopStack(spell) {
         this.resolveSpell(spell)
