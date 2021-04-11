@@ -27,7 +27,11 @@
           />
         </div>
         <div class="col-2">
-          <Graveyard :cards="board.graveyard"></Graveyard>
+          <Graveyard
+              :cards="board.graveyard"
+              @exile="exileFromGraveyard"
+              @play="playFromGraveyard"
+          />
         </div>
       </div>
     </div>
@@ -83,7 +87,7 @@
       ...mapActions([
         'resolveSpell', 'counterSpell', 'millDeck', 'spawnToken',
         'draw', 'discardRandom', 'discardCard', 'exileFromDeck',
-        'playFromDeck',
+        'playFromDeck', 'exileFromGraveyard', 'playFromGraveyard',
       ]),
       resolveTopStack(spell) {
         this.resolveSpell(spell)

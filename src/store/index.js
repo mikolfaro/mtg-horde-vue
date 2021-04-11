@@ -41,7 +41,7 @@ export default new Vuex.Store({
         if (!state.settings.graveyardTokens && card.isToken()) {
           state.board.exile.push(card)
         } else {
-          state.board.graveyard.push(card)
+          state.board.graveyard.unshift(card)
         }
       })
     },
@@ -58,7 +58,7 @@ export default new Vuex.Store({
         if (!state.settings.graveyardTokens && card.isToken()) {
           state.board.exile.push(card)
         } else {
-          state.board.graveyard.push(card)
+          state.board.graveyard.unshift(card)
         }
       })
       state.deck.cards = state.deck.cards.slice(count)
@@ -67,7 +67,7 @@ export default new Vuex.Store({
       if (!state.settings.graveyardTokens && card.isToken()) {
         state.board.exile.push(card)
       } else {
-        state.board.graveyard.push(card)
+        state.board.graveyard.unshift(card)
       }
     },
     setSpawnableToken(state, cardData) {
@@ -75,7 +75,7 @@ export default new Vuex.Store({
     },
     spawnCard(state, card) {
       state.board.permanents.push(card)
-    }
+    },
   },
   actions: {
     resetGame({commit}, [deck, spawnableToken]) {
@@ -144,6 +144,14 @@ export default new Vuex.Store({
       commit('removeFromDeck', card)
       commit('play', card)
     },
+    exileFromGraveyard({ commit }, card) {
+      commit('removeFromGraveyard', card)
+      commit('putInExile', card)
+    },
+    playFromGraveyard({ commit }, card) {
+      commit('removeFromGraveyard', card)
+      commit('play', card)
+    }
   },
   modules: {
     board,
