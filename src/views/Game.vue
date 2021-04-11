@@ -15,7 +15,7 @@
           <TokenCreator
               class="mt-2"
               :tokenDefaultData="spawnableToken"
-              @spawnToken="spawnToken"></TokenCreator>
+              @spawn-token="spawnToken"></TokenCreator>
         </div>
         <div class="col-2">
           <Deck :cards="deck.cards" @mill="millDeck"></Deck>
@@ -33,8 +33,8 @@
 
     <SpellModal
       :spell="topStack"
-      @resolveSpell="resoveTopStack"
-      @counterSpell="counterTopStack" />
+      @resolve-spell="resoveTopStack"
+      @counter-spell="counterTopStack" />
 
     <!-- card-modal></card-modal -->
 

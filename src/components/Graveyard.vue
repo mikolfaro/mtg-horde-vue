@@ -4,8 +4,8 @@
         label="Graveyard"
         :cards="cards"
         :background="background"
-        @removeCards="onExile"
-        removeCardLabel="Exile"
+        remove-card-label="Exile"
+        @remove-cards="onExile"
     />
   </div>
 </template>

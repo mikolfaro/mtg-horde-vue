@@ -53,7 +53,7 @@
         this.tokenToughness += 1
       },
       onSpawn() {
-        this.$emit("spawnToken", { power: this.tokenPower, toughness: this.tokenToughness })
+        this.$emit("spawn-token", { power: this.tokenPower, toughness: this.tokenToughness })
       }
     }
   }
