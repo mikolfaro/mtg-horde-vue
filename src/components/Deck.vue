@@ -4,8 +4,8 @@
         label="Deck"
         :cards=cards
         :background="background"
-        @removeCards="mill"
-        removeCardLabel="Mill">
+        remove-card-label="Mill"
+        @remove-cards="mill">
     </CardPile>
   </div>
 </template>

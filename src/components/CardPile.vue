@@ -48,7 +48,7 @@
     methods: {
       handleRemoveCard(e) {
         e.preventDefault()
-        this.$emit('removeCards', this.cardsNumber)
+        this.$emit('remove-cards', this.cardsNumber)
       },
       handleChange() {
         console.log("Change")

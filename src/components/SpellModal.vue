@@ -34,10 +34,10 @@
     },
     methods: {
       resolveSpell() {
-        this.$emit('resolveSpell', this.spell)
+        this.$emit('resolve-spell', this.spell)
       },
       counterSpell() {
-        this.$emit('counterSpell', this.spell)
+        this.$emit('counter-spell', this.spell)
       }
     }
   }
