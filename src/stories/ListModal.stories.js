@@ -27,9 +27,21 @@ const Template = (args, { argTypes }) => ({
 
 export const empty = Template.bind({})
 empty.args = {
-  title: "The card list",
+  title: "No cards modal",
+  isOpen: true,
+  cards: []
+}
+
+export const emptyWithActions = Template.bind({})
+emptyWithActions.args = {
+  title: "No cards with actions modal",
   isOpen: true,
   cards: [],
+  actions: {
+    discard: "Discard",
+    exile: "Exile",
+    "shuffle-in-deck": "Shuffle in deck",
+  }
 }
 
 let cards = [

@@ -21,11 +21,14 @@
       </form>
     </div>
 
-    <ListModal :is-open="modalOpen"
-               :title="label"
-               :cards="cards"
-               @card-change="onActiveChange"
-               @close="onListClose" />
+    <ListModal
+        v-if="modalOpen"
+        :is-open="true"
+        :title="label"
+        :cards="cards"
+        :actions="actions"
+        @action="onAction"
+    />
   </div>
 </template>
 <script>
@@ -44,6 +47,7 @@
       cards: { type: Array },
       background: { type: String },
       removeCardLabel: { type: String, default: "Remove cards" },
+      actions: { type: Object }
     },
     methods: {
       handleRemoveCard(e) {
@@ -59,9 +63,12 @@
       onListClose() {
         this.modalOpen = false
       },
-      onActiveChange(card) {
-        console.log(card.index, card.name())
-      }
+      onAction(action, card) {
+        this.modalOpen = false
+        this.$nextTick(function () {
+          this.$emit(action, card)
+        })
+      },
     },
     computed: {
       cardPileStyle() {
@@ -70,7 +77,6 @@
     }
   }
 </script>
-
 <style lang="sass">
   @import '~@/styles/global/mixins'
 

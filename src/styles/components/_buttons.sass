@@ -15,9 +15,23 @@
   display: inline-block
   background: $color-light-grey
   color: $color-black
-  border: $color-black
+  border: 1px solid $color-black
   border-radius: 2px
   text-align: center
   text-transform: uppercase
   padding: 5px 10px
   margin: 0 auto
+
+.button-group
+  display: flex
+
+  .button, .button-small
+    flex-grow: 1
+    text-align: center
+    border-radius: 0
+    &:first-of-type
+      border-top-left-radius: 2px
+      border-bottom-left-radius: 2px
+    &:last-of-type
+      border-top-right-radius: 2px
+      border-bottom-right-radius: 2px

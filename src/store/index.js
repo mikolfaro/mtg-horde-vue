@@ -30,7 +30,7 @@ export default new Vuex.Store({
         state.hand.cards.push(state.deck.cards.shift())
       }
     },
-    discardCard(state) {
+    discardRandom(state) {
       if (!state.hand.cards) {
           return
       }
@@ -45,16 +45,12 @@ export default new Vuex.Store({
         }
       })
     },
-    play(state) {
-      state.hand.cards.forEach((card) => {
-        if (card.isToken()) {
-          state.board.permanents.push(card)
-        } else {
-          state.board.stack.push(card)
-        }
-      })
-
-      state.hand.cards = []
+    play(state, card) {
+      if (card.isToken()) {
+        state.board.permanents.push(card)
+      } else {
+        state.board.stack.push(card)
+      }
     },
     millDeck(state, count) {
       const milledCards = state.deck.cards.slice(0, count)
@@ -67,12 +63,11 @@ export default new Vuex.Store({
       })
       state.deck.cards = state.deck.cards.slice(count)
     },
-    destroyPermanent(state, permanent) {
-      state.board.permanents = state.board.permanents.filter(card => card.index !== permanent.index)
-      if (!state.settings.graveyardTokens && permanent.isToken()) {
-        state.board.exile.push(permanent)
+    putInGraveyard(state, card) {
+      if (!state.settings.graveyardTokens && card.isToken()) {
+        state.board.exile.push(card)
       } else {
-        state.board.graveyard.push(permanent)
+        state.board.graveyard.push(card)
       }
     },
     setSpawnableToken(state, cardData) {
@@ -101,7 +96,10 @@ export default new Vuex.Store({
           preload(card.cardData.imageUrl)
         })
       } else if (state.phases.current.id === 'HORDE_PLAY') {
-        commit('play')
+        state.hand.cards.map(function (card) {
+          commit('play', card)
+        })
+        commit('clearHand')
       } else if (state.phases.current.id === 'HORDE_ATTACK') {
         commit('attack')
       }
@@ -127,9 +125,25 @@ export default new Vuex.Store({
     draw({ commit }) {
       commit('drawCards', 1)
     },
-    discard({ commit }) {
-      commit('discardCard')
-    }
+    discardRandom({ commit }) {
+      commit('discardRandom')
+    },
+    discardCard({ commit, state }, card) {
+      commit('removeFromDeck', card)
+      if (!state.settings.graveyardTokens && card.isToken()) {
+        commit('putInExile', card)
+      } else {
+        commit('putInGraveyard', card)
+      }
+    },
+    exileFromDeck({ commit }, card) {
+      commit('removeFromDeck', card)
+      commit('putInExile', card)
+    },
+    playFromDeck({ commit }, card) {
+      commit('removeFromDeck', card)
+      commit('play', card)
+    },
   },
   modules: {
     board,

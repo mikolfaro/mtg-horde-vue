@@ -54,6 +54,12 @@ export default {
       state.graveyard.push(spell)
       state.stack.shift()
     },
+    removeFromBoard(state, permanent) {
+      state.permanents = state.permanents.filter(card => card.index !== permanent.index)
+    },
+    putInExile(state, card) {
+      state.exile.push(card)
+    }
   },
   actions: {
     tapPermanent({ commit }, permanent) {
@@ -63,7 +69,8 @@ export default {
       commit('untapPermanent', permanent)
     },
     destroyPermanent({ commit }, permanent) {
-      commit('destroyPermanent', permanent)
+      commit('removeFromBoard', permanent)
+      commit('putInGraveyard', permanent)
     }
   }
 }

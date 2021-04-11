@@ -15,8 +15,9 @@
       </div>
     </template>
     <template v-slot:footer>
-      <div class="button-group">
+      <div class="button-group" v-if="cards.length">
         <button
+            class="button-small"
             v-for="(label, value) in actions"
             v-bind:key="value"
             @click="onAction(value)"
@@ -75,7 +76,7 @@
         this.$emit("close")
       },
       onAction(action) {
-        this.$emit(action, this.activeCard)
+        this.$emit('action', action, this.activeCard)
       }
     }
   }
@@ -86,21 +87,25 @@
       width: 126px * 1.3
       height: 176px * 1.3
 
-    .swiper-slide .card
-      transform: scale(0.7)
+  .swiper-slide .card
+    transform: scale(0.7)
+    transition: .3s
+    transition-delay: .2s
+
+  .swiper-slide-prev,
+  .swiper-slide-next
+    .card
+      transform: scale(0.8)
       transition: .3s
       transition-delay: .2s
-
-    .swiper-slide-prev,
-    .swiper-slide-next
-      .card
-        transform: scale(0.8)
-        transition: .3s
-        transition-delay: .2s
-        transition-timing-function: ease
-
-    .swiper-slide-active .card
-      transform: scale(1.0)
-      transition: .5s
       transition-timing-function: ease
+
+  .swiper-slide-active .card
+    transform: scale(1.0)
+    transition: .5s
+    transition-timing-function: ease
+
+  .button-group
+    margin: auto
+    width: 40%
 </style>
