@@ -46,7 +46,7 @@ export default {
       if (spell.isPermanent()) {
         state.permanents.push(spell)
       } else {
-        state.unshift.push(spell)
+        state.graveyard.unshift(spell)
       }
       state.stack.shift()
     },
