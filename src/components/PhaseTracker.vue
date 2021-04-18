@@ -3,13 +3,17 @@
     <div class="current-phase-title">
       <span class="current-phase-label">{{ $t('phaseTracker.title') }}</span>
       &nbsp;
-      <span class="current-phase">{{phase.title}}</span>
+      <span class="current-phase">{{ $t(`phases.${phase.id}.name`) }}</span>
     </div>
 
-    <span class="current-phase-description">{{phase.description}}</span>
+    <span class="current-phase-description">
+      {{ $t(`phases.${phase.id}.description`) }}
+    </span>
 
     <div class="button-container">
-      <button class="button-small" @click="onNextPhase">{{ $t('phaseTracker.nextPhaseButton') }}</button>
+      <button class="button-small" @click="onNextPhase">
+        {{ $t('phaseTracker.nextPhaseButton') }}
+      </button>
     </div>
   </div>
 </template>

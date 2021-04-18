@@ -1,6 +1,6 @@
 <template>
   <Modal :is-open="open" class="spell-modal" @close="resolveSpell">
-    <template v-slot:header>The Horde cast</template>
+    <template v-slot:header>{{ $t("spellModal.title" )}}</template>
     <template v-slot:body>
       <div class="spell">
         <img v-if="spell" :src="spell.imageUrl()" :alt="spell.name()" />
@@ -8,8 +8,12 @@
     </template>
     <template v-slot:footer>
       <div class="button-group">
-        <button class="button-small" @click="resolveSpell">Resolve</button>
-        <button class="button-small" @click="counterSpell">Counter spell</button>
+        <button class="button-small" @click="resolveSpell">
+          {{ $t("actions.resolve") }}
+        </button>
+        <button class="button-small" @click="counterSpell">
+          {{ $t("actions.counterSpell" ) }}
+        </button>
       </div>
     </template>
   </Modal>

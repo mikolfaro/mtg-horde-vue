@@ -46,17 +46,40 @@
   "card": {
     "faceDown": "Carta a faccia in giù"
   },
+  "spellModal": {
+    "title": "L'Orda gioca"
+  },
   "actions": {
     "play": "Gioca",
     "discard": "Scarta",
     "exile": "Esilia",
     "tap": "Tappa",
     "untap": "Stappa",
-    "destroy": "Distruggi"
+    "destroy": "Distruggi",
+    "resolve": "Risolvi",
+    "counterSpell": "Neutralizza"
   },
   "gameType": {
     "horde": {
       "title": "L'orda"
+    }
+  },
+  "phases": {
+    "SURVIVORS_TURN": {
+      "name": "Turno dei Sopravvissuti",
+      "description": "I Sopravvissuti (giocatori) giocano il proprio turno come gruppo. Tutte le modifiche allo stato del campo di battaglia dell'Orda, come distruggere o tappare carte, deve essere fatto manualmente durante questa fase. Quando pronti, clicca il bottone avanti e passa al turno dell'Orda."
+    },
+    "HORDE_DRAW": {
+      "name": "L'Orda pesca",
+      "description": "L'Orda rivela carte dal mazzo, fino a che rivela una carta non pedina. Sono in uno stato temporaneo. Potete rispondere a ciascuna di queste carte prima che siano giocate. Quando fatto, risolvete manualmente ogni effetto When you are done, manually resolve eventuali effetti, poi premete Avanti per continuare al prossimo step then press next to continue to the Horde play phase."
+    },
+    "HORDE_PLAY": {
+      "name": "L'Orda gioca",
+      "description": "Le carte rivelate dal mazzo dell'Orda sono risolte. L'Orda gioca eventuali carte dalla mano o dal cimitero. Rispondete a quelle carte adesso, poi risolvete eventuali effetti manualmente, infine premete Avanti per la fase di attacco dell'Orda."
+    },
+    "HORDE_ATTACK": {
+      "name": "L'Orda attacca",
+      "description": "L'Orda attacca. Ogni creatura viene tappata. "
     }
   }
 }
