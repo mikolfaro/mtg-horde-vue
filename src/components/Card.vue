@@ -43,7 +43,11 @@
         return this.faceDown ? this.$t("card.faceDownName") : this.card.name()
       },
       image() {
-        return this.faceDown ? faceDownImage : this.card.imageUrl()
+        if (this.faceDown) {
+          return faceDownImage
+        } else {
+          return this.card.imageUrl(this.$i18n.locale)
+        }
       },
       tapped() {
         return this.card.tapped

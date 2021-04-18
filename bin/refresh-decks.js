@@ -21,6 +21,8 @@ const extractData = function (card) {
     power: card.data.power,
     toughness:card.data.toughness,
     colors: card.data.colors,
+    set: card.data.set,
+    collectorNumber: card.data.collector_number
   }
 }
 
@@ -48,16 +50,41 @@ const downloadCardData = function (card) {
   }
 }
 
+const downloadTranslationsData = function (card) {
+  if (card.set && card.collectorNumber && !card.type.startsWith('Token')) {
+    const url = `https://api.scryfall.com/cards/${card.set}/${card.collectorNumber}/it`
+    return axios.get(url)
+      .then(function (translationData) {
+        return Object.assign({}, card, {
+          translations: {
+            it: {
+              name: translationData.printed_name,
+              imageUrl: card.data?.image_uris?.normal
+            }
+          }
+        })
+      })
+      .catch(function (error) {
+        console.log("Card translation download failed", url)
+        return card
+      })
+  } else {
+    return card
+  }
+}
+
 fs.readdir(DECKS_DIR, (err, files) => {
   files.forEach(file => {
     if (file.endsWith('.json')) {
       console.log(`Importing ${file}`)
 
       const deck = JSON.parse(fs.readFileSync(DECKS_DIR + '/' + file))
-      // deck.deckList = [deck.deckList[0]]
-      Promise.all(deck.deckList.map(downloadCardData)).then(function (data) {
+      Promise.all(
+        deck.deckList
+          .map(downloadCardData)
+          .map(cardDataPromise => cardDataPromise.then(downloadTranslationsData))
+      ).then(function (data) {
         deck.deckList = data
-
         fs.writeFile(DECKS_DIR + '/' + file, JSON.stringify(deck), (err) => {
           if (err) {
             console.error("File write failed", err)

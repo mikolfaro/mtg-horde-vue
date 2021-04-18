@@ -23,7 +23,16 @@ export default class Card extends Record({
     return this.set('tapped', false)
   }
 
-  imageUrl() {
+  imageUrl(locale = "en") {
+    if (
+      locale != "en" &&
+      this.cardData.translations &&
+      this.cardData.translations[locale] &&
+      this.cardData.translations[locale].imageUrl
+    ) {
+      return this.cardData.translations[locale].imageUrl
+    }
+
     return this.cardData.imageUrl
   }
 
