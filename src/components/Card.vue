@@ -6,13 +6,13 @@
     </div>
     <slot name="buttons">
       <button v-if="canTap && !card.tapped" class="tap-card" @click=onTap>
-        <img alt="Tap card" :src="tapIcon" role="presentation" />
+        <img :alt="$t('actions.tap')" :src="tapIcon" role="presentation" />
       </button>
       <button v-if="card.tapped" class="untap-card" @click="onUntap">
-        <img alt="Untap card" :src="untapIcon" role="presentation" />
+        <img :alt="$t('actions.untap')" :src="untapIcon" role="presentation" />
       </button>
       <button v-if="canDestroy" class="destroy-card" @click="onDestroy">
-        <img alt="Destroy card" :src="destroyIcon" role="presentation" />
+        <img :alt="$t('actions.destroy')" :src="destroyIcon" role="presentation" />
       </button>
     </slot>
   </div>
@@ -40,7 +40,7 @@
     },
     computed: {
       name() {
-        return this.faceDown ? "Face down card" : this.card.name()
+        return this.faceDown ? this.$t("card.faceDownName") : this.card.name()
       },
       image() {
         return this.faceDown ? faceDownImage : this.card.imageUrl()

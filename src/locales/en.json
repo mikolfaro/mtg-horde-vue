@@ -32,10 +32,27 @@
     "title": "Deck",
     "millButton": "Mill"
   },
+  "cardPile": {
+    "cardsNumber": {
+      "label": "Number of cards"
+    }
+  },
+  "listModal": {
+    "noCards": "No cards"
+  },
+  "graveyard": {
+    "title": "Graveyard"
+  },
+  "card": {
+    "faceDown": "Face down card"
+  },
   "actions": {
     "play": "Play",
     "discard": "Discard",
-    "exile": "Exile"
+    "exile": "Exile",
+    "tap": "Tap",
+    "untap": "Untap",
+    "destroy": "Destroy"
   },
   "gameType": {
     "horde": {

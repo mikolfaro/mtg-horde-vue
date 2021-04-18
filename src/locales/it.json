@@ -32,10 +32,27 @@
     "title": "Mazzo",
     "millButton": "Macina"
   },
+  "cardPile": {
+    "cardsNumber": {
+      "label": "Numero di carte"
+    }
+  },
+  "listModal": {
+    "noCards": "Nessuna carta"
+  },
+  "graveyard": {
+    "title": "Cimitero"
+  },
+  "card": {
+    "faceDown": "Carta a faccia in giù"
+  },
   "actions": {
     "play": "Gioca",
     "discard": "Scarta",
-    "exile": "Esilia"
+    "exile": "Esilia",
+    "tap": "Tappa",
+    "untap": "Stappa",
+    "destroy": "Distruggi"
   },
   "gameType": {
     "horde": {

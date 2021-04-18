@@ -1,7 +1,7 @@
 <template>
   <div class="graveyard">
     <CardPile
-        label="Graveyard"
+        :label="$t('graveyard.title')"
         :cards="cards"
         :background="background"
         :actions="actions"
@@ -19,8 +19,8 @@
     data() {
       return {
         actions: {
-          exile: "Exile",
-          play: "Play",
+          exile: this.$t("actions.exile"),
+          play: this.$t("actions.play"),
         },
       }
     },

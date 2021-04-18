@@ -3,7 +3,7 @@
     <template v-slot:header>{{ title }}</template>
     <template v-slot:body>
       <div>
-        <p v-if="!cards.length">No cards</p>
+        <p v-if="!cards.length">{{ $t("listModal.noCards")}}</p>
 
         <Swiper ref="swiper"
                 :options="swiperOptions"

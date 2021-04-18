@@ -13,7 +13,9 @@
           @submit="handleRemoveCard"
       >
         <div class="form-group">
-          <label class="sr-only" for="cards-number">Numero di carte</label>
+          <label class="sr-only" for="cards-number">
+            {{ $t("cardPile.cardsNumber.label") }}
+          </label>
           <input id="cards-number"
                  type="number"
                  v-model="cardsNumber"

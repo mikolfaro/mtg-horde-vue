@@ -24,9 +24,9 @@
       return {
         background: backCard,
         actions: {
-          discard: 'Discard',
-          exile: 'Exile',
-          play: 'Play',
+          discard: this.$t("actions.discard"),
+          exile: this.$t("actions.exile"),
+          play: this.$t("actions.play"),
         }
       }
     },

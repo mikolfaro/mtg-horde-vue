@@ -2,9 +2,7 @@
   <div v-if="isOpen" class="modal-backdrop" v-on:click.stop @click="close">
     <div class="modal" v-on:click.stop>
       <header class="modal-header">
-        <slot name="header">
-          This is the default title!
-        </slot>
+        <slot name="header"></slot>
         <button
             type="button"
             class="btn-close"
@@ -15,11 +13,11 @@
       </header>
 
       <section class="modal-body">
-        <slot name="body">Body of the modal</slot>
+        <slot name="body"></slot>
       </section>
 
       <footer class="modal-footer">
-        <slot name="footer">Footer of the modal</slot>
+        <slot name="footer"></slot>
       </footer>
     </div>
   </div>
