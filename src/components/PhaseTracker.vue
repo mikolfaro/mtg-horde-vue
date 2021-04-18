@@ -1,7 +1,7 @@
 <template>
   <div class="phase-tracker">
     <div class="current-phase-title">
-      <span class="current-phase-label">Phase:</span>
+      <span class="current-phase-label">{{ $t('phaseTracker.title') }}</span>
       &nbsp;
       <span class="current-phase">{{phase.title}}</span>
     </div>
@@ -9,7 +9,7 @@
     <span class="current-phase-description">{{phase.description}}</span>
 
     <div class="button-container">
-      <button class="button-small" @click="onNextPhase">Next</button>
+      <button class="button-small" @click="onNextPhase">{{ $t('phaseTracker.nextPhaseButton') }}</button>
     </div>
   </div>
 </template>

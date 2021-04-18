@@ -1,16 +1,16 @@
 <template>
   <div class="container game-form">
     <div class="outer-box">
-      <h1>MTG Horde</h1>
+      <h1>{{ $t("gameType.horde.title") }}</h1>
 
       <form v-on:submit="handleSubmit">
         <div class="mt-3 form-group">
-          <label for="players"># of Players</label>
+          <label for="players">{{ $t("gameForm.players.label") }}</label>
           <input class="form-control" id="players" name="players" type="number" min="1" max="6"
                  v-model="players" @change="handleInputChange">
         </div>
         <div class="mt-3 form-group">
-            <label for="deck">Deck</label>
+            <label for="deck">{{ $t("gameForm.deck.label") }}</label>
             <select class="form-control" id="deck" name="deck"
                     v-model="deck" @change="handleInputChange">
               <option v-for="aDeck in decks"
@@ -26,11 +26,11 @@
             <input id="graveyardTokens" name="graveyardTokens" type="checkbox"
                    v-model="graveyardTokens" @change="handleInputChange">
 
-            <span class="label">Destroyed tokens go to graveyard</span>
+            <span class="label">{{ $t("gameForm.graveyardTokens.label") }}</span>
          </label>
         </div>
 
-        <input class="button button-primary" type="submit" value="Play!"/>
+        <input class="button button-primary" type="submit" :value="$t('gameForm.submit')"/>
       </form>
     </div>
   </div>

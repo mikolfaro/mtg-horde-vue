@@ -43,17 +43,11 @@
       <CardZone id="board"></CardZone>
     </div>
 
-    <!-- BoardWipe></BoardWipe -->
-
     <SpellModal
       :spell="topStack"
       @resolve-spell="resolveTopStack"
       @counter-spell="counterTopStack"
     />
-
-    <!-- card-modal></card-modal -->
-
-    <!-- list-modal></list-modal -->
   </div>
 </template>
 <script>

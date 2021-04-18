@@ -13,7 +13,9 @@
         <button class="token-stat-button" @click="onBuffToughness">+</button>
       </div>
 
-      <button class="button-small token-spawn-button" @click="onSpawn">Spawn</button>
+      <button class="button-small token-spawn-button" @click="onSpawn">
+        {{ $t('tokenCreator.spawnButton' )}}
+      </button>
     </div>
   </div>
 </template>

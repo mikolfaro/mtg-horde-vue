@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <h1>Horde Magic</h1>
+    <h1>{{ $t('home.title') }}</h1>
 
     <GameForm @play="onPlay" />
   </div>

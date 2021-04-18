@@ -1,0 +1,22 @@
+{
+  "home": {
+    "title": "MTG Horde"
+  },
+  "gameForm": {
+    "players": {
+      "label": "Giocatori"
+    },
+    "deck": {
+      "label": "Mazzo"
+    },
+    "graveyardTokens": {
+      "label": "Le pedine finiscono nel cimitero"
+    },
+    "submit": "Gioca!"
+  },
+  "gameType": {
+    "horde": {
+      "title": "L'orda"
+    }
+  }
+}

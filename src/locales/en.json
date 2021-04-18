@@ -1,3 +1,45 @@
 {
-  "message": "hello i18n !!"
+  "home": {
+    "title": "MTG Horde"
+  },
+  "gameForm": {
+    "players": {
+      "label": "# of Players"
+    },
+    "deck": {
+      "label": "Deck"
+    },
+    "graveyardTokens": {
+      "label": "Destroyed tokens go to graveyard"
+    },
+    "submit": "Play!"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About"
+  },
+  "phaseTracker": {
+    "title": "Phase:",
+    "nextPhaseButton": "Next"
+  },
+  "hand": {
+    "title": "The Horde Hand"
+  },
+  "tokenCreator": {
+    "spawnButton": "Spawn"
+  },
+  "deck": {
+    "title": "Deck",
+    "millButton": "Mill"
+  },
+  "actions": {
+    "play": "Play",
+    "discard": "Discard",
+    "exile": "Exile"
+  },
+  "gameType": {
+    "horde": {
+      "title": "Horde Magic"
+    }
+  }
 }

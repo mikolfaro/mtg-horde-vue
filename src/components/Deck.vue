@@ -1,8 +1,8 @@
 <template>
   <div class="deck" >
     <CardPile
-        label="Deck"
-        remove-card-label="Mill"
+        :label="$t('deck.title')"
+        :remove-card-label="$t('deck.millButton')"
         :cards=cards
         :background="background"
         :actions="actions"

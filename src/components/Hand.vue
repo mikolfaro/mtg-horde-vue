@@ -7,7 +7,7 @@
     <ListModal
       v-if="modalOpen"
       :is-open="true"
-      title="The Horde Hand"
+      :title="$t('hand.title')"
       :cards="cards"
       :actions="actions"
       @action="onAction"
@@ -27,9 +27,9 @@
       return {
         modalOpen: false,
         actions: {
-          play: "Play",
-          discard: "Discard",
-          exile: "Exile",
+          play: this.$t("actions.play"),
+          discard: this.$t("actions.discard"),
+          exile: this.$t("actions.exile"),
         }
       }
     },
