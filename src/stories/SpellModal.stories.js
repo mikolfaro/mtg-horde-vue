@@ -1,5 +1,4 @@
 import SpellModal from '@/components/SpellModal'
-import Modal from '@/components/Modal'
 import Card from '@/models/Card'
 
 export default {

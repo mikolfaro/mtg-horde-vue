@@ -1,5 +1,3 @@
-import { action } from '@storybook/addon-actions'
-
 import Deck from '../components/Deck'
 import Card from '../models/Card'
 

@@ -1,5 +1,3 @@
-import { action } from '@storybook/addon-actions'
-
 import Graveyard from '@/components/Graveyard'
 import Card from '@/models/Card'
 

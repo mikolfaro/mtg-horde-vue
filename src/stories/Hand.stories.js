@@ -1,5 +1,3 @@
-import { action } from '@storybook/addon-actions'
-
 import Hand from '@/components/Hand'
 
 export default {

@@ -1,5 +1,3 @@
-import { action } from '@storybook/addon-actions'
-
 import PhaseTracker from '../components/PhaseTracker.vue'
 
 export default {

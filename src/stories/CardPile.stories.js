@@ -1,5 +1,3 @@
-import { action } from '@storybook/addon-actions'
-
 import CardPile from '../components/CardPile.vue'
 import Card from '../models/Card'
 import backCard from '../assets/back-card.png';

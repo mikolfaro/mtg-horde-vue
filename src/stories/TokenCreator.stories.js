@@ -1,5 +1,3 @@
-import { action } from '@storybook/addon-actions'
-
 import TokenCreator from '@/components/TokenCreator'
 
 export default {
