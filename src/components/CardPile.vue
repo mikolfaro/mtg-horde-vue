@@ -109,6 +109,8 @@
         flex: 1 0 auto
       form
         flex-shrink: 0
+        .button-small
+          padding: 5px 0
 
       .button-small
         display: inline-block

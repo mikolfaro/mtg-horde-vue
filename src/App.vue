@@ -18,10 +18,11 @@
     },
     methods: {
       onItClick() {
-
+        console.log("Change lang")
+        this.$i18n.locale = "it"
       },
       onEnClick() {
-
+        this.$i18n.locale = "en"
       }
     }
   }
