@@ -47,10 +47,14 @@
   }
 </script>
 <style lang="sass">
-  .spell-modal .buttons
-    display: flex
-    flex-direction: row
-    justify-content: space-between
+  .spell-modal
+    .buttons
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+
+    .spell img
+      border-radius: 4.5%
 
   .button-group
     margin: auto
