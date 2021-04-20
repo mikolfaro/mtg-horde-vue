@@ -10,7 +10,8 @@
     "refresh-decks": "./bin/refresh-decks.js",
     "storybook:build": "vue-cli-service storybook:build -c config/storybook",
     "storybook:serve": "vue-cli-service storybook:serve -p 6006 -c config/storybook",
-    "test:vue": "vue-cli-service test:unit test/components"
+    "test:vue": "vue-cli-service test:unit test/components",
+    "test:firestore": "mocha --exit"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -21,6 +22,7 @@
     "vuex": "^3.4.0"
   },
   "devDependencies": {
+    "@firebase/testing": "^0.20.11",
     "@storybook/addon-essentials": "^6.0.26",
     "@storybook/addon-links": "^6.0.26",
     "@storybook/vue": "^6.0.26",
