@@ -9,7 +9,9 @@
     "i18n:report": "vue-cli-service i18n:report --src \"./src/**/*.?(js|vue)\" --locales \"./src/locales/**/*.json\"",
     "refresh-decks": "./bin/refresh-decks.js",
     "storybook:build": "vue-cli-service storybook:build -c config/storybook",
-    "storybook:serve": "vue-cli-service storybook:serve -p 6006 -c config/storybook"
+    "storybook:serve": "vue-cli-service storybook:serve -p 6006 -c config/storybook",
+    "test:vue": "vue-cli-service test:unit",
+    "test:firestore": "mocha --exit"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -20,12 +22,14 @@
     "vuex": "^3.4.0"
   },
   "devDependencies": {
+    "@firebase/testing": "^0.20.11",
     "@storybook/addon-essentials": "^6.0.26",
     "@storybook/addon-links": "^6.0.26",
     "@storybook/vue": "^6.0.26",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-unit-mocha": "^4.5.12",
     "@vue/cli-service": "~4.5.0",
     "axios": "^0.21.1",
     "babel-eslint": "^10.1.0",
