@@ -15,6 +15,9 @@
     "graveyardTokens": {
       "label": "Le pedine finiscono nel cimitero"
     },
+    "playerName": {
+      "label": "Nome"
+    },
     "submit": "Gioca!"
   },
   "nav": {
@@ -47,7 +50,7 @@
     "title": "Cimitero"
   },
   "card": {
-    "faceDown": "Carta a faccia in giù"
+    "faceDownName": "Carta a faccia in giù"
   },
   "spellModal": {
     "title": "L'Orda gioca"

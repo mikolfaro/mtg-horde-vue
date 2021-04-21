@@ -15,6 +15,9 @@
     "graveyardTokens": {
       "label": "Destroyed tokens go to graveyard"
     },
+    "playerName": {
+      "label": "Player name"
+    },
     "submit": "Play!"
   },
   "nav": {
@@ -47,7 +50,7 @@
     "title": "Graveyard"
   },
   "card": {
-    "faceDown": "Face down card"
+    "faceDownName": "Face down card"
   },
   "spellModal": {
     "title": "The Horde cast"
