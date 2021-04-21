@@ -11,7 +11,7 @@
     "storybook:build": "vue-cli-service storybook:build -c config/storybook",
     "storybook:serve": "vue-cli-service storybook:serve -p 6006 -c config/storybook",
     "test:vue": "vue-cli-service test:unit test/components",
-    "test:firestore": "mocha test/firebase/**/*.js --exit",
+    "test:firestore": "FIRESTORE_EMULATOR_HOST=localhost:8090 mocha test/firebase/**/*.js --exit",
     "firebase:emulators": "firebase emulators:start"
   },
   "dependencies": {
