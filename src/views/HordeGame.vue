@@ -62,7 +62,7 @@
   import SpellModal from '@/components/SpellModal'
 
   export default {
-    name: "Game",
+    name: "HordeGame",
     components: { SpellModal, CardZone, Deck, Graveyard, Hand, PhaseTracker, TokenCreator },
     data() {
       return {}
