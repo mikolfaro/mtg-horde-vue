@@ -11,14 +11,20 @@
   </div>
 </template>
 <script>
+  import { auth } from '@/utils/firebase'
+
   export default {
     name: "App",
     data() {
       return {}
     },
+    async mounted() {
+      if (!auth.currentUser) {
+        auth.signInAnonymously()
+      }
+    },
     methods: {
       onItClick() {
-        console.log("Change lang")
         this.$i18n.locale = "it"
       },
       onEnClick() {

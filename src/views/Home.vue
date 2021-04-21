@@ -12,7 +12,7 @@
         </select>
 
         <HordeGameForm v-if="gameType === 'horde'" @play="onPlayHorde" />
-        <PvpHostGameForm v-if="gameType === 'pvpHost'" />
+        <PvpHostGameForm v-if="gameType === 'pvpHost'" @play="onPlayPvpHost" />
         <PvpGuestGameForm v-if="gameType === 'pvpGuest'" />
       </div>
     </div>
@@ -41,6 +41,9 @@ export default {
       this.setPlayersCount(e.playersCount)
       this.setGraveyardTokens(e.graveyardTokens)
       this.$router.push({ name: "HordeGame" })
+    },
+    onPlayPvpHost() {
+      this.$router.push({ name: "PvpHostGame" })
     },
     loadDeck(deck) {
       const cards = deck['deckList'].map((cardData, i) => {

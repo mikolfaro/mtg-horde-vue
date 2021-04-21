@@ -21,6 +21,8 @@
   </form>
 </template>
 <script>
+import { auth } from '@/utils/firebase'
+
 export default {
   name: "PvpHostGameForm",
   data() {
@@ -29,6 +31,9 @@ export default {
       playerName: ""
     }
   },
+  mounted () {
+    this.playerName = auth.currentUser.displayName
+  },
   methods: {
     handleSubmit(e) {
       e.preventDefault()
@@ -36,8 +41,14 @@ export default {
 
       })
     },
-    handlePlayerNameChange() {
-
+    async handlePlayerNameChange() {
+      await auth.currentUser.updateProfile({
+        displayName: this.playerName,
+      }).then(function() {
+        // Update successful.
+      }).catch(function(error) {
+        console.log(error)
+      });
     }
   }
 }
