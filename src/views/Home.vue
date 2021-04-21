@@ -25,7 +25,7 @@ import Card from '@/models/Card'
 import HordeGameForm from '@/components/HordeGameForm.vue'
 import PvpGuestGameForm from '@/components/PvpGuestGameForm'
 import PvpHostGameForm from '@/components/PvpHostGameForm'
-import { shuffle } from '@/helpers'
+import { shuffle } from '@/utils/commons'
 
 export default {
   name: 'Home',

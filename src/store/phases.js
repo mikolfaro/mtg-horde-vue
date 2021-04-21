@@ -1,4 +1,4 @@
-import { phases } from '@/helpers'
+import { phases } from '@/utils/horde'
 
 export default {
   state: () => ({

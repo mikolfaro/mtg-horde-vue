@@ -26,7 +26,9 @@
      </label>
     </div>
 
-    <input class="button button-primary" type="submit" :value="$t('gameForm.submit')"/>
+    <div class="mt-3">
+      <input class="button button-primary" type="submit" :value="$t('gameForm.submit')"/>
+    </div>
   </form>
 </template>
 <script>
