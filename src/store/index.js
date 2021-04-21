@@ -6,7 +6,7 @@ import hand from './hand'
 import phases from './phases'
 import settings from './settings'
 import Card from '@/models/Card'
-import { preload } from '../helpers'
+import preload from '../utils/preload'
 
 Vue.use(Vuex)
 
