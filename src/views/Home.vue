@@ -5,14 +5,15 @@
     <div class="container game-form">
       <div class="outer-box">
         <select class="game-select" v-model="gameType">
+          <option value="">{{ $t("home.gameSelect.emptyOption") }}</option>
           <option value="horde">{{ $t("gameType.horde.title") }}</option>
           <option value="pvpHost">{{ $t("gameType.pvpHost.title") }}</option>
+          <option value="pvpGuest">{{ $t("gameType.pvpGuest.title") }}</option>
         </select>
 
-        <HordeGameForm
-            v-if="gameType === 'horde'"
-            @play="onPlayHorde" />
-
+        <HordeGameForm v-if="gameType === 'horde'" @play="onPlayHorde" />
+        <PvpHostGameForm v-if="gameType === 'pvpHost'" />
+        <PvpGuestGameForm v-if="gameType === 'pvpGuest'" />
       </div>
     </div>
   </div>
@@ -22,15 +23,17 @@
 import { mapActions } from 'vuex'
 import Card from '@/models/Card'
 import HordeGameForm from '@/components/HordeGameForm.vue'
+import PvpGuestGameForm from '@/components/PvpGuestGameForm'
+import PvpHostGameForm from '@/components/PvpHostGameForm'
 import { shuffle } from '@/helpers'
 
 export default {
   name: 'Home',
   components: {
-    HordeGameForm
+    HordeGameForm, PvpGuestGameForm, PvpHostGameForm
   },
   data() {
-    return { gameType: null }
+    return { gameType: "" }
   },
   methods: {
     onPlayHorde(e) {

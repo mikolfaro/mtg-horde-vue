@@ -1,6 +1,9 @@
 {
   "home": {
-    "title": "MTG Horde"
+    "title": "MTG Horde",
+    "gameSelect": {
+      "emptyOption": "Scegli una modalità"
+    }
   },
   "gameForm": {
     "players": {
@@ -62,6 +65,12 @@
   "gameType": {
     "horde": {
       "title": "L'orda"
+    },
+    "pvpHost": {
+      "title": "PvP - Nuova partita"
+    },
+    "pvpGuest": {
+      "title": "PvP - Partecipa ad una partita"
     }
   },
   "phases": {
