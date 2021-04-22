@@ -1,4 +1,4 @@
-const firebase = require('@firebase/testing')
+const firebase = require('@firebase/rules-unit-testing')
 
 const MY_PROJECT_ID = "mtg-horde-5b6a1"
 
@@ -31,10 +31,15 @@ describe("User", () => {
     await firebase.assertFails(testDoc.set({ name: "Tizio" }))
   })
 
-  it("Can create a new room", async () => {
+  it("Can create a new room with fixed id", async () => {
     const db = getFirestore(myAuth)
     const testDoc = db.collection("rooms").doc("myRoomId")
     await firebase.assertSucceeds(testDoc.set({ ownerId: myId }))
+  })
+
+  it("Can create a new room without id", async () => {
+    const db = getFirestore(myAuth)
+    await firebase.assertSucceeds(db.collection("rooms").add({ ownerId: myId }))
   })
 
   it("Can read a room of other user", async () => {
