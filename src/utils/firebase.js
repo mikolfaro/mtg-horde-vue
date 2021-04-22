@@ -18,6 +18,6 @@ if (
   process.env.NODE_ENV === "development" ||
   process.env.NODE_ENV === "test"
 ) {
-  db.useEmulator('http://localhost:8090')
-  auth.useEmulator('http://localhost:9099/');
+  // db.useEmulator('http://localhost:8090')
+  // auth.useEmulator('http://localhost:9099/');
 }
