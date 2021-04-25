@@ -1,5 +1,5 @@
 <template>
-  <div class="camera">
+  <div class="camera" :class="{ 'other-player': otherPlayer }">
     <span class="name">{{ name }}</span>
   </div>
 </template>
@@ -10,7 +10,8 @@ export default {
     return {}
   },
   props: {
-    name: { type: String }
+    name: { type: String },
+    otherPlayer: { type: Boolean }
   }
 }
 </script>
@@ -19,4 +20,7 @@ export default {
     min-width: 200px
     min-height: 200px
     background: red
+
+    &.other-player
+      background: yellow
 </style>

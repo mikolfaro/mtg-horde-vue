@@ -5,6 +5,9 @@
         <div class="col-4">
           <Camera :name="playerName" />
         </div>
+        <div v-for="(player, index) in otherPlayers" v-bind:key="index" class="col-4">
+          <Camera :name="player.name" :otherPlayer="true" />
+        </div>
         <div class="col-4">
           <span v-if="roomId">
             Other players can join using code: {{ this.roomId }}
@@ -15,37 +18,18 @@
   </div>
 </template>
 <script>
-import { auth } from '@/utils/firebase'
 import Camera from '@/components/Camera'
+import pvpGame from '@/mixins/pvpGame'
 
 export default {
   name: "PvpHostGame",
   components: {Camera},
+  mixins: [pvpGame],
   data() {
     return {
       user: {},
       room: null,
       roomId: null
-    }
-  },
-  computed: {
-    playerName() {
-      return this.user?.displayName
-    }
-  },
-  mounted() {
-    this.roomId = this.$route.params.roomId
-    this.user = auth.currentUser
-
-    auth.onAuthStateChanged((user) => {
-      this.user = user
-    })
-
-    this.loadOtherPlayers()
-  },
-  methods: {
-    loadOtherPlayers() {
-
     }
   }
 }
