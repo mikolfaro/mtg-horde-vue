@@ -10,7 +10,7 @@
     "refresh-decks": "./bin/refresh-decks.js",
     "storybook:build": "vue-cli-service storybook:build -c config/storybook",
     "storybook:serve": "vue-cli-service storybook:serve -p 6006 -c config/storybook",
-    "test:vue": "vue-cli-service test:unit"
+    "test:vue": "vue-cli-service test:unit test/components"
   },
   "dependencies": {
     "core-js": "^3.6.5",

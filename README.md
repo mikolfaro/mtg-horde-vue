@@ -4,6 +4,7 @@ Available at https://mikolfaro.github.io/mtg-horde-vue.
 
 This is a porting of [dkniffin/mtg-horde](https://github.com/dkniffin/mtg-horde) to VueJS.
 
+![testing status](https://github.com/<OWNER>/<REPOSITORY>/actions/workflows/test.js.yml/badge.svg)
 ## Project setup
 ```
 yarn install
