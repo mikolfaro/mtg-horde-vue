@@ -18,6 +18,9 @@
     "playerName": {
       "label": "Nome"
     },
+    "roomId": {
+      "label": "Partita"
+    },
     "submit": "Gioca!"
   },
   "nav": {

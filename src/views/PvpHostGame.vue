@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-4">
-          <Camera :name="user.displayName" />
+          <Camera :name="playerName" />
         </div>
         <div class="col-4">
           <span v-if="roomId">
@@ -24,9 +24,13 @@ export default {
   data() {
     return {
       user: {},
-      playerName: null,
       room: null,
       roomId: null
+    }
+  },
+  computed: {
+    playerName() {
+      return this.user?.displayName
     }
   },
   mounted() {
@@ -40,7 +44,9 @@ export default {
     this.loadOtherPlayers()
   },
   methods: {
-    
+    loadOtherPlayers() {
+
+    }
   }
 }
 </script>
