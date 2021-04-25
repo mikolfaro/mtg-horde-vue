@@ -20,3 +20,5 @@ jobs:
         run: yarn install --frozen-lockfile
       - name: "Run Vue tests"
         run: yarn test:vue
+      - name: "Run firebase tests"
+        run: firebase emulators:exec "FIRESTORE_EMULATOR_HOST=localhost:8090 yarn run mocha test/firebase/**/*.js --exit"
