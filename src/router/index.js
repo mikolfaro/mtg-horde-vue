@@ -24,9 +24,14 @@ const routes = [
     component: () => import(/* webpackChunkName: "game" */ '../views/HordeGame.vue')
   },
   {
-    path: '/pvp-host',
+    path: '/pvp-host/:roomId',
     name: 'PvpHostGame',
     component: () => import(/* webpackChunkName: "pvpHost" */ '../views/PvpHostGame.vue')
+  },
+  {
+    path: '/pvp-guest/:roomId',
+    name: 'PvpGuestGame',
+    component: () => import(/*webpackChunkName: "pvpGuest" */ '../views/PvpGuestGame.vue')
   }
 ]
 

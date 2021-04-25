@@ -1,32 +1,26 @@
 <template>
-  <div class="game-page">
-    <div class="container">
-      <div class="row">
-        <div class="col-4">
-          <Camera :name="user.displayName" />
-        </div>
-        <div class="col-4">
-          <span v-if="roomId">
-            Other players can join using code: {{ this.roomId }}
-          </span>
+    <div class="game-page">
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <Camera :name="user.displayName" />
+          </div>
         </div>
       </div>
     </div>
-  </div>
 </template>
 <script>
 import { auth } from '@/utils/firebase'
 import Camera from '@/components/Camera'
 
 export default {
-  name: "PvpHostGame",
+  name: "PvpGuestGame",
   components: {Camera},
   data() {
     return {
       user: {},
-      playerName: null,
       room: null,
-      roomId: null
+      roomId: null,
     }
   },
   mounted() {
@@ -36,11 +30,6 @@ export default {
     auth.onAuthStateChanged((user) => {
       this.user = user
     })
-
-    this.loadOtherPlayers()
-  },
-  methods: {
-    
   }
 }
 </script>

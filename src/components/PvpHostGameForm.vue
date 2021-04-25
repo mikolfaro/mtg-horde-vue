@@ -21,7 +21,7 @@
   </form>
 </template>
 <script>
-import { auth } from '@/utils/firebase'
+import { auth, db } from '@/utils/firebase'
 
 export default {
   name: "PvpHostGameForm",
@@ -35,11 +35,10 @@ export default {
     this.playerName = auth.currentUser.displayName
   },
   methods: {
-    handleSubmit(e) {
+    async handleSubmit(e) {
       e.preventDefault()
-      this.$emit("play", {
-
-      })
+      const roomId = await this.createRoom()
+      this.$emit("play", roomId)
     },
     async handlePlayerNameChange() {
       await auth.currentUser.updateProfile({
@@ -49,6 +48,15 @@ export default {
       }).catch(function(error) {
         console.log(error)
       });
+    },
+    async createRoom() {
+      const data = { ownerId: auth.currentUser.uid, createdAt: new Date() }
+      console.log(data)
+
+      const room = db.collection("rooms").doc()
+      await room.set(data)
+
+      return room.id
     }
   }
 }
