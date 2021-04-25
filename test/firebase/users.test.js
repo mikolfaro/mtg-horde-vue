@@ -15,7 +15,7 @@ function getAdminFirestore() {
 }
 
 beforeEach(async () => {
-  firebase.clearFirestoreData({ projectId: MY_PROJECT_ID })
+  await firebase.clearFirestoreData({ projectId: MY_PROJECT_ID })
 })
 
 describe("User", () => {
@@ -42,15 +42,6 @@ describe("User", () => {
     await firebase.assertSucceeds(db.collection("rooms").add({ ownerId: myId }))
   })
 
-  it("Cannot update an other user room", async () => {
-    const setupDoc = getAdminFirestore().collection("rooms").doc("theirRoomId")
-    await setupDoc.set({ ownerId: theirId })
-
-    const db = getFirestore(myAuth)
-    const testDoc = db.collection("rooms").doc(setupDoc.id)
-    await firebase.assertFails(testDoc.set({ foo: "bar", ownerId: myId }))
-  })
-
   it("Can read a room of other user", async () => {
       const setupDoc = getAdminFirestore().collection("rooms").doc("theirRoomId")
       await setupDoc.set({ ownerId: theirId })
@@ -66,16 +57,27 @@ describe("User", () => {
       await firebase.assertFails(testQuery.get())
   })
 
-  it("Can update their room", async () => {
-      const adminDoc = getAdminFirestore().collection("rooms").doc()
-      await adminDoc.set({ owner: myId })
+  it("Can update their own room", async () => {
+    const adminDoc = getAdminFirestore().collection("rooms").doc("myRoomId")
+    await adminDoc.set({ ownerId: myId })
 
-      const db = getFirestore(myAuth)
-      const testDoc = db.collection("rooms").doc("myRoomId")
-      await firebase.assertSucceeds(testDoc.set({ foo: "bar", ownerId: myId }))
+    const db = getFirestore(myAuth)
+    const testDoc = db.collection("rooms").doc(adminDoc.id)
+    await firebase.assertSucceeds(testDoc.set({ foo: "bar", ownerId: myId }))
+    await firebase.assertSucceeds(testDoc.update({ "foo": "bar"}))
+  })
+
+  it("Cannot update an other user room", async () => {
+    const adminDoc = getAdminFirestore().collection("rooms").doc("theirRoomId")
+    await adminDoc.set({ ownerId: theirId })
+
+    const db = getFirestore(myAuth)
+    const testDoc = db.collection("rooms").doc(adminDoc.id)
+    // await firebase.assertFails(testDoc.update({ foo: "bar", ownerId: myId }))
+    await firebase.assertFails(testDoc.set({ foo: "bar", ownerId: myId }, { merge: true }))
   })
 })
 
-after(() => {
-  firebase.clearFirestoreData({ projectId: MY_PROJECT_ID })
+after(async () => {
+  await firebase.clearFirestoreData({ projectId: MY_PROJECT_ID })
 })
