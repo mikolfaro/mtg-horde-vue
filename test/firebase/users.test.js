@@ -42,12 +42,21 @@ describe("User", () => {
     await firebase.assertSucceeds(db.collection("rooms").add({ ownerId: myId }))
   })
 
+  it("Cannot update an other user room", async () => {
+    const setupDoc = getAdminFirestore().collection("rooms").doc("theirRoomId")
+    await setupDoc.set({ ownerId: theirId })
+
+    const db = getFirestore(myAuth)
+    const testDoc = db.collection("rooms").doc(setupDoc.id)
+    await firebase.assertFails(testDoc.set({ foo: "bar", ownerId: myId }))
+  })
+
   it("Can read a room of other user", async () => {
       const setupDoc = getAdminFirestore().collection("rooms").doc("theirRoomId")
-      await setupDoc.set({ owner: theirId })
+      await setupDoc.set({ ownerId: theirId })
 
       const db = getFirestore(myAuth)
-      const testDoc = db.collection("rooms").doc("theirRoomId")
+      const testDoc = db.collection("rooms").doc(setupDoc.id)
       await firebase.assertSucceeds(testDoc.get())
   })
 
@@ -65,13 +74,8 @@ describe("User", () => {
       const testDoc = db.collection("rooms").doc("myRoomId")
       await firebase.assertSucceeds(testDoc.set({ foo: "bar", ownerId: myId }))
   })
+})
 
-  it("Cannot update an other user room", async () => {
-    const setupDoc = getAdminFirestore().collection("rooms").doc("theirRoomId")
-    await setupDoc.set({ owner: theirId })
-
-    const db = getFirestore(myAuth)
-      const testDoc = db.collection("rooms").doc("theirRoomId")
-      await firebase.assertFails(testDoc.set({ foo: "bar", ownerId: theirId }))
-  })
+after(() => {
+  firebase.clearFirestoreData({ projectId: MY_PROJECT_ID })
 })
