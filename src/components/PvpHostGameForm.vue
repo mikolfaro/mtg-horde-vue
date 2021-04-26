@@ -32,7 +32,7 @@ export default {
     }
   },
   mounted () {
-    this.playerName = auth.currentUser.displayName
+    this.playerName = auth.currentUser ? auth.currentUser.displayName : null
   },
   methods: {
     async handleSubmit(e) {

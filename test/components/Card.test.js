@@ -1,10 +1,10 @@
 import { render } from '@testing-library/vue'
 import { expect } from 'chai'
 
+import VueI18n from 'vue-i18n'
 import i18n from '@/i18n'
 import Card from '@/components/Card'
 import CardModel from '@/models/Card'
-import VueI18n from 'vue-i18n'
 
 describe('Card', () => {
   const aCreature = new CardModel({
