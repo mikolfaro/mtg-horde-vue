@@ -3,7 +3,6 @@ import VueRouter from 'vue-router'
 import { auth, db } from '@/utils/firebase'
 
 import Home from '../views/Home.vue'
-import { nextTick } from 'vue/types/umd'
 
 Vue.use(VueRouter)
 
