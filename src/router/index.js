@@ -1,6 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import { auth, db } from '@/utils/firebase'
+
 import Home from '../views/Home.vue'
+import { nextTick } from 'vue/types/umd'
 
 Vue.use(VueRouter)
 
@@ -24,20 +27,26 @@ const routes = [
     component: () => import(/* webpackChunkName: "game" */ '../views/HordeGame.vue')
   },
   {
-<<<<<<< HEAD
-    path: '/pvp-host',
-    name: 'PvpHostGame',
-    component: () => import(/* webpackChunkName: "pvpHost" */ '../views/PvpHostGame.vue')
-=======
     path: '/pvp-host/:roomId',
     name: 'PvpHostGame',
-    component: () => import(/* webpackChunkName: "pvpHost" */ '../views/PvpHostGame.vue')
+    component: () => import(/* webpackChunkName: "pvpHost" */ '../views/PvpHostGame.vue'),
+    async beforeEnter(to) {
+      const roomId = to.params.roomId
+      console.log("TO", roomId)
+      console.log("Current UID", auth.currentUser.uid)
+      const doc = db.collection(`rooms/${roomId}/players`).doc(auth.currentUser.uid)
+      await doc.set({ name: auth.currentUser.displayName }, { merge: true })
+    },
+    async beforeRouteLeave(to, from, next) {
+      const doc = db.collection(`rooms/${this.roomId}/players`).doc(this.user.uid)
+      await doc.set({ name: this.playerName })
+      next()
+    }
   },
   {
     path: '/pvp-guest/:roomId',
     name: 'PvpGuestGame',
     component: () => import(/*webpackChunkName: "pvpGuest" */ '../views/PvpGuestGame.vue')
->>>>>>> a6ddd2d8c0e7efe488107321f9708075ecbf461a
   }
 ]
 

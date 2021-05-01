@@ -18,12 +18,9 @@
     "playerName": {
       "label": "Player name"
     },
-<<<<<<< HEAD
-=======
     "roomId": {
       "label": "Game"
     },
->>>>>>> a6ddd2d8c0e7efe488107321f9708075ecbf461a
     "submit": "Play!"
   },
   "nav": {

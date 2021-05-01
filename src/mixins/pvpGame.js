@@ -31,6 +31,17 @@ export default {
     })
 
     this.loadOtherPlayers()
+
+    this.playersCollection.onSnapshot((snapshot) => {
+      snapshot.docChanges().forEach((change) => {
+        if (change.type === "added") {
+          console.log("New city: ", change.doc.data());
+        }
+      })
+    })
+  },
+  unmounted() {
+    this.leaveRoom()
   },
   methods: {
     async loadOtherPlayers() {
@@ -48,6 +59,11 @@ export default {
     async joinRoom() {
       const doc = this.playersCollection.doc(this.user.uid)
       await doc.set({ name: this.playerName })
+    },
+    async leaveRoom() {
+      console.log("Leaving room")
+      const doc = this.playersCollection.doc(this.user.uid)
+      await doc.delete()
     }
   }
 }

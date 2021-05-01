@@ -86,4 +86,15 @@ describe("User", () => {
     const db = utils.getFirestore(myAuth)
     await utils.firebase.assertSucceeds(db.collection(`rooms/${adminDoc.id}/players`))
   })
+
+  it("Can delete their own presence in the room", async () => {
+    const adminDoc = utils.getAdminFirestore().collection("rooms").doc("theirRoomId")
+    await adminDoc.set({ ownerId: theirId })
+
+    await utils.getAdminFirestore().collection(`rooms/${adminDoc.id}/players`).doc(myId).set({})
+
+    const db = utils.getFirestore(myAuth)
+    const myPresenceDoc = db.collection(`rooms/${adminDoc.id}/players`).doc(myId)
+    await utils.firebase.assertSucceeds(myPresenceDoc.delete())
+  })
 })

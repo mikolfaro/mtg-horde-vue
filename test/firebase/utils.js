@@ -14,9 +14,9 @@ beforeEach(async () => {
   await firebase.clearFirestoreData({ projectId: MY_PROJECT_ID })
 })
 
-after(async () => {
-  await firebase.clearFirestoreData({ projectId: MY_PROJECT_ID })
-})
+// after(async () => {
+//  await firebase.clearFirestoreData({ projectId: MY_PROJECT_ID })
+// })
 
 module.exports = {
   getFirestore,

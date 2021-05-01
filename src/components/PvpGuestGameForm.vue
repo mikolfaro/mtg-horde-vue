@@ -1,7 +1,5 @@
 <template>
   <form v-on:submit="handleSubmit">
-<<<<<<< HEAD
-=======
     <div class="mt-3 form-group">
       <label for="playerName">{{ $t("gameForm.playerName.label") }}</label>
       <input class="form-control" id="playerName" name="playerName" type="text"
@@ -13,7 +11,6 @@
       <input class="form-control" id="roomId" name="roomId" type="text"
              v-model="roomId" @change="handleRoomIdChange" />
     </div>
->>>>>>> a6ddd2d8c0e7efe488107321f9708075ecbf461a
     <div class="mt-3">
       <input
           class="button button-primary"
@@ -24,12 +21,6 @@
   </form>
 </template>
 <script>
-<<<<<<< HEAD
-export default {
-  name: "PvpGuestGameForm",
-  data() {
-    return {}
-=======
 import { auth, db } from '@/utils/firebase'
 
 export default {
@@ -43,16 +34,10 @@ export default {
   },
   mounted () {
     this.playerName = auth.currentUser.displayName
->>>>>>> a6ddd2d8c0e7efe488107321f9708075ecbf461a
   },
   methods: {
     handleSubmit(e) {
       e.preventDefault()
-<<<<<<< HEAD
-      this.$emit("play", {
-
-      })
-=======
       if (this.roomExists) {
         this.$emit("play", this.roomId)
       }
@@ -70,7 +55,6 @@ export default {
       this.roomExists = false
       const room = db.collection("rooms").doc(this.roomId)
       this.roomExists = (await room.get()).exists
->>>>>>> a6ddd2d8c0e7efe488107321f9708075ecbf461a
     }
   }
 }
