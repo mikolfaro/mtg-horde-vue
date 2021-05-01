@@ -3,10 +3,10 @@
     <div class="container">
       <div class="row">
         <div class="col-4">
-          <Camera :name="playerName" />
+          <Display :name="playerName" />
         </div>
         <div v-for="(player, index) in otherPlayers" v-bind:key="index" class="col-4">
-          <Camera :name="player.name" :otherPlayer="true" />
+          <Display :name="player.name" :otherPlayer="true" />
         </div>
         <div class="col-4">
           <span v-if="roomId">
@@ -18,12 +18,12 @@
   </div>
 </template>
 <script>
-import Camera from '@/components/Camera'
+import Display from '@/components/Display'
 import pvpGame from '@/mixins/pvpGame'
 
 export default {
   name: "PvpHostGame",
-  components: {Camera},
+  components: {Display},
   mixins: [pvpGame],
   data() {
     return {

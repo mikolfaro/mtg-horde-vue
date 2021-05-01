@@ -37,7 +37,6 @@ export default {
         if (change.type === "added") {
           const doc = change.doc
           if (doc.id !== this.user.uid) {
-            console.log("New user joined the room", doc.id)
             this.$set(this.players, doc.id, doc.data())
           }
         }

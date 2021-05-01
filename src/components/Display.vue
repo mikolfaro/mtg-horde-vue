@@ -5,7 +5,7 @@
 </template>
 <script>
 export default {
-  name: "Camera",
+  name: "Displayv",
   data() {
     return {}
   },
