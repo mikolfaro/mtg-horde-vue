@@ -1,18 +1,37 @@
 <template>
   <div class="camera" :class="{ 'other-player': otherPlayer }">
     <span class="name">{{ name }}</span>
+
+    <video ref="video" autoplay="true" :muted="muted"></video>
   </div>
 </template>
 <script>
 export default {
-  name: "Displayv",
+  name: "Display",
   data() {
     return {}
   },
   props: {
     name: { type: String },
     otherPlayer: { type: Boolean },
-    stream: { type: Object }
+    stream: { type: MediaStream }
+  },
+  mounted() {
+    if (this.stream) {
+      this.$refs.video.srcObject = this.stream
+    }
+  },
+  computed: {
+    muted() {
+      return this.otherPlayer ? null : "muted"
+    }
+  },
+  watch: {
+    stream: function (newStream) {
+      if (newStream) {
+        this.$refs.video.srcObject = newStream
+      }
+    }
   }
 }
 </script>
@@ -24,4 +43,7 @@ export default {
 
     &.other-player
       background: yellow
+
+    video
+      width: 100%
 </style>

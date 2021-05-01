@@ -58,6 +58,9 @@
   "spellModal": {
     "title": "L'Orda gioca"
   },
+  "pvpHost": {
+    "openCamera": "Avvia camera"
+  },
   "actions": {
     "play": "Gioca",
     "discard": "Scarta",

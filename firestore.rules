@@ -11,15 +11,22 @@ service cloud.firestore {
       allow create: if request.auth != null;
 
       match /players/{playerId} {
-        allow list: if true
+        allow read: if request.auth != null;
         allow write: if request.auth.uid == playerId
           || request.auth.uid == get(/databases/$(database)/documents/rooms/$(roomId)).data.ownerId;
+      }
+
+      match /stream-offers/{offerId} {
+        allow read: if request.auth != null;
+        allow create: if request.auth != null;
+        allow update: if request.auth.uid == resource.data.forId
+          || request.auth.uid == resource.data.byId
       }
     }
 
     match /users/{userId} {
       allow write: if (request.auth.uid == userId);
-      allow read: if true;
+      allow read: if request.auth != null;
     }
   }
 }

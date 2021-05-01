@@ -46,6 +46,9 @@
       "label": "Number of cards"
     }
   },
+  "pvpHost": {
+    "openCamera": "Open camera"
+  },
   "listModal": {
     "noCards": "No cards"
   },
