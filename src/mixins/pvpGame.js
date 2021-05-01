@@ -35,7 +35,11 @@ export default {
     this.playersCollection.onSnapshot((snapshot) => {
       snapshot.docChanges().forEach((change) => {
         if (change.type === "added") {
-          console.log("New city: ", change.doc.data());
+          const doc = change.doc
+          if (doc.id !== this.user.uid) {
+            console.log("New user joined the room", doc.id)
+            this.$set(this.players, doc.id, doc.data())
+          }
         }
       })
     })
@@ -61,7 +65,6 @@ export default {
       await doc.set({ name: this.playerName })
     },
     async leaveRoom() {
-      console.log("Leaving room")
       const doc = this.playersCollection.doc(this.user.uid)
       await doc.delete()
     }

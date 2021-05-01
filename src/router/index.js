@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import { auth, db } from '@/utils/firebase'
 
 import Home from '../views/Home.vue'
 
@@ -29,18 +28,6 @@ const routes = [
     path: '/pvp-host/:roomId',
     name: 'PvpHostGame',
     component: () => import(/* webpackChunkName: "pvpHost" */ '../views/PvpHostGame.vue'),
-    async beforeEnter(to) {
-      const roomId = to.params.roomId
-      console.log("TO", roomId)
-      console.log("Current UID", auth.currentUser.uid)
-      const doc = db.collection(`rooms/${roomId}/players`).doc(auth.currentUser.uid)
-      await doc.set({ name: auth.currentUser.displayName }, { merge: true })
-    },
-    async beforeRouteLeave(to, from, next) {
-      const doc = db.collection(`rooms/${this.roomId}/players`).doc(this.user.uid)
-      await doc.set({ name: this.playerName })
-      next()
-    }
   },
   {
     path: '/pvp-guest/:roomId',

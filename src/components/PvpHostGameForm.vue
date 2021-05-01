@@ -51,10 +51,11 @@ export default {
     },
     async createRoom() {
       const data = { ownerId: auth.currentUser.uid, createdAt: new Date() }
-      console.log(data)
 
       const room = db.collection("rooms").doc()
       await room.set(data)
+
+      console.log("Created new room", room.id)
 
       return room.id
     }
