@@ -21,7 +21,11 @@
   </form>
 </template>
 <script>
+<<<<<<< HEAD
 import { auth } from '@/utils/firebase'
+=======
+import { auth, db } from '@/utils/firebase'
+>>>>>>> a6ddd2d8c0e7efe488107321f9708075ecbf461a
 
 export default {
   name: "PvpHostGameForm",
@@ -32,6 +36,7 @@ export default {
     }
   },
   mounted () {
+<<<<<<< HEAD
     this.playerName = auth.currentUser.displayName
   },
   methods: {
@@ -40,6 +45,15 @@ export default {
       this.$emit("play", {
 
       })
+=======
+    this.playerName = auth.currentUser ? auth.currentUser.displayName : null
+  },
+  methods: {
+    async handleSubmit(e) {
+      e.preventDefault()
+      const roomId = await this.createRoom()
+      this.$emit("play", roomId)
+>>>>>>> a6ddd2d8c0e7efe488107321f9708075ecbf461a
     },
     async handlePlayerNameChange() {
       await auth.currentUser.updateProfile({
@@ -49,6 +63,18 @@ export default {
       }).catch(function(error) {
         console.log(error)
       });
+<<<<<<< HEAD
+=======
+    },
+    async createRoom() {
+      const data = { ownerId: auth.currentUser.uid, createdAt: new Date() }
+      console.log(data)
+
+      const room = db.collection("rooms").doc()
+      await room.set(data)
+
+      return room.id
+>>>>>>> a6ddd2d8c0e7efe488107321f9708075ecbf461a
     }
   }
 }

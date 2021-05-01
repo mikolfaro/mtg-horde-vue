@@ -1,11 +1,16 @@
+<<<<<<< HEAD
 const firebase = require('@firebase/rules-unit-testing')
 
 const MY_PROJECT_ID = "mtg-horde-5b6a1"
+=======
+const utils = require('./utils')
+>>>>>>> a6ddd2d8c0e7efe488107321f9708075ecbf461a
 
 const myId = "user_abc"
 const myAuth = {uid: myId, email: "test@test.test"}
 const theirId = "user_deg"
 
+<<<<<<< HEAD
 function getFirestore(auth) {
   return firebase.initializeTestApp({ projectId: MY_PROJECT_ID, auth: auth }).firestore()
 }
@@ -73,5 +78,18 @@ describe("User", () => {
     const db = getFirestore(myAuth)
       const testDoc = db.collection("rooms").doc("theirRoomId")
       await firebase.assertFails(testDoc.set({ foo: "bar", ownerId: theirId }))
+=======
+describe("User", () => {
+  it("Can write to a user document with the same ID as the user", async () => {
+    const db = utils.getFirestore(myAuth)
+    const testDoc = db.collection("users").doc(myId)
+    await utils.firebase.assertSucceeds(testDoc.set({ name: "Tizio" }))
+  })
+
+  it("Cannot write to a user document with a different ID than the the user", async () => {
+    const db = utils.getFirestore(myAuth)
+    const testDoc = db.collection("users").doc(theirId)
+    await utils.firebase.assertFails(testDoc.set({ name: "Tizio" }))
+>>>>>>> a6ddd2d8c0e7efe488107321f9708075ecbf461a
   })
 })

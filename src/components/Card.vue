@@ -5,7 +5,10 @@
       <span v-if="card.isCreature()" class="pt-indicator">{{power}}/{{toughness}}</span>
     </div>
     <slot name="buttons">
-      <button v-if="canTap && !card.tapped" class="tap-card" @click=onTap>
+      <button
+          v-if="canTap && !card.tapped"
+          class="tap-card"
+          @click="onTap">
         <img :alt="$t('actions.tap')" :src="tapIcon" role="presentation" />
       </button>
       <button v-if="card.tapped" class="untap-card" @click="onUntap">
