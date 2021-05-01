@@ -39,6 +39,8 @@ export default {
           if (doc.id !== this.user.uid) {
             this.$set(this.players, doc.id, doc.data())
           }
+        } else {
+          console.log("Unknown change received", change)
         }
       })
     })

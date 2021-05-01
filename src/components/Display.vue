@@ -11,7 +11,8 @@ export default {
   },
   props: {
     name: { type: String },
-    otherPlayer: { type: Boolean }
+    otherPlayer: { type: Boolean },
+    stream: { type: Object }
   }
 }
 </script>

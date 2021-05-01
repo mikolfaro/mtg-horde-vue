@@ -20,11 +20,12 @@
 <script>
 import Display from '@/components/Display'
 import pvpGame from '@/mixins/pvpGame'
+import audioVideo from '@/mixins/audioVideo'
 
 export default {
   name: "PvpHostGame",
   components: {Display},
-  mixins: [pvpGame],
+  mixins: [pvpGame, audioVideo],
   data() {
     return {
       user: {},
