@@ -70,7 +70,7 @@ export default new Vuex.Store({
       commit('clearHand')
       commit('resetPhase')
     },
-    stepPhase({ commit, state }) {
+    stepPhase({ commit, state, rootState }) {
       commit('stepPhase')
 
       if (state.phases.current.id === 'HORDE_DRAW') {
@@ -86,7 +86,7 @@ export default new Vuex.Store({
         })
         commit('clearHand')
       } else if (state.phases.current.id === 'HORDE_ATTACK') {
-        commit('attack')
+        commit('attack', rootState.settings.playersCount)
       }
     },
     resolveSpell({ commit }, spell) {

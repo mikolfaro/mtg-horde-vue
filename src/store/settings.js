@@ -12,8 +12,8 @@ export default {
     },
   },
   actions: {
-      setPlayersCount(context, graveyardTokens) {
-        context.commit('setGraveyardTokens', graveyardTokens)
+      setPlayersCount(context, playersCount) {
+        context.commit('setPlayersCount', playersCount)
       },
       setGraveyardTokens(context, graveyardTokens) {
         context.commit('setGraveyardTokens', graveyardTokens)

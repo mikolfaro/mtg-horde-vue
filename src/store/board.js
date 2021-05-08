@@ -12,10 +12,11 @@ export default {
       state.stack = []
       state.exile = []
     },
-    attack(state) {
+    attack(state, playersCount) {
       state.permanents = state.permanents.map((card) => {
         if (!card.tapped && card.isCreature()) {
-          return card.tap()
+          const player = Math.floor(Math.random() * playersCount)
+          return card.attack(player)
         }
 
         return card
