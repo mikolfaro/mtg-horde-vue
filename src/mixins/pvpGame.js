@@ -38,8 +38,9 @@ export default {
 
       this.loadOtherPlayers()
 
-      console.log("Joined room", this.roomId)
-      this.playersCollection.onSnapshot((snapshot) => {
+      console.log("Joined room", { id: this.roomId })
+      this.playersCollection.where(truese).onSnapshot((snapshot) => {
+        console.log("Received players snapshot")
         snapshot.docChanges().forEach((change) => {
           const doc = change.doc
           if (change.type === "added") {
