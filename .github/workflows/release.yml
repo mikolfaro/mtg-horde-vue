@@ -23,7 +23,10 @@ jobs:
       - name: "Run Vue tests"
         run: yarn test:vue
 
-      - name: "Lint"
+      - name: Build
+        run: yarn build
+
+      - name: Lint
         run: yarn lint
 
       - name: Deploy
