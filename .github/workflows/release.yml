@@ -7,9 +7,8 @@ on:
     branches: [ main ]
 
 jobs:
-  test:
+  setup:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v2
       - name: Use Node.js 14.x
@@ -18,24 +17,25 @@ jobs:
           node-version: 14.x
       - name: "Install dependencies"
         run: yarn install --frozen-lockfile
+
+  test:
+    runs-on: ubuntu-latest
+    needs: [ setup ]
+    steps:
       - name: "Run Vue tests"
         run: yarn test:vue
 
+  lint:
+    runs-on: ubuntu-latest
+    needs: [ setup ]
+    steps:
+      - name: "Lint"
+        run: yarn lint
+
   release:
     runs-on: ubuntu-latest
-    needs: test
-
+    needs: [ test, lint ]
     steps:
-      - uses: actions/checkout@v2
-
-      - name: Use Node.js 14.x
-        uses: actions/setup-node@v1
-        with:
-          node-version: 14.x
-
-      - name: Install dependencies
-        run: yarn install --frozen-lockfile
-
       - name: Build
         run: yarn build
 
