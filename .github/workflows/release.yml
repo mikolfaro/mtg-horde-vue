@@ -1,15 +1,14 @@
-name: Test
+name: Release
 
 on:
   push:
-    branches: [ '*' ]
+    branches: [ main ]
   pull_request:
     branches: [ main ]
 
 jobs:
-  test:
+  release:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v2
 
@@ -21,8 +20,17 @@ jobs:
       - name: "Install dependencies"
         run: yarn install --frozen-lockfile
 
-      - name: "Lint"
-        run: yarn lint
-
       - name: "Run Vue tests"
         run: yarn test:vue
+
+      - name: Build
+        run: yarn build
+
+      - name: Lint
+        run: yarn lint
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist

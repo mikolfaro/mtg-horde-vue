@@ -1,5 +1,6 @@
 <template>
   <div class="card" :class="{ tapped: tapped, token: card.isToken() }">
+    <div v-if="attackedPlayer != null" class="target-player">{{ attackedPlayer + 1 }}</div>
     <div class="card-bounds">
       <img :src=image :alt="name" @click=onCardClick />
       <span v-if="card.isCreature()" class="pt-indicator">{{power}}/{{toughness}}</span>
@@ -64,6 +65,9 @@
       toughness() {
         return this.card.toughness()
       },
+      attackedPlayer() {
+        return this.card.attackedPlayer
+      }
     },
     methods: {
       onCardClick() {
@@ -86,6 +90,19 @@
   position: relative
   display: inline-block
   transition: 200ms all ease-in-out
+
+  .target-player
+    font-size: 1.5em
+    background-color: rgba(0, 0, 0, 0.5)
+    color: red
+    width: 2em
+    text-align: center
+
+    position: absolute
+    z-index: 2
+    top: 30%
+    left: 50%
+    transform: translateX(-50%)
 
   .card-bounds
     width: 126px
@@ -131,4 +148,7 @@
   &.tapped
     transform-origin: center
     transform: translate(25px, 25px) rotate(90deg)
+
+    .target-player
+      transform: translate(-50%, -50%) rotate(-90deg)
 </style>

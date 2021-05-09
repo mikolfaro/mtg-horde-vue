@@ -1,7 +1,7 @@
 import { Record } from 'immutable'
 
 export default class Card extends Record({
-  cardData: {}, tapped: false, index: 0, counters: {}, modifiers: {}, faceDown: false
+  cardData: {}, tapped: false, index: 0, counters: {}, modifiers: {}, faceDown: false, attackedPlayer: null
 }) {
   name() {
     return this.cardData.name
@@ -13,6 +13,11 @@ export default class Card extends Record({
 
   toughness() {
     return this.cardData.toughness
+  }
+
+  attack(player) {
+    console.log('Attack player', player)
+    return this.set('attackedPlayer', player).set('tapped', true)
   }
 
   tap() {
